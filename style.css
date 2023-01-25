@@ -17,7 +17,7 @@
     box-sizing: border-box;
     outline: none;
     border: none;
-    transition: 0.2s ease;
+    transition: 0.1s ease;
 
 }
 
@@ -28,6 +28,7 @@ html{
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
+    overflow: auto;
 }
 
 html::-webkit-scrollbar{
@@ -45,6 +46,12 @@ body{
     /* height: 200vh; */
 }
 
+
+/*base html codes end*/
+
+
+/*home start*/
+
 .home h1{
     font-weight: lighter;
 }
@@ -55,19 +62,24 @@ body{
 }
 
 .home{
+    align-items: center;
+    height: 100vh;
     display: none;
     width: 100%;
     font-size: 1.4rem;
-    margin-top: 50vh;
     display: flex;
     justify-content: center;
     color: white;
+    
     
 }
 
 .home p i{
     align-items: center;
     justify-content: space-between;
+}
+
+.home .job{
     color: #8EA7E9;
 }
 
@@ -79,9 +91,35 @@ body{
     display: flex;
     padding: 2rem;
     gap: 2rem;
-    font-size: 2rem;
+    font-size: 1rem;
     cursor: pointer;
 }
+
+.home .icons{
+    right: 2%;
+    top: 33%;
+    /* border: 1px solid white; */
+    position: fixed;
+    padding: 2rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.home .icons a{
+    color: white;
+
+}
+
+.home .icons a:hover{
+    color: #8EA7E9;
+}
+
+/*home end*/
+
+/*header start*/
 
 .header .navbar{
     position: fixed;
@@ -96,6 +134,7 @@ body{
     font-size: 2rem;
    text-decoration: none;
    color: white;
+   text-transform: lowercase;
 }
 
 .header .navbar i:hover{
@@ -107,3 +146,150 @@ body{
     color:#8EA7E9;
 }
 
+.navbar a div{
+    display: inline;
+    padding: 0.2rem 1.5rem;
+    box-sizing: border-box;
+    display: none;
+    font-size: 1.5rem;
+    background-color: #8EA7E9;
+    color: #0b0c0c;
+    border-radius: 2rem;
+    align-items: center;
+    margin: 0 1rem;
+    /* position: fixed; */
+    /* left: 2.7%; */
+    /* z-index: -1000; */
+}
+
+.navbar a:hover div{
+    display: inline;
+}
+
+
+/*header end*/
+
+/*dot start*/
+
+.dot{
+    background-color: #8EA7E9;
+    position: fixed;
+    top: 5%;
+    right: 3%;
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+/*dot end*/
+
+/*about start*/
+
+.home .about h1{
+    background-color: #4A73B0;
+    font-weight: bolder;
+    border-radius: 3rem;
+    /* width: fit-content; */
+}
+
+.home .about{
+    text-align: center;
+    width: 50%;
+} 
+
+/*about end*/
+
+/*certificates start*/
+
+.home .certificates{
+    text-align: center;
+    width: 50%;
+} 
+
+.home .certificates h1{
+    background-color: #4A73B0;
+    font-size: 95%;
+    font-weight: bolder;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    margin: 1rem
+}
+
+.home .certificates p{
+    margin: 1rem;
+}
+
+/*certificates end*/
+
+/*projects start*/
+
+.home .projects{
+    width: 50%;
+    text-align: center;
+} 
+
+.home .projects h1, p{
+    font-size: 90%;
+}
+
+.home .projects h1{
+    font-weight: bolder;
+    padding: 1rem;
+    color: #8EA7E9;
+}
+
+
+/*projects end*/
+
+/*skills start*/
+
+.home .skills{
+    text-align: center;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.home .skills i:nth-child(1):hover{
+    color: #f06529;
+}
+
+.home .skills i:nth-child(2):hover{
+    color: #2965f1;
+}
+
+.home .skills i:nth-child(3):hover{
+    color: #F0DB4F;
+}
+
+.home .skills i:nth-child(4):hover{
+    color: #4B8BBE;
+}
+
+
+.home .text span{
+    color: #8EA7E9;
+}
+
+.home .skills p{
+    margin-top: 2rem;
+    padding: 0.4rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/*skills end*/
+
+/*contact start*/
+
+.home .contact a{
+    text-decoration: none;
+    color: white;
+}
+
+/*contact end*/
