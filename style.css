@@ -119,6 +119,32 @@ body{
 
 /*home end*/
 
+/*side start*/
+
+.sideh1{
+    display: flex;
+    /* flex-direction: row; */
+
+    color: white;
+    /* font-weight: lighter; */
+    font-size: 1.5rem;
+    position: fixed;
+    top: 75%;
+    right: 2%;
+    transform: rotate(270deg);
+}
+
+.sideh1 .cizgi{
+    /* margin: 1rem; */
+    width: 5rem;
+    height: 0.3rem;
+    background-color: white;
+
+
+}
+
+/*side end*/
+
 /*header start*/
 
 .header .navbar{
