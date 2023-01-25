@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --main-color: #5b6abf;
+    --black-color: #323232;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.4)
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: 0.2s ease;
+}
+
+/*!base html codes*/
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    background-color: #4e5ba4;
+}
+
+body {
+    background-color: var(--main-color);
+    height: 200vh;
+}
+
+section {
+    padding: 3.5rem 7%;
+
+}
+
+.heading {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid white;
+
+}
+
+.search-input {
+    font-size: 1.6rem;
+    color: var(--black-color);
+    padding: 1rem;
+    text-transform: none;
+    border-radius: 3rem;
+}
+
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: var(--black-color);
+
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+    /* font-size: 1.9rem; */
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+}
+
+.title {
+    font-size: 2rem;
+}
+
+
+/*header start*/
+
+.header .search-form {
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background-color: white;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    transform: scaley(0);
+}
+
+.header h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header span {
+    color: var(--main-color);
+}
+
+.header .search-form.active {
+    transform: scaley(1);
+}
+
+.header .search-form i {
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black-color);
+}
+
+.header .search-form input {
+    width: 90%;
+}
+
+.header .search-form {
+    padding: 0 0 0 2rem;
+}
+
+.header a img {
+    width: 10rem;
+}
+
+.header a img:hover {
+    transform: rotate(-10deg);
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 1rem;
+    z-index: 1000;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    border-bottom: 0.3rem solid transparent;
+    border-radius: 0.2rem;
+
+}
+
+.header .navbar .active,
+.header .navbar a:hover {
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+    color: var(--main-color)
+}
+
+.header .buttons button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+
+.header .buttons button:hover {
+    color: var(--main-color);
+    transform: translateY(-5px);
+    transition: 0.2s ease;
+    transform: rotate(-20deg);
+}
+
+.header .cart-items-container {
+    position: absolute;
+    top: 95%;
+    height: calc(100vh - 9rem);
+    width: 35rem;
+    background-color: white;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    right: -100%;
+}
+
+.header .cart-items-container.active {
+    /* position: absolute; */
+    top: 95%;
+    height: calc(100vh - 9rem);
+    width: 35rem;
+    background-color: white;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    right: 7%;
+}
+
+.header .cart-items-container .cart-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.header .cart-items-container .cart-item:hover {
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+}
+
+.header .cart-items-container .cart-item .content h3 {
+    font-size: 1.7rem;
+    color: var(--black-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .cart-items-container .cart-item .content .price {
+    font-size: 1.5rem;
+    color: var(--black-color);
+}
+
+.header .cart-items-container .btn {
+    width: 100%;
+    text-align: center;
+    border-radius: unset;
+}
+
+.header .cart-items-container .cart-item .fa-times {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black-color);
+
+}
+
+.header .cart-items-container .cart-item img {
+    height: 7rem;
+}
+
+.header #menu-btn {
+    display: none;
+}
+
+.header .hizmetlerimiz {
+    display: none;
+    background-color: white;
+    position: absolute;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    /* margin-top: 1rem; */
+    margin-left: 5rem;
+}
+
+.header .hizmetlerimiz a {
+    display: block;
+    padding: 1.2rem 0;
+    list-style-type: none;
+    padding-bottom: none;
+    border-bottom: none;
+    /* padding: 2rem 0; */
+}
+
+.navbar a:hover+.hizmetlerimiz,
+/*hizmetlerimiz üzerine geldiğinde*/
+.navbar .hizmetlerimiz:hover {
+    /* veya liste üzerinde gezindiğinde */
+    display: block;
+    /* görünür hale getir */
+}
+
+/*header end*/
+
+
+/*home start*/
+
+.home {
+    min-height: 100vh;
+    background: url(../images/home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    margin: 2rem 0;
+    font-size: 4rem;
+    color: black;
+}
+
+.home .content p {
+    font-size: 2.1rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: black;
+}
+
+
+.home img {
+    height: 50rem;
+    margin: 12.5rem 5rem;
+}
+
+.home .home-icons{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.home-icons div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home .home-icons i{
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.home .home-icons p{
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+    padding-left: 1rem;
+}
+
+
+
+/*home end*/
+
+/*hizmet start*/
+
+.hizmet .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    text-align: center;
+}
+
+.hizmet .box-container .box:hover {
+
+    box-shadow: 0px 0px 34px -2px rgba(0, 0, 0, 0.75);
+    background-color: rgb(223, 241, 254);
+}
+
+.hizmet .box-container .box img {
+    width: 45%;
+    object-fit: cover;
+    gap: 1.5rem;
+
+}
+
+.hizmet .box-container .box {
+    margin: 1rem;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 3rem;
+    background-color: white;
+    min-height: 40rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-betweens;
+
+}
+
+.hizmet .box-container .box h3 {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+
+}
+
+.hizmet .box-container p {
+    /* border: 0.1rem solid blue; */
+    font-size: 2rem;
+    min-height: 12rem;
+    padding: 1rem;
+}
+
+.hizmet .box-container .box .btn {
+    position: relative;
+    top: 1rem;
+
+}
+
+/*hizmet end*/
+
+/*surec start*/
+
+.surec .baslik {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.surec h3:hover {
+    border-bottom: 0.1rem solid white;
+}
+
+.surec .paragraf {
+    text-align: center;
+    padding: 5rem 25rem;
+    font-size: 1.5rem;
+    color: white;
+    /* border: 1px solid red; */
+
+}
+
+#section2,
+#section3,
+#section4,
+#section5 {
+    display: none;
+}
+
+.paragraf i {
+    border: 1px solid red;
+    float: left;
+    justify-content: space-between;
+    font-size: 8rem;
+    margin: 0 2rem;
+    /* align-items: center; */
+}
+
+
+/*surec end*/
+
+/*about start*/
+
+.about .row {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 2rem;
+
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+}
+
+.about .row .img {
+    /* flex: 1 1 45rem; */
+    /* filter: grayscale(100%); */
+    width: 0.1rem;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3 {
+    padding: 4rem 0;
+    font-size: 3rem;
+    color: white;
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: white;
+    padding: 3rem 0;
+    line-height: 1.8;
+}
+
+
+/*hizmet end*/
+
+/*footer start*/
+
+.footer {
+    background-color: var(--black-color);
+    text-align: center;
+    /* background: ; */
+}
+
+.footer .search {
+    justify-content: center;
+
+}
+
+.footer .search .search-input {
+    width: 30rem;
+}
+
+.footer .search .btn-primary {
+    background-color: var(--main-color);
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    /* height: 6rem; */
+}
+
+.footer .search .btn-primary:hover {
+    background-color: white;
+    color: var(--main-color)
+}
+
+.footer .share {
+    padding: 2rem 0;
+
+}
+
+.footer .share a {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    color: white;
+    font-size: 2rem;
+    border: var(--border);
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.footer .share a:hover {
+    background-color: var(--main-color);
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer .links a {
+    background-color: var(--main-color);
+    padding: 0.7rem 2rem;
+    color: white;
+    font-size: 1rem;
+    border: var(--border);
+}
+
+.footer .links a.active,
+.footer .links a:hover {
+    background-color: var(--black-color);
+    opacity: 0.7;
+}
+
+.footer .copyright {
+    color: white;
+    padding: 3rem 0;
+    font-size: 1.4rem;
+}
+
+.footer .copyright span {
+    color: wheat;
+}
+
+/*footer end*/
+
+/*social start*/
+
+.social {
+    background-color: transparent;
+    border-radius: 30rem;
+    position: fixed;
+    top: 33%;
+    right: 1rem;
+    /* box-shadow: 0px 0px 34px -2px rgba(65, 65, 65, 0.75); */
+}
+
+.social a {
+    width: 3rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    padding: 0 0.5rem;
+    margin: 0.5rem;
+    align-items: center;
+    opacity: 0, 5;
+    justify-content: center;
+}
+
+.social a:hover {
+    font-size: 2.3rem;
+    transform: rotate(-15deg);
+}
+
+/*social end*/
+
+/*logo referans start*/
+
+.referans{
+    text-align: center;
+}
+
+.referans h1,
+.referans h2{
+    color: white;
+    text-align: center;
+}
+
+.referans h1{
+    font-size: 4rem;
+}
+
+.referans h2{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.referans .logo  div{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.referans .logo  img{
+    width: 20rem;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 3rem;
+    padding: 3rem;
+    margin: 0.5rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.referans .logo  img:hover{
+    opacity: 1;
+    fill: white;
+    background-color: rgb(250, 249, 249);
+}
+
+/*logo referans end*/
+
+/*kartvizit referans start*/
+
+.referans .kartvizit{
+    background-color: none;
+}
+.referans .kartvizit img{
+    margin: 0;
+    padding: 0;
+    width: 50rem;
+
+}
+
+/*kartvizit referans end*/
+
+
+/*responsive start*/
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    .header .logo img {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .hizmet .box-container .box .box-head h1 {
+        font-size: 3.4rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 95%;
+        background-color: white;
+        height: auto;
+        /* height: calc(90vh - 9rem); */
+        /* width: 30rem; */
+        box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+        right: -100%;
+    }
+
+    .header .navbar.active {
+        right: 3rem;
+    }
+
+    .header .navbar a {
+        color: var(--black-color);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+    html {
+        font-size: 50%;
+    }
+
+}
+
+/*responsive end*/
+
+
+
+/* Grid yapısı öğrenilecek */
