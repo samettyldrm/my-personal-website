@@ -42,7 +42,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background-color:#0b0c0c;
+    background-color: #0d1117;
     /* height: 200vh; */
 }
 
@@ -141,8 +141,6 @@ body{
 
 
 .side .dot{
-    /* border: 1px solid red; */
-    background-color:#8EA7E9;
     position: fixed;
     top: 5%;
     right: 3%;
@@ -151,14 +149,11 @@ body{
     height: 1rem;
     border-radius: 3rem;
     cursor: pointer;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     font-weight: bolder;
 }
 
-.side .dot span{
-    
-}
 
 .side .dot div{
     /* border: 1px solid red; */
@@ -169,11 +164,6 @@ body{
     right: 6rem;
     text-align: right;
 }
-
-.side .sideh1 div{
-
-}
-
 
 
 /*side end*/
@@ -212,7 +202,8 @@ body{
     box-sizing: border-box;
     display: none;
     font-size: 1.5rem;
-    background-color: var(--blue-color2);
+    background-color: #8EA7E9;
+    box-shadow: 0px 0px 17px -2px rgb(143, 143, 143);
     color: white;
     border-radius: 2rem;
     align-items: center;
@@ -233,17 +224,17 @@ body{
 
 /*about start*/
 
-.home .about h1{
-    background-color: #4A73B0;
-    font-weight: bolder;
+.home .baslik{
+    color: #FFFBAC;
+    font-size: 2rem;
+    padding: 0 2rem;
+    /* background-color: #8EA7E9; */
     border-radius: 3rem;
-    /* width: fit-content; */
-}
+    position: fixed;
+    top: 20%;
+    left: 15%;
 
-.home .about{
-    text-align: center;
-    width: 50%;
-} 
+}
 
 /*about end*/
 
