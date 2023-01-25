@@ -193,7 +193,7 @@ body{
     border-radius: 30rem;
     transform: rotate(-380deg);
     color:#8EA7E9;
-    transition: 0.4s ease;
+    transition: 0.3s ease;
 }
 
 .navbar a div{
