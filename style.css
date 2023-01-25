@@ -17,7 +17,7 @@
     box-sizing: border-box;
     outline: none;
     border: none;
-    transition: 0.1s ease;
+    transition: 0.2s ease;
 
 }
 
@@ -95,7 +95,16 @@ body{
     cursor: pointer;
 }
 
-.home .icons{
+/*home end*/
+
+/*side start*/
+
+.side{
+    right: 1%;
+}
+
+
+.side .icons{
     right: 2%;
     top: 33%;
     /* border: 1px solid white; */
@@ -108,34 +117,63 @@ body{
     gap: 2rem;
 }
 
-.home .icons a{
+.side .icons a{
     color: white;
 
 }
 
-.home .icons a:hover{
-    color: #8EA7E9;
+/* twitter */
+.side .icons a:nth-child(1):hover{ 
+    color: #1DA1F2;
+}
+/* linkedin */
+.side .icons a:nth-child(2):hover{
+    color: #0077b5;
+}
+/* behance */
+.side .icons a:nth-child(3):hover{
+    color: #4670ff;
+}
+/* github */
+.side .icons a:nth-child(4):hover{
 }
 
-/*home end*/
 
-/*side start*/
 
-.sideh1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    color: white;
-    font-size: 1.5rem;
+.side .dot{
+    /* border: 1px solid red; */
+    background-color:#8EA7E9;
     position: fixed;
-    top: 75%;
-    right: 2%;
-    transform: rotate(270deg);
-    /* border-left: 1px solid white; */
+    top: 5%;
+    right: 3%;
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
 }
 
-.sideh1 .cizgi{
-    margin-bottom: 3rem;
+.side .dot span{
+    
 }
+
+.side .dot div{
+    /* border: 1px solid red; */
+    width: 55rem;
+    color: white;
+    /* display: flex; */
+    position: fixed;
+    right: 6rem;
+    text-align: right;
+}
+
+.side .sideh1 div{
+
+}
+
 
 
 /*side end*/
@@ -163,8 +201,9 @@ body{
     /* padding: 0.3rem; */
     box-sizing: border-box;
     border-radius: 30rem;
-    transform: rotate(-15deg);
+    transform: rotate(-380deg);
     color:#8EA7E9;
+    transition: 0.4s ease;
 }
 
 .navbar a div{
@@ -173,8 +212,8 @@ body{
     box-sizing: border-box;
     display: none;
     font-size: 1.5rem;
-    background-color: #8EA7E9;
-    color: #0b0c0c;
+    background-color: var(--blue-color2);
+    color: white;
     border-radius: 2rem;
     align-items: center;
     margin: 0 1rem;
@@ -190,24 +229,7 @@ body{
 
 /*header end*/
 
-/*dot start*/
 
-.dot{
-    background-color: #8EA7E9;
-    position: fixed;
-    top: 5%;
-    right: 3%;
-    display: flex;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 3rem;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
-}
-
-/*dot end*/
 
 /*about start*/
 
