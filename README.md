@@ -1,1 +1,0 @@
-# samettyldrm.github.io
