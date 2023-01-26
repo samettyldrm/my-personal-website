@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,600&display=swap');
 
 :root {
     --main-color: #41434E;
@@ -11,7 +11,7 @@
 }
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Comfortaa', cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -53,12 +53,15 @@ body {
 /*home start*/
 
 .home h1 {
-    font-weight: lighter;
+    font-family: 'Comfortaa', cursive;
+
 }
 
 .home span {
     /* color: #8EA7E9; */
     font-weight: bolder;
+    font-family: 'Comfortaa', cursive;
+
 }
 
 .home {
@@ -75,6 +78,7 @@ body {
 }
 
 .home p i {
+    
     align-items: center;
     justify-content: space-between;
 }
@@ -127,29 +131,18 @@ body {
     color: #f06529;
 }
 
-
-
 .side .dot {
     position: fixed;
     top: 5%;
     right: 3%;
     display: flex;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 3rem;
     cursor: pointer;
-    /* justify-content: center; */
-    align-items: center;
-    font-weight: bolder;
 }
 
 
 .side .dot div {
-    /* border: 1px solid red; */
     width: 55rem;
-    color: white;
-    /* display: flex; */
-    position: fixed;
+    color: #FFBF00;
     right: 6rem;
     text-align: right;
 }
@@ -181,7 +174,7 @@ body {
     box-sizing: border-box;
     border-radius: 30rem;
     transform: rotate(-380deg);
-    color: #8EA7E9;
+    color: #FFBF00;
     transition: 0.3s ease;
 }
 
@@ -190,10 +183,10 @@ body {
     padding: 0.2rem 1.5rem;
     box-sizing: border-box;
     display: none;
-    font-size: 1.5rem;
-    background-color: #8EA7E9;
+    font-size: 1.7rem;
+    background-color: #FFBF00;
     box-shadow: 0px 0px 17px -2px rgb(143, 143, 143);
-    color: white;
+    color: var(--black-color);
     border-radius: 2rem;
     align-items: center;
     margin: 0 1rem;
@@ -214,38 +207,39 @@ body {
 /*about start*/
 
 .home .baslik {
-    color: #FFFBAC;
+    color: #FFBF00;
     font-size: 2rem;
     padding: 0 2rem;
     /* background-color: #8EA7E9; */
     border-radius: 3rem;
     position: fixed;
-    top: 20%;
-    left: 15%;
+    top: 10%;
+    left: 10%;
+}
 
+.home .about .metin{
+    text-align: center;
 }
 
 /*about end*/
 
 /*certificates start*/
 
+
 .home .certificates {
-    text-align: center;
     width: 50%;
+    text-align: center;
+}
+
+.home .certificates h1,p {
+    font-size: 90%;
 }
 
 .home .certificates h1 {
-    background-color: #4A73B0;
-    font-size: 95%;
+    font-size: 90%;
     font-weight: bolder;
-    justify-content: center;
-    padding: 0.5rem;
-    border-radius: 3rem;
-    margin: 1rem
-}
-
-.home .certificates p {
-    margin: 1rem;
+    padding: 1rem;
+    color: #8EA7E9;
 }
 
 /*certificates end*/
@@ -275,8 +269,12 @@ p {
 
 .home .skills {
     text-align: center;
-    font-size: 5rem;
     cursor: pointer;
+}
+
+.home .skills i{
+    font-size: 5rem;
+    padding: 0 1rem;
 }
 
 .home .skills i:nth-child(1):hover {
@@ -303,7 +301,7 @@ p {
 .home .skills p {
     margin-top: 2rem;
     padding: 0.4rem;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     font-style: italic;
 }
 
