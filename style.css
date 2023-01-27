@@ -52,6 +52,14 @@ body {
 
 /*home start*/
 
+.home .pp {
+    width: 3rem;
+    display: flex;
+    position: fixed;
+    top: 4%;
+    left: 2%;
+}
+
 .home h1 {
     font-family: 'Comfortaa', cursive;
 
@@ -74,11 +82,11 @@ body {
     justify-content: center;
     color: white;
 
-
 }
 
-.home p i  {
-    
+
+.home p i {
+
     align-items: center;
     justify-content: space-between;
 }
@@ -206,18 +214,14 @@ body {
 
 /*about start*/
 
-.home .baslik {
-    color: #FFBF00;
-    font-size: 2rem;
-    padding: 0 2rem;
-    /* background-color: #8EA7E9; */
-    border-radius: 3rem;
-    position: fixed;
-    top: 10%;
-    left: 10%;
+.metin {
+    /* border: 1px solid red; */
 }
 
-.home .about .metin{
+.home .about .metin {
+    justify-content: center;
+    /* display: flex; */
+    /* box-sizing: border-box; */
     text-align: center;
 }
 
@@ -231,7 +235,8 @@ body {
     text-align: center;
 }
 
-.home .certificates h1,p {
+.home .certificates h1,
+p {
     font-size: 90%;
 }
 
@@ -245,19 +250,43 @@ body {
 /*certificates end*/
 
 /*projects start*/
+/* .projects .metin  */
+
+.projects .btn{
+    justify-content: center;
+    background-color: #8EA7E9;
+    width: 15rem;
+    border-radius: 3rem;
+    margin: 1rem auto 1rem auto;
+    padding: 1rem 0 1rem 0;
+}
+
+.projects .btn:hover{
+    background-color: #FFBF00;
+}
+
+.projects .btn a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    bottom: 0.9rem;
+}
+
+.projects .btn img{
+    width: 3rem;
+}
 
 .home .projects {
     width: 50%;
     text-align: center;
 }
 
-.home .projects h1,
-p {
+.home .projects p {
     font-size: 90%;
 }
 
 .home .projects h1 {
-    font-weight: bolder;
+    font-size: 90%;
     padding: 1rem;
     color: #8EA7E9;
 }
@@ -272,7 +301,7 @@ p {
     cursor: pointer;
 }
 
-.home .skills i{
+.home .skills i {
     font-size: 5rem;
     padding: 0 1rem;
 }
