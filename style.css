@@ -177,7 +177,7 @@ body {
 }
 
 .header .navbar i:hover,
-.header .navbar i.active{
+.header .navbar i .active{
     /* background-color: white; */
     /* padding: 0.3rem; */
     box-sizing: border-box;
