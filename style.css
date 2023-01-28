@@ -188,6 +188,8 @@ body {
 
 .header .navbar i.active{
     color: #FFBF00;
+    transform: rotate(0deg);
+    
 }
 
 .navbar a div {
