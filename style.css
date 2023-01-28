@@ -176,8 +176,7 @@ body {
     text-transform: lowercase;
 }
 
-.header .navbar i:hover,
-.header .navbar i.active{
+.header .navbar i:hover{
     /* background-color: white; */
     /* padding: 0.3rem; */
     box-sizing: border-box;
@@ -185,6 +184,10 @@ body {
     transform: rotate(-380deg);
     color: #FFBF00;
     transition: 0.3s ease;
+}
+
+.header .navbar i.active{
+    color: #FFBF00;
 }
 
 .navbar a div {
