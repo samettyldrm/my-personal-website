@@ -284,13 +284,23 @@ p {
 /*projects start*/
 
 .projects {
-    width: 50%;
+    width: 75%;
+    /* margin-top: 10rem; */
+    display: grid;
 }
 
 .cards {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+}
+
+.projects .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding: 1rem; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
 }
 
 .cards h1 {
@@ -304,10 +314,15 @@ p {
     margin: 0;
 }
 
+.projects .cards a{
+    margin: 1rem;
+}
+
 .cards a {
     text-decoration: none;
     color: black;
     margin: 0rem;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 .cards ul{
