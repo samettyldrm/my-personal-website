@@ -43,7 +43,6 @@ html::-webkit-scrollbar-thumb {
 
 body {
     background-color: #0d1117;
-    /* height: 200vh; */
 }
 
 
@@ -51,9 +50,26 @@ body {
 
 
 /*home start*/
-.home .homepage {
-    /* display: flex; */
 
+.home .download{
+    background-color: #8EA7E9;
+    padding: 1rem;
+    border-radius: 4rem;
+    display: inline-block;
+    width: 75%;
+}
+
+.home .download:hover{
+    background-color: #f06529;
+}
+
+.home .homepage a{
+    text-decoration: none;
+    color: white;
+}
+
+.home .homepage{
+    text-align: center;
 }
 
 .home .pp {
