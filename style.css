@@ -274,6 +274,7 @@ p {
 .cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cards h1 {
@@ -290,16 +291,7 @@ p {
 .cards a {
     text-decoration: none;
     color: black;
-    margin: 1rem;
-}
-
-.certificates .cards a{
     margin: 0rem;
-}
-
-.certificates .cards a:hover{
-    color: #6f7ea8;
-    font-weight: bolder;
 }
 
 .cards ul{
@@ -318,7 +310,12 @@ p {
     padding: 0 1rem 0 0;
 }
 
+.certificates .cards div{
+    width: 75%;
+}
+
 .cards div {
+    align-items: center;
     background-color: #FFFFE8;
     border-radius: 3rem;
     padding: 0rem;
@@ -332,46 +329,70 @@ p {
     opacity: 1;
 }
 
+.certificates .cards a{
+    margin: 0rem;
+}
+
+.certificates .cards a:hover{
+    color: #6f7ea8;
+    font-weight: bolder;
+}
 /*projects end*/
 
 /*skills start*/
 
-.home .skills {
+.skills {
     text-align: center;
     cursor: pointer;
 }
 
-.home .skills i {
-    font-size: 5rem;
+.skills .cards i {
+    font-size: 1rem;
     padding: 0 1rem;
 }
 
-.home .skills i:nth-child(1):hover {
+.skills i {
+    font-size: 5rem;
+    padding: 1rem;
+}
+
+.skills .html:hover {
     color: #f06529;
 }
 
-.home .skills i:nth-child(2):hover {
+.skills .css:hover {
     color: #2965f1;
 }
 
-.home .skills i:nth-child(3):hover {
+.skills .js:hover {
     color: #F0DB4F;
 }
 
-.home .skills i:nth-child(4):hover {
+.skills .python:hover {
     color: #4B8BBE;
 }
 
 
-.home .text span {
+.text span {
     color: #8EA7E9;
 }
 
-.home .skills p {
-    margin-top: 2rem;
-    padding: 0.4rem;
-    /* font-size: 1rem; */
+.skills p {
     font-style: italic;
+}
+.skills .cards div{
+    width: 75%;
+    justify-content: center;
+}
+
+.skills .cards i{
+    font-size: 2rem;
+}
+
+.cards .fa-times{
+    position: absolute;
+    top: 20%;
+    right: 1%;
 }
 
 /*skills end*/
