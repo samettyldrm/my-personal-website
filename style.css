@@ -265,7 +265,7 @@ body {
 
 
 .home .certificates {
-    width: 50%;
+    width: 75%;
     text-align: center;
 }
 
@@ -279,12 +279,14 @@ p {
     padding: 1rem;
 }
 
+
 /*certificates end*/
 
 /*projects start*/
 
 .projects {
-    width: 75%;
+    max-height: 100%;
+    width: 50%;
     /* margin-top: 10rem; */
     display: grid;
 }
@@ -403,7 +405,6 @@ p {
     color: #4B8BBE;
 }
 
-
 .text span {
     color: #8EA7E9;
 }
@@ -412,7 +413,7 @@ p {
     font-style: italic;
 }
 .skills .cards div{
-    width: 75%;
+    width: 50%;
     justify-content: center;
 }
 
@@ -449,5 +450,9 @@ p {
         grid-template-columns: 1fr;
         margin-top: 3rem;
         
+    }
+
+    .projects {
+        width: 75%;
     }
 }
