@@ -436,3 +436,65 @@ p {
 }
 
 /*contact end*/
+
+
+/*deneme*/
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .login-form {
+    width: 100%;
+    margin: 10% auto;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control {
+    background-color: #3a3a3a;
+    border: none;
+    border-bottom: 2px solid #00ff00;
+    color: #fff;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .form-control:focus {
+    border-color: #00cc00;
+    outline: none;
+  }
+  
+  .btn {
+    background-color: #00ff00;
+    border: none;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #00cc00;
+  }
+  
