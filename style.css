@@ -265,7 +265,7 @@ body {
 
 
 .home .certificates {
-    width: 75%;
+    width: 50%;
     text-align: center;
 }
 
@@ -284,9 +284,10 @@ p {
 
 /*projects start*/
 
+
 .projects {
     max-height: 100%;
-    width: 50%;
+    width: 75%;
     /* margin-top: 10rem; */
     display: grid;
 }
@@ -441,7 +442,7 @@ p {
 
 /*responsive start*/
 
-@media (max-width: 900px){
+@media (max-width: 758px){
     html{
         font-size: 55%;
     }
@@ -452,7 +453,18 @@ p {
         
     }
 
-    .projects {
-        /* width: 75%; */
+    .home .certificates {
+        width: 75%;
+    }
+
+    .skills .cards div{
+        width: 75%;
+    }
+
+    .about{
+        width: 60%;
+        text-align: center;
+        justify-content: center;
+
     }
 }
