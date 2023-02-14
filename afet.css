@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,600&display=swap');
+
+:root {
+    --main-color: #41434E;
+    --font-color: #FFFEFE;
+    --black-color: #0F121F;
+    --blue-color: #5C4AB0;
+    --blue-color2: #4A73B0;
+    --green-color: #61D1BB;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.4)
+}
+
+* {
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: 0.2s ease;
+
+}
+
+div{
+    text-align: center;
+}
+
+.afet div{
+    display: grid;
+    grid-template-columns: auto;
+    line-height: 2rem;
+    box-shadow: 0px 0px 17px -2px rgb(150, 150, 150);
+    width: 65%;
+    border: 1px solid black;
+    border-radius: 2rem;
+    margin: 1rem auto 1rem auto;
+}
+
+.afet h1{
+    padding: 1rem;
+}
+
+.afet p a{
+    font-size: 0.7rem;
+    background-color: #337ab7;
+    text-decoration: none;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    
+}
+
+.afet p a:hover{
+    background-color:rgb(172, 3, 3);
+}
+
+.afet div h3{
+    color: #4A73B0;
+    border-radius: 2rem;
+}
+
+div .adres{
+    font-size: 75%;
+    margin: 0;
+}

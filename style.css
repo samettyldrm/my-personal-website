@@ -437,6 +437,10 @@ p {
     color: white;
 }
 
+.contact a:hover{
+    color: #8EA7E9;
+}
+
 /*contact end*/
 
 
