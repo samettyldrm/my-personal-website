@@ -51,7 +51,7 @@ body {
 
 /*home start*/
 
-.home .download{
+.home .download {
     background-color: #8EA7E9;
     padding: 1rem;
     border-radius: 4rem;
@@ -59,33 +59,29 @@ body {
     width: 75%;
 }
 
-.home .download:hover{
+.home .download:hover {
     background-color: #f06529;
 }
 
-.home .homepage a{
+.home .homepage a {
     text-decoration: none;
     color: white;
 }
 
-.home .homepage{
+.home .homepage {
     text-align: center;
 }
 
 .home .pp {
     padding: 2rem;
-    margin-left: auto;
-    margin-right: auto;
     width: 20rem;
     display: flex;
-    /* position: fixed; */
     filter: grayscale(100%);
 }
 
 .home .pp:hover {
     filter: grayscale(0%);
 }
-
 
 .home h1 {
     font-family: 'Comfortaa', cursive;
@@ -100,13 +96,12 @@ body {
 }
 
 .home {
-    align-items: center;
     height: 100vh;
-    display: none;
-    width: 100%;
+    width: 100vw;
     font-size: 1.4rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     color: white;
 
 }
@@ -123,7 +118,6 @@ body {
 }
 
 .home .down {
-    /* border: 1px solid red; */
     position: absolute;
     bottom: 2rem;
     right: 2rem;
@@ -171,14 +165,13 @@ body {
     top: 5%;
     right: 3%;
     display: flex;
-/*     cursor: pointer; */
 }
 
 
 .side .dot div {
     font-size: 1.2rem;
     width: 55rem;
-    color: #8EA7E9;
+    color: #AAC4FF;
     right: 6rem;
     text-align: right;
 }
@@ -205,17 +198,14 @@ body {
 }
 
 .header .navbar i:hover {
-    /* background-color: white; */
-    /* padding: 0.3rem; */
-    box-sizing: border-box;
     border-radius: 30rem;
     transform: rotate(-380deg);
-    color: #FFBF00;
+    color: #AAC4FF;
     transition: 0.3s ease;
 }
 
 .header .navbar i.active {
-    color: #FFBF00;
+    color: #AAC4FF;
     transform: rotate(0deg);
 
 }
@@ -223,18 +213,14 @@ body {
 .navbar a div {
     display: inline;
     padding: 0.2rem 1.5rem;
-    box-sizing: border-box;
     display: none;
     font-size: 1.7rem;
-    background-color: #FFBF00;
+    background-color: #AAC4FF;
     box-shadow: 0px 0px 17px -2px rgb(143, 143, 143);
     color: var(--black-color);
     border-radius: 2rem;
     align-items: center;
     margin: 0 1rem;
-    /* position: fixed; */
-    /* left: 2.7%; */
-    /* z-index: -1000; */
 }
 
 .navbar a:hover div {
@@ -248,14 +234,8 @@ body {
 
 /*about start*/
 
-.metin {
-    /* border: 1px solid red; */
-}
-
 .home .about .metin {
     justify-content: center;
-    /* display: flex; */
-    /* box-sizing: border-box; */
     text-align: center;
     line-height: 2rem;
 }
@@ -318,7 +298,7 @@ p {
     margin: 0;
 }
 
-.projects .cards a{
+.projects .cards a {
     margin: 1rem;
 }
 
@@ -329,11 +309,11 @@ p {
     grid-template-columns: 1fr 2fr 1fr;
 }
 
-.cards ul{
+.cards ul {
     padding: 1rem;
 }
 
-.cards ul li{
+.cards ul li {
     list-style-type: none;
 }
 
@@ -341,11 +321,11 @@ p {
     padding: 2rem;
 }
 
-.cards i{
+.cards i {
     padding: 0 1rem 0 0;
 }
 
-.certificates .cards div{
+.certificates .cards div {
     width: 75%;
 }
 
@@ -364,14 +344,15 @@ p {
     opacity: 1;
 }
 
-.certificates .cards a{
+.certificates .cards a {
     margin: 0rem;
 }
 
-.certificates .cards a:hover{
+.certificates .cards a:hover {
     color: #6f7ea8;
     font-weight: bolder;
 }
+
 /*projects end*/
 
 /*skills start*/
@@ -413,16 +394,17 @@ p {
 .skills p {
     font-style: italic;
 }
-.skills .cards div{
+
+.skills .cards div {
     width: 50%;
     justify-content: center;
 }
 
-.skills .cards i{
+.skills .cards i {
     font-size: 2rem;
 }
 
-.cards .fa-terminal{
+.cards .fa-terminal {
     position: absolute;
     top: 20%;
     right: 1%;
@@ -437,7 +419,7 @@ p {
     color: white;
 }
 
-.contact a:hover{
+.contact a:hover {
     color: #8EA7E9;
 }
 
@@ -446,26 +428,26 @@ p {
 
 /*responsive start*/
 
-@media (max-width: 758px){
-    html{
+@media (max-width: 758px) {
+    html {
         font-size: 55%;
     }
 
     .projects .cards {
         grid-template-columns: 1fr;
         margin-top: 3rem;
-        
+
     }
 
     .home .certificates {
         width: 75%;
     }
 
-    .skills .cards div{
+    .skills .cards div {
         width: 75%;
     }
 
-    .about{
+    .about {
         width: 60%;
         text-align: center;
         justify-content: center;
