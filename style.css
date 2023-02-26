@@ -161,6 +161,7 @@ body {
 }
 
 .side .dot {
+    cursor: pointer;
     position: fixed;
     top: 5%;
     right: 3%;
@@ -244,7 +245,9 @@ body {
 
 /*certificates start*/
 
-
+.fa-terminal{
+    cursor: pointer;
+}
 .home .certificates {
     width: 50%;
     text-align: center;
