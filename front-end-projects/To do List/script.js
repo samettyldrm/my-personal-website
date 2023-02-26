@@ -31,8 +31,6 @@ function alertClose() {
     document.getElementById("alert").style.opacity = 0;
 }
 
-function enter()
-
 // Create a new list item when clicking on the "Add" button
 
 function yeniElement() {
