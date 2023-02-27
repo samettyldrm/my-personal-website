@@ -65,19 +65,6 @@ function yeniElement() {
 }
 
 
-// function yeniElement() {
-//     var li = document.createElement("li"); // yeni bir li öğesi oluştur
-//     var input = document.getElementById("myInput"); // input alanından değeri al
-//     var text = document.createTextNode(input.value); // input değerini yeni bir text düğümüne dönüştür
-//     li.appendChild(text); // text düğümünü li öğesine ekle
-//     if (input.value === '') { // eğer input boş ise uyarı göster ve ekleme yapma
-//       alertOpen();
-//     } else { // input dolu ise ekleme yap ve inputu temizle
-//       document.getElementById("myUl").appendChild(li);
-//       input.value = "";
-//     }
-//   }
-  
 
 
 
