@@ -34,9 +34,9 @@ body {
 .container {
     background-color: #ffffff;
     box-shadow: 0px 0px 17px -2px rgb(79, 79, 79);
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
     margin: 1rem auto auto auto;
-    width: 90vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,6 +64,7 @@ input {
     background: none;
     padding: 1rem 1rem 1rem 3rem;
     margin: 0 0 0 2rem;
+    border-radius: 0.5rem 0 0 0.5rem  ;
 }
 
 #myInput:focus{
@@ -79,6 +80,7 @@ input {
     padding: 1rem;
     width: auto;
     margin: 0 2rem 0 0;
+    border-radius: 0 0.5rem 0.5rem 0 ;
 }
 
 
@@ -109,7 +111,8 @@ ul{
 ul li{
     position: relative;
     list-style: none;
-    box-shadow: 0px 0px 17px -2px rgb(159, 159, 159);
+    box-shadow: 0px 0px 17px -2px rgb(199, 199, 199);
+    border-radius: 0.5rem;
     padding: 0.8rem 2rem;
     margin: 0 2rem;
     -webkit-user-select: none;
@@ -207,13 +210,15 @@ ul li.checked::before {
 /* RESPONSIVE START */
 
 @media (max-width: 758px) {
+    .container{
+        width: 100%;
+    }
     ul li{
         font-size: 1.3rem;
     }
 
     .add{
-        grid-template-columns: 0fr 9fr auto;
-        /* grid-template-rows: 1fr 1fr; */
+        /* grid-template-columns: 0fr 9fr auto; */
     }
 
     .btn{
