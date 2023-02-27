@@ -1,3 +1,4 @@
+
 //Close butonu oluşturma ve listelere ekleme
 var myNodelist = document.getElementsByTagName("li");
 var i;
@@ -64,9 +65,43 @@ function yeniElement() {
     }
 }
 
+//Enter tuşu ile input'u YeniElement()e yönlendir
+
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    yeniElement();
+  }
+});
 
 
+//Eğer li etiketlerinin hepsinin display'i none ise p etiketinin displayini block yap.
 
+var ul = document.querySelector("ul");
+var list = ul.getElementsByTagName("li");
+var bos = document.getElementById("bos");
+// alert(list.length)
+
+// alert(list.length)
+var i;
+noneCount = 0;
+for (i= 0; i<list.length; i++){
+    if (list[i].style.display == "none"){
+        // alert(list[i])
+        noneCount++;
+    }
+}
+
+// alert(noneCount)
+
+if (noneCount==0){
+    bos.style.display= "none";
+}else {
+    bos.style.display= "block";
+}
+
+// alert(noneCount)
 
 
 

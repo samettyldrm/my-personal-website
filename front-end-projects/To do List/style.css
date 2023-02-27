@@ -50,6 +50,10 @@ h1 i{
 
 /* ADD START*/
 
+#bos{
+    text-align: center;
+    display: none;
+}
 
 .add{
     display: grid;
