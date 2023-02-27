@@ -1,37 +1,39 @@
-// // Create a "close" button and append it to each list item
-// var myNodelist = document.getElementsByTagName("li");
-// var i;
-// for (i = 0; i < myNodelist.length; i++) {
-//     var span = document.createElement("SPAN");
-//     var txt = document.createTextNode("\u00D7");
-//     span.className = "close";
-//     span.appendChild(txt);
-//     myNodelist[i].appendChild(span);
-// }
+//Close butonu oluşturma ve listelere ekleme
+var myNodelist = document.getElementsByTagName("li");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    myNodelist[i].appendChild(span);
+}
 
-// // Click on a close button to hide the current list item
-// var close = document.getElementsByClassName("close");
-// var i;
-// for (i = 0; i < close.length; i++) {
-//     close[i].onclick = function () {
-//         var div = this.parentElement;
-//         div.style.display = "none";
-//     }
-// }
+//Close butonuna tıklayınca li'ler'in displayleri kapatılacak.
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+    close[i].onclick = function () {
+        var div = this.parentElement;
+        div.style.display = "none";
+    }
+}
 
-// // Add a "checked" symbol when clicking on a list item
-// var list = document.querySelector('ul');
-// list.addEventListener('click', function (ev) {
-//     if (ev.target.tagName === 'LI') {
-//         ev.target.classList.toggle('checked');
-//     }
-// }, false);
+//Tıklanılan li etiketlerinin classlist'ine checked ekle.
+var list = document.querySelector('ul');
+list.addEventListener('click', function (ev) {
+    if (ev.target.tagName === 'LI') {
+        ev.target.classList.toggle('checked');
+    }
+}, false);
+
+//Alert kapat fonksiyonu
 
 function alertClose() {
     document.getElementById("alert").style.display = "none";
 }
 
-// Create a new list item when clicking on the "Add" button
+// Ekle butonuna tıklayınca yeni bir li elementi ekle
 
 function yeniElement() {
     var li = document.createElement("li");
@@ -43,7 +45,8 @@ function yeniElement() {
         alert.style.display = "flex";
         // alert("Bi şeyler yazmalısın dostum!");
     } else {
-        document.getElementById("myWork").appendChild(li);
+        var liTag = document.getElementsByTagName("li")
+        document.getElementById("myUl").appendChild(li);
     }
     document.getElementById("myInput").value = "";
 
@@ -61,6 +64,20 @@ function yeniElement() {
     }
 }
 
+
+// function yeniElement() {
+//     var li = document.createElement("li"); // yeni bir li öğesi oluştur
+//     var input = document.getElementById("myInput"); // input alanından değeri al
+//     var text = document.createTextNode(input.value); // input değerini yeni bir text düğümüne dönüştür
+//     li.appendChild(text); // text düğümünü li öğesine ekle
+//     if (input.value === '') { // eğer input boş ise uyarı göster ve ekleme yapma
+//       alertOpen();
+//     } else { // input dolu ise ekleme yap ve inputu temizle
+//       document.getElementById("myUl").appendChild(li);
+//       input.value = "";
+//     }
+//   }
+  
 
 
 
