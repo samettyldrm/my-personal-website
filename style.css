@@ -272,7 +272,6 @@ p {
 .projects {
     max-height: 100%;
     width: 75%;
-    /* margin-top: 10rem; */
     display: grid;
 }
 
@@ -285,9 +284,6 @@ p {
 .projects .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* padding: 1rem; */
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
 }
 
 .cards h1 {
@@ -301,15 +297,16 @@ p {
     margin: 0;
 }
 
-.projects .cards a {
-    margin: 1rem;
-}
-
 .cards a {
+    margin: 1rem;
     text-decoration: none;
     color: black;
-    margin: 0rem;
+    margin: 1rem;
     grid-template-columns: 1fr 2fr 1fr;
+}
+
+.projects .cards a div{
+    height: 17rem;
 }
 
 .cards ul {
@@ -322,6 +319,9 @@ p {
 
 .cards p {
     padding: 2rem;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
 }
 
 .cards i {
