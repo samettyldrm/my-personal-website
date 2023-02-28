@@ -277,6 +277,7 @@ ul li.checked .fa-regular{
 
 
 body .darkMode{
+    transition: 0.2s ease;
     background-color: #212134;
     color: white;
 }
