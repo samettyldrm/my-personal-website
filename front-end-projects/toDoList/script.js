@@ -128,42 +128,32 @@ input.addEventListener("keyup", function(event) {
 });
 
 
-//Eğer li etiketlerinin hepsinin display'i none ise p etiketinin displayini block yap.
-
-//Burası düzenlenecek. li etiketinin display'i none ise p etiketinin displayini block yapıyor
-//fakat bunu javascript ile none yaptığımda olmuyor. veya tam tersi. DÜZENLENECEK.
-
-// var ul = document.querySelector("ul");
-// var list = ul.getElementsByTagName("li");
-// var bos = document.getElementById("bos");
-// // alert(list.length)
-
-// // alert(list.length)
-// var i;
-// noneCount = 0;
-// for (i= 0; i<list.length; i++){
-//     if (list[i].style.display == "none"){
-//         // alert(list[i])
-//         noneCount++;
-//     }
-// }
-
-// // alert(noneCount)
-
-// if (noneCount==0){
-//     bos.style.display= "none";
-// }else {
-//     bos.style.display= "block";
-// }
-
-// // alert(noneCount)
-
-
 function toggleDarkMode() {
-    var container = document.querySelector(".container");
-    container.classList.toggle("darkMode");
+    var bodyClass = document.querySelector(".bodyClass");
+    bodyClass.classList.toggle("darkMode");
   }
   
   var toggleButton = document.getElementById("mode");
   toggleButton.addEventListener("click", toggleDarkMode);
   
+
+
+//KAYDETME
+
+// Formu seçin
+var form = document.querySelector('bodyClass');
+
+// LocalStorage'da kaydedilen verileri yükleyin
+if (localStorage.getItem('formValues')) {
+  form.innerHTML = localStorage.getItem('formValues');
+}
+
+// Form alanlarında değişiklik olduğunda verileri kaydedin
+form.addEventListener('change', function() {
+  localStorage.setItem('formValues', form.innerHTML);
+});
+
+// Formu gönderildiğinde kaydedilen verileri silin
+form.addEventListener('submit', function() {
+  localStorage.removeItem('formValues');
+});
