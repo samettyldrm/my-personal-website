@@ -1,126 +1,85 @@
 
-//Close butonu oluşturma ve listelere ekleme
-var myNodelist = document.getElementsByTagName("li");
+//CLOSE SİMGESİ EKLE
+
+//Tüm "li" etiketlerini al
+var myList = document.getElementsByTagName("li");
+
 var i;
-for (i = 0; i < myNodelist.length; i++) {
-    var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
-    span.className = "close";
-    span.appendChild(txt);
-    myNodelist[i].appendChild(span);
+// "li" etiketinin sayısı kadar döngü oluştur.
+for (i = 0; i < myList.length; i++) {
+  //span etiketini oluştur.
+  var span = document.createElement("SPAN");
+  //close sınıfını ekle.
+  span.className = "close";
+  //fontAwesome'dan "times" simgesini temsil eden "i" etiketini oluştur.
+  var icon = document.createElement("i");
+  icon.className = "fas fa-times";
+  span.appendChild(icon);
+  //Her bir "li" elemanına "span etiketini ekle."
+  myList[i].appendChild(span);
 }
 
-//Close butonuna tıklayınca li'ler'in displayleri kapatılacak.
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-    close[i].onclick = function () {
-        var div = this.parentElement;
-        div.style.display = "none";
-    }
-}
-
-//Tıklanılan li etiketlerinin classlist'ine checked ekle.
-var list = document.querySelector('ul');
-list.addEventListener('click', function (ev) {
-    if (ev.target.tagName === 'LI') {
-        ev.target.classList.toggle('checked');
-    }
-}, false);
-
-
-
-  var toggle = document.querySelector('#mode');
-
-  toggle.addEventListener('click', function() {
-    var on = toggle.classList.toggle('on');
-    document.querySelector('.fa-toggle-on').style.display = on ? 'inline-block' : 'none';
-    document.querySelector('.fa-toggle-off').style.display = on ? 'none' : 'inline-block';
-  });
-
-
-
-//Alert kapat fonksiyonu
-
-function alertClose() {
-    document.getElementById("alert").style.display = "none";
-}
-
-// Ekle butonuna tıklayınca yeni bir li elementi ekle
-
-
-// function yeniElement() {
-//     var faSolid = document.querySelector(".fa-solid");
-//     var faRegular = document.querySelector(".fa-regular");
-//     var li = document.createElement("li");
-//     var inputValue = document.getElementById("myInput").value;
-//     var t = document.createTextNode(inputValue);
-//     var alert = document.getElementById("alert")
-//     li.appendChild(t);
-//     if (inputValue === '') {
-//         alert.style.display = "flex";
-//         // alert("Bi şeyler yazmalısın dostum!");
-//     } else {
-//         document.getElementById("myUl").appendChild(li);
-//         // document.getElementById("myUl").append(faSolid)
-//         // document.getElementById("myUl").append(faRegular)
-//     }
-//     document.getElementById("myInput").value = "";
-
-//     var span = document.createElement("SPAN");
-//     var txt = document.createTextNode("\u00D7");
-//     span.className = "close";
-//     span.appendChild(txt);
-//     li.appendChild(span);
-
-//     for (i = 0; i < close.length; i++) {
-//         close[i].onclick = function () {
-//             var div = this.parentElement;
-//             div.style.display = "none";
-//         }
-//     }
-// }
+//yeniElement() fonksiyonu
 
 function yeniElement() {
-    var faCircle = document.createElement("i");
-    faCircle.classList.add("fa-solid", "fa-circle-check");
-    var faCheck = document.createElement("i");
-    faCheck.classList.add("fa-regular", "fa-circle");
+  control()
+  // FontAwesome'dan "circle-check" simgesini temsil eden "i" etiketi oluştur
+  var faCircle = document.createElement("i");
+  faCircle.classList.add("fa-solid", "fa-circle-check");
 
-    var li = document.createElement("li");
-    var inputValue = document.getElementById("myInput").value;
-    var t = document.createTextNode(" " + inputValue);
-    var alert = document.getElementById("alert");
-    li.appendChild(faCircle);
-    li.appendChild(faCheck);
-    li.appendChild(t);
-    if (inputValue === '') {
-        alert.style.display = "flex";
-        // alert("Bi şeyler yazmalısın dostum!");
-    } else {
-        document.getElementById("myUl").appendChild(li);
+  // FontAwesome'dan "circle" simgesini temsil eden "i" etiketi oluştur
+  var faCheck = document.createElement("i");
+  faCheck.classList.add("fa-regular", "fa-circle");
+
+  // "li" etiketi oluştur
+  var li = document.createElement("li");
+
+  // "myInput" alanındaki değeri al
+  var inputValue = document.getElementById("myInput").value;
+
+  // "t" değişkeni ile metin düğümü oluştur ve "li" etiketine ekle
+  var t = document.createTextNode(" " + inputValue);
+  li.appendChild(faCircle);
+  li.appendChild(faCheck);
+  li.appendChild(t);
+
+  // Eğer "myInput" alanı boşsa, uyarı mesajını göster
+  var alert = document.getElementById("alert");
+  if (inputValue === '') {
+    alert.style.display = "flex";
+    // alert("Bi şeyler yazmalısın dostum!");
+  } else {
+    // "myUl" listesine "li" elemanını ekle
+    document.getElementById("myUl").appendChild(li);
+  }
+
+  // "myInput" alanının içeriğini temizle
+  document.getElementById("myInput").value = "";
+
+  // "span" etiketi oluştur ve "li" etiketine ekle
+  var span = document.createElement("SPAN");
+  var icon = document.createElement("i");
+  icon.className = "fas fa-times";
+  span.className = "close";
+  span.appendChild(icon);
+  li.appendChild(span);
+  control()
+
+  // "close" sınıfına sahip tüm etiketleri al ve tıklama olayını ekleyerek kapat
+  var close = document.getElementsByClassName("close");
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function () {
+      var div = this.parentElement;
+      div.style.display = "none";
+      control()
     }
-    document.getElementById("myInput").value = "";
-
-    var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
-    span.className = "close";
-    span.appendChild(txt);
-    li.appendChild(span);
-
-    for (i = 0; i < close.length; i++) {
-        close[i].onclick = function () {
-            var div = this.parentElement;
-            div.style.display = "none";
-        }
-    }
+  }
 }
-
 
 //Enter tuşu ile input'u YeniElement()e yönlendir
 
 var input = document.getElementById("myInput");
-input.addEventListener("keyup", function(event) {
+input.addEventListener("keyup", function (event) {
   if (event.keyCode === 13) {
     event.preventDefault();
     yeniElement();
@@ -128,32 +87,78 @@ input.addEventListener("keyup", function(event) {
 });
 
 
-function toggleDarkMode() {
-    var bodyClass = document.querySelector(".bodyClass");
-    bodyClass.classList.toggle("darkMode");
+//Close butonuna tıklayınca li'ler'in displayleri kapatılacak.
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function () {
+    var div = this.parentElement;
+    div.style.display = "none";
+    control()
   }
-  
-  var toggleButton = document.getElementById("mode");
-  toggleButton.addEventListener("click", toggleDarkMode);
-  
 
-
-//KAYDETME
-
-// Formu seçin
-var form = document.querySelector('bodyClass');
-
-// LocalStorage'da kaydedilen verileri yükleyin
-if (localStorage.getItem('formValues')) {
-  form.innerHTML = localStorage.getItem('formValues');
 }
 
-// Form alanlarında değişiklik olduğunda verileri kaydedin
-form.addEventListener('change', function() {
-  localStorage.setItem('formValues', form.innerHTML);
+//Tıklanılan li etiketlerinin classlist'ine checked ekle.
+var list = document.querySelector('ul');
+list.addEventListener('click', function (ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+
+
+var toggle = document.querySelector('#mode');
+
+toggle.addEventListener('click', function () {
+  var on = toggle.classList.toggle('on');
+  document.querySelector('.fa-toggle-on').style.display = on ? 'inline-block' : 'none';
+  document.querySelector('.fa-toggle-off').style.display = on ? 'none' : 'inline-block';
 });
 
-// Formu gönderildiğinde kaydedilen verileri silin
-form.addEventListener('submit', function() {
-  localStorage.removeItem('formValues');
-});
+
+
+//Alert kapat fonksiyonu
+function alertClose() {
+  document.getElementById("alert").style.display = "none";
+}
+
+//darkMode fonksiyonu
+function toggleDarkMode() {
+  var bodyClass = document.querySelector(".bodyClass");
+  bodyClass.classList.toggle("darkMode");
+}
+
+//ToggleButton
+var toggleButton = document.getElementById("mode");
+toggleButton.addEventListener("click", toggleDarkMode);
+
+
+function control(){
+  var li = document.querySelectorAll("li");
+  var bos = document.getElementById("bos");
+  var allNone = true;
+  
+  for (var i = 0; i < li.length; i++) {
+    if (li[i].style.display !== "none") {
+      allNone = false;
+      break;
+    }
+  }
+  
+  if (allNone) {
+    bos.style.display = "block";
+  } else {
+    bos.style.display = "none";
+  }
+}
+
+
+
+
+
+
+
+
+

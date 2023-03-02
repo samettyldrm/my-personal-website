@@ -26,6 +26,7 @@ body {
     outline: none;
     border: none;
     transition: 0.2s ease;
+    /* overflow: hidden; */
 
 }
 
@@ -35,11 +36,9 @@ body {
 
 .container {
     padding: 2rem;
-    /* background-color: #ffffff; */
-    /* box-shadow: 0px 0px 17px -2px rgb(36, 36, 36); */
-    /* border-radius: 0.5rem; */
-    margin: auto auto auto auto;
-    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,23 +56,26 @@ h1 i{
 
 #bos{
     text-align: center;
-    display: none;
+    /* border: 1px solid red; */
+    display:none;
 }
 
 .add{
-    display: grid;
-    grid-template-columns: 0fr 9fr 1fr;
-    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+    width: 75%;
+    justify-content: center;
 
 }
 
-input {
+#myInput {
     box-shadow: 0px 0px 17px -2px rgb(159, 159, 159);
     border: none;
     background: none;
     padding: 1rem 1rem 1rem 3rem;
     margin: 0 0 0 2rem;
     border-radius: 0.5rem 0 0 0.5rem  ;
+    width: 100%;
 }
 
 #myInput:focus{
@@ -110,7 +112,7 @@ input {
 #myWork{
     margin: 1rem auto 1rem auto;
     cursor: pointer;
-    width: 100%;
+    width: 75%;
 }
 
 ul{
@@ -255,19 +257,11 @@ ul li.checked .fa-regular{
 /* RESPONSIVE START */
 
 @media (max-width: 758px) {
-    .container{
-        width: 100%;
+    #myInput{
+        /* width: 50%; */
     }
     ul li{
-        font-size: 1.3rem;
-    }
-
-    .add{
-        /* grid-template-columns: 0fr 9fr auto; */
-    }
-
-    .btn{
-        /* grid-template-columns: auto; */
+        font-size: 1.1rem;
     }
 
     .alert div{
