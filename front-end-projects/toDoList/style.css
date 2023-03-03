@@ -253,9 +253,10 @@ ul li.checked .fa-regular{
 /* RESPONSIVE START */
 
 @media (max-width: 758px) {
-    #myInput{
-        /* width: 50%; */
-    }
+   
+.add, #myWork{
+    width: 100%;
+}
     ul li{
         font-size: 1.1rem;
     }
