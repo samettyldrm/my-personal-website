@@ -62,7 +62,7 @@ function createItem(){
 }
 
 //yeniElement() fonksiyonu
-var inputError = document.querySelector("container)
+var inputError = document.querySelector("container")
 //var inputError = document.getElementById("myInput")
 inputError.style.pointerEvents= "auto"
 inputError.style.userSelect= "auto"
