@@ -124,8 +124,8 @@ var toggle = document.querySelector('#mode');
 
 toggle.addEventListener('click', function () {
   var on = toggle.classList.toggle('on');
-  document.querySelector('.fa-toggle-on').style.display = on ? 'inline-block' : 'none';
-  document.querySelector('.fa-toggle-off').style.display = on ? 'none' : 'inline-block';
+  document.querySelector('.fa-sun').style.display = on ? 'inline-block' : 'none';
+  document.querySelector('.fa-moon').style.display = on ? 'none' : 'inline-block';
 });
 
 
