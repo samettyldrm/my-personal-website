@@ -57,7 +57,7 @@ h1 i{
 #bos{
     text-align: center;
     /* border: 1px solid red; */
-    display:none;
+    display: block;
 }
 
 .add{
@@ -76,6 +76,7 @@ h1 i{
     margin: 0 0 0 2rem;
     border-radius: 0.5rem 0 0 0.5rem  ;
     width: 100%;
+
 }
 
 #myInput:focus{
@@ -226,11 +227,6 @@ ul li.checked .fa-regular{
     border-radius: 1rem;
 }
 
-.minik{
-    line-height: 1rem;
-    font-size: 60%;
-}
-
 /* CLOSE AND ALERT END */
 
 /* MODE START */
@@ -272,8 +268,6 @@ ul li.checked .fa-regular{
 }
 
 /* RESPONSIVE */
-
-//update
 
 
 

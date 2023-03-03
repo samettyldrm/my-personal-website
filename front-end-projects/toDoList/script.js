@@ -19,11 +19,8 @@ for (i = 0; i < myList.length; i++) {
   myList[i].appendChild(span);
 }
 
-//yeniElement() fonksiyonu
-
-function yeniElement() {
-  control()
-  // FontAwesome'dan "circle-check" simgesini temsil eden "i" etiketi oluştur
+function createItem(){
+// FontAwesome'dan "circle-check" simgesini temsil eden "i" etiketi oluştur
   var faCircle = document.createElement("i");
   faCircle.classList.add("fa-solid", "fa-circle-check");
 
@@ -42,12 +39,11 @@ function yeniElement() {
   li.appendChild(faCircle);
   li.appendChild(faCheck);
   li.appendChild(t);
-
-  // Eğer "myInput" alanı boşsa, uyarı mesajını göster
   var alert = document.getElementById("alert");
   if (inputValue === '') {
+    inputError.style.pointerEvents= "none"
+    inputError.style.userSelect= "none"
     alert.style.display = "flex";
-    // alert("Bi şeyler yazmalısın dostum!");
   } else {
     // "myUl" listesine "li" elemanını ekle
     document.getElementById("myUl").appendChild(li);
@@ -63,6 +59,18 @@ function yeniElement() {
   span.className = "close";
   span.appendChild(icon);
   li.appendChild(span);
+}
+
+//yeniElement() fonksiyonu
+var inputError = document.getElementById("myInput")
+inputError.style.pointerEvents= "auto"
+inputError.style.userSelect= "auto"
+
+// Load()
+function yeniElement() {
+  control()
+  createItem()
+  // Eğer "myInput" alanı boşsa, önce inputa erişimi engelle, sonra uyarı mesajını göster
   control()
 
   // "close" sınıfına sahip tüm etiketleri al ve tıklama olayını ekleyerek kapat
@@ -72,8 +80,11 @@ function yeniElement() {
       var div = this.parentElement;
       div.style.display = "none";
       control()
+      inputError.style.pointerEvents= "auto"
+      inputError.style.userSelect= "auto"
     }
   }
+  Load()
 }
 
 //Enter tuşu ile input'u YeniElement()e yönlendir
@@ -122,6 +133,9 @@ toggle.addEventListener('click', function () {
 //Alert kapat fonksiyonu
 function alertClose() {
   document.getElementById("alert").style.display = "none";
+  inputError.style.pointerEvents= "auto"
+  inputError.style.userSelect= "auto"
+  
 }
 
 //darkMode fonksiyonu
@@ -152,7 +166,71 @@ function control(){
   } else {
     bos.style.display = "none";
   }
+
 }
+
+function Load(){
+  const todoListElement = document.querySelector('#myUl');
+  const todoList = [];
+  console.log(todoList)
+
+  // ul elementi altındaki li elementlerinin textContent'ini todoList dizisine ekleyin
+todoListElement.querySelectorAll('li').forEach(function(li) {
+  todoList.push(li.textContent);
+});
+
+window.addEventListener('load', function() {
+  const todoListElement = document.querySelector('#myUl');
+  todoList.forEach(function(item) {
+    const li = document.createElement('li');
+    li.textContent = item;
+    todoListElement.appendChild(li);
+  });
+});
+}
+
+
+
+
+
+// 
+
+// // Input alanını seçin
+// const inputElement = document.querySelector('#myInput');
+
+// // Yerel depolamada "todoList" anahtarına sahip bir veri varsa, o veriyi getirin. Aksi takdirde, boş bir dizi oluşturun
+// let todoList = JSON.parse(localStorage.getItem('todoList')) || [];
+
+// // Eğer input alanı boş değilse, input değerini todoList dizisine ekleyin ve depolayın.
+// inputElement.addEventListener('keyup', function(event) {
+//   if (event.key === 'Enter' && inputElement.value !== '') {
+//     todoList.push(inputElement.value);
+//     localStorage.setItem('todoList', JSON.stringify(todoList));
+//     inputElement.value = '';
+//   }
+// });
+
+// Sayfa yüklendiğinde, todoList dizisindeki tüm öğeleri listeye ekleyin.
+
+
+
+
+
+
+
+
+
+// // todoList dizisindeki tüm öğeleri listeye ekleyin
+// todoList.forEach(function(item) {
+//   // listeye ekleme işlemi yapılabilir
+// });
+
+// const inputElement = document.querySelector('#myInput');
+// let todoListt = JSON.parse(localStorage.getItem('todoList')) || [];
+
+
+
+
 
 
 
