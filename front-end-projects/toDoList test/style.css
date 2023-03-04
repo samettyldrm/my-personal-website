@@ -260,18 +260,14 @@ ul li.checked .fa-regular{
 .add, #myWork{
     width: 100%;
 }
+    ul li{
+        font-size: 1.1rem;
+    }
 
-html{
-    font-size: 75%;
-}
-ul li{
-    font-size: 1.1rem;
-}
-
-.alert div{
-    font-size: 75%;
-    line-height: 0.8rem;
-}
+    .alert div{
+        font-size: 75%;
+        line-height: 0.8rem;
+    }
 
 }
 
