@@ -66,9 +66,7 @@ var inputError = document.getElementById("myInput")
 inputError.style.pointerEvents= "auto"
 inputError.style.userSelect= "auto"
 
-// Load()
 function yeniElement() {
-  control()
   createItem()
   // Eğer "myInput" alanı boşsa, önce inputa erişimi engelle, sonra uyarı mesajını göster
   control()
@@ -84,7 +82,6 @@ function yeniElement() {
       inputError.style.userSelect= "auto"
     }
   }
-  Load()
 }
 
 //Enter tuşu ile input'u YeniElement()e yönlendir
@@ -123,7 +120,7 @@ list.addEventListener('click', function (ev) {
 var toggle = document.querySelector('#mode');
 
 toggle.addEventListener('click', function () {
-  var on = toggle.classList.toggle('on');
+  var on = toggle.classList.toggle('sun');
   document.querySelector('.fa-sun').style.display = on ? 'inline-block' : 'none';
   document.querySelector('.fa-moon').style.display = on ? 'none' : 'inline-block';
 });
@@ -188,48 +185,6 @@ window.addEventListener('load', function() {
   });
 });
 }
-
-
-
-
-
-// 
-
-// // Input alanını seçin
-// const inputElement = document.querySelector('#myInput');
-
-// // Yerel depolamada "todoList" anahtarına sahip bir veri varsa, o veriyi getirin. Aksi takdirde, boş bir dizi oluşturun
-// let todoList = JSON.parse(localStorage.getItem('todoList')) || [];
-
-// // Eğer input alanı boş değilse, input değerini todoList dizisine ekleyin ve depolayın.
-// inputElement.addEventListener('keyup', function(event) {
-//   if (event.key === 'Enter' && inputElement.value !== '') {
-//     todoList.push(inputElement.value);
-//     localStorage.setItem('todoList', JSON.stringify(todoList));
-//     inputElement.value = '';
-//   }
-// });
-
-// Sayfa yüklendiğinde, todoList dizisindeki tüm öğeleri listeye ekleyin.
-
-
-
-
-
-
-
-
-
-// // todoList dizisindeki tüm öğeleri listeye ekleyin
-// todoList.forEach(function(item) {
-//   // listeye ekleme işlemi yapılabilir
-// });
-
-// const inputElement = document.querySelector('#myInput');
-// let todoListt = JSON.parse(localStorage.getItem('todoList')) || [];
-
-
-
 
 
 
