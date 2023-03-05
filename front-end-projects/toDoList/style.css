@@ -3,7 +3,7 @@
 
 /* HTML START*/
 
-:root{
+:root {
     --dark-mode-color: #212134;
 }
 
@@ -45,22 +45,23 @@ body {
 }
 
 /* CONTAINER END*/
-h1{
+h1 {
     font-family: 'Mynerve', cursive;
 }
-h1 i{
+
+h1 i {
     color: #007bff;
 }
 
 /* ADD START*/
 
-#bos{
+#bos {
     text-align: center;
     /* border: 1px solid red; */
     display: block;
 }
 
-.add{
+.add {
     display: flex;
     /* border: 1px solid red; */
     width: 75%;
@@ -75,12 +76,12 @@ h1 i{
     background: none;
     padding: 1rem 1rem 1rem 3rem;
     margin: 0 0 0 2rem;
-    border-radius: 0.5rem 0 0 0.5rem  ;
+    border-radius: 0.5rem 0 0 0.5rem;
     width: 100%;
 
 }
 
-#myInput:focus{
+#myInput:focus {
     border: 1px solid #007bff;
     outline: none;
 }
@@ -93,18 +94,18 @@ h1 i{
     padding: 1rem;
     width: auto;
     margin: 0 2rem 0 0;
-    border-radius: 0 0.5rem 0.5rem 0 ;
+    border-radius: 0 0.5rem 0.5rem 0;
     box-shadow: 0px 0px 17px -2px rgb(159, 159, 159);
 }
 
 
-.add .icon{
+.add .icon {
     position: absolute;
     padding: 1rem;
     margin: 0 2rem;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #000000;
 }
 
@@ -112,17 +113,17 @@ h1 i{
 
 /* LIST START*/
 
-#myWork{
+#myWork {
     margin: 1rem auto 1rem auto;
     cursor: pointer;
     width: 75%;
 }
 
-ul{
-    padding:0;
+ul {
+    padding: 0;
 }
 
-ul li{
+ul li {
     position: relative;
     list-style: none;
     box-shadow: 0px 0px 17px -2px rgb(199, 199, 199);
@@ -136,36 +137,37 @@ ul li{
 
 }
 
-ul li:hover{
-    background-color:#dbdbdb;
-    /* color: white; */
+ul li:hover {
+    background-color: #dbdbdb;
 }
 
-ul li.checked {
+ul li.checked span {
     color: #6a6a6a;
     text-decoration: line-through;
-  }
-
-ul li.checked span{
-    text-decoration: none;
 }
 
-ul li .fa-solid{
-    color:#0b834f;
+ul li.checked .fa-solid {
+    /* color: red; */
+
+}
+
+
+ul li .fa-solid {
+    color: #0b834f;
     background-color: black;
     display: none;
 }
 
-ul li.checked .fa-solid{
-    display:contents;
+ul li.checked .fa-solid {
+    display: contents;
 }
 
-.fa-regular{
+.fa-regular {
     color: #0b834f;
 
 }
 
-ul li.checked .fa-regular{
+ul li.checked .fa-regular {
     display: none;
 }
 
@@ -180,14 +182,14 @@ ul li.checked .fa-regular{
     top: 0;
     padding: 12px 16px 12px 16px;
     border-radius: 0 0.5rem 0.5rem 0;
-  }
+}
 
 .close:hover {
     background-color: #f44336;
     color: white;
-  }
+}
 
-.alert{
+.alert {
     display: none;
     position: absolute;
     background-color: white;
@@ -199,7 +201,7 @@ ul li.checked .fa-regular{
     align-items: center;
 }
 
-.alert div{
+.alert div {
     line-height: 0;
     box-sizing: border-box;
     -webkit-user-select: none;
@@ -208,7 +210,7 @@ ul li.checked .fa-regular{
     user-select: none;
 }
 
-.fa-exclamation-circle{
+.fa-exclamation-circle {
     font-size: 2rem;
     background-color: #007bff;
     padding: 1rem 1rem;
@@ -217,13 +219,13 @@ ul li.checked .fa-regular{
     margin: 0 1rem 0 0;
 }
 
-.fa-close{
+.fa-close {
     margin: 0 0 0 4rem;
     cursor: pointer;
     padding: 0.5rem;
 }
 
-.fa-close:hover{
+.fa-close:hover {
     color: #f44336;
     padding: 0.5rem;
     border-radius: 1rem;
@@ -234,20 +236,20 @@ ul li.checked .fa-regular{
 /* MODE START */
 /* <i class="fa-solid fa-moon"></i>
             <i class="fa-solid fa-sun"></i> */
-#mode{
+#mode {
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     position: absolute;
     right: 2rem;
     cursor: pointer;
     color: white;
     background-color: var(--dark-mode-color);
-    background-color: linear-gradient(black,rgb(114, 114, 114));
+    background-color: linear-gradient(black, rgb(114, 114, 114));
     padding: 0.2rem 0.5rem;
     border-radius: 1rem;
 }
 
 
-#mode .fa-sun{
+#mode .fa-sun {
     display: none;
 }
 
@@ -256,22 +258,24 @@ ul li.checked .fa-regular{
 /* RESPONSIVE START */
 
 @media (max-width: 758px) {
-   
-.add, #myWork{
-    width: 100%;
-}
 
-html{
-    font-size: 75%;
-}
-ul li{
-    font-size: 1.1rem;
-}
+    .add,
+    #myWork {
+        width: 100%;
+    }
 
-.alert div{
-    font-size: 75%;
-    line-height: 0.8rem;
-}
+    html {
+        font-size: 75%;
+    }
+
+    ul li {
+        font-size: 1.1rem;
+    }
+
+    .alert div {
+        font-size: 75%;
+        line-height: 0.8rem;
+    }
 
 }
 
@@ -279,7 +283,7 @@ ul li{
 
 
 
-.darkMode{
+.darkMode {
     transition: 0.2s ease;
     background-color: #212134;
     /* height: 100vh; */
@@ -289,7 +293,7 @@ ul li{
     color: white;
 }
 
-.darkMode .container{
+.darkMode .container {
     transition: 0.2s ease;
     background-color: var(--dark-mode-color);
     color: white;
@@ -303,34 +307,36 @@ ul li{
     color: white;
 }
 
-.darkMode #myInput, .darkMode .btn,
-.darkMode ul li{
+.darkMode #myInput,
+.darkMode .btn,
+.darkMode ul li {
     box-shadow: 0px 0px 10px -1px #1c1c30;
 }
 
-.darkMode .btn:hover{
+.darkMode .btn:hover {
     background-color: #ffffff;
     color: black;
 }
 
-.darkMode input{
+.darkMode input {
     color: white;
 }
 
 
-.darkMode .fa-regular{
-    color:#20e08d;
+.darkMode .fa-regular {
+    color: #20e08d;
 
 }
 
-.darkMode ul li:hover{
+.darkMode ul li:hover {
     color: white;
     background-color: #2d2d3f;
 }
-.darkMode ul li.checked{
+
+.darkMode ul li.checked {
     color: #afafaf;
 }
 
-.darkMode .alert{
+.darkMode .alert {
     color: black;
 }
