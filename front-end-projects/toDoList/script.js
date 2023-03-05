@@ -1,6 +1,35 @@
 
 //CLOSE SİMGESİ EKLE
 
+let items;
+
+// loadItems();
+
+function loadItems() {
+
+  items = getItemsFromLS();
+  items.forEach(function (item) {
+    createItem(item);
+  });
+}
+
+// get items from Local Storage
+function getItemsFromLS(){
+  if(localStorage.getItem('items')===null){
+    items = [];
+  }else{
+    items = JSON.parse(localStorage.getItem('items'));
+  }
+  return items;
+}
+
+// set item to Local Storage
+function setItemToLS(text){
+  items = getItemsFromLS();
+  items.push(text);
+  localStorage.setItem('items', JSON.stringify(items));
+}
+
 //Tüm "li" etiketlerini al
 var myList = document.getElementsByTagName("li");
 
@@ -8,7 +37,6 @@ var i;
 // "li" etiketinin sayısı kadar döngü oluştur.
 for (i = 0; i < myList.length; i++) {
   //span etiketini oluştur.
-  var span = document.createElement("SPAN");
   //close sınıfını ekle.
   span.className = "close";
   //fontAwesome'dan "times" simgesini temsil eden "i" etiketini oluştur.
@@ -32,13 +60,15 @@ function createItem(){
   var li = document.createElement("li");
 
   // "myInput" alanındaki değeri al
+  var span = document.createElement("SPAN");
   var inputValue = document.getElementById("myInput").value;
 
   // "t" değişkeni ile metin düğümü oluştur ve "li" etiketine ekle
   var t = document.createTextNode(" " + inputValue);
   li.appendChild(faCircle);
   li.appendChild(faCheck);
-  li.appendChild(t);
+  span.appendChild(t);
+  li.appendChild(span);
   var alert = document.getElementById("alert");
   if (inputValue === '') {
     inputError.style.pointerEvents= "none"
