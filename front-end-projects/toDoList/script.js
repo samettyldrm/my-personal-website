@@ -1,86 +1,51 @@
+var input = document.getElementById('myInput');
+var alert = document.getElementById("alert");
+var taskList = document.getElementById("taskList");
+var close = document.getElementsByClassName("close");
+var myList = document.getElementsByTagName("li");
+
+//yeniElement() fonksiyonu
+
 
 //CLOSE SİMGESİ EKLE
 
-let items;
-
-// loadItems();
-
-function loadItems() {
-
-  items = getItemsFromLS();
-  items.forEach(function (item) {
-    createItem(item);
-  });
-}
-
-// get items from Local Storage
-function getItemsFromLS(){
-  if(localStorage.getItem('items')===null){
-    items = [];
-  }else{
-    items = JSON.parse(localStorage.getItem('items'));
-  }
-  return items;
-}
-
-// set item to Local Storage
-function setItemToLS(text){
-  items = getItemsFromLS();
-  items.push(text);
-  localStorage.setItem('items', JSON.stringify(items));
-}
-
 //Tüm "li" etiketlerini al
-var myList = document.getElementsByTagName("li");
 
 var i;
-// "li" etiketinin sayısı kadar döngü oluştur.
 for (i = 0; i < myList.length; i++) {
-  //span etiketini oluştur.
-  //close sınıfını ekle.
+  var span = document.createElement("SPAN")
   span.className = "close";
-  //fontAwesome'dan "times" simgesini temsil eden "i" etiketini oluştur.
   var icon = document.createElement("i");
   icon.className = "fas fa-times";
   span.appendChild(icon);
-  //Her bir "li" elemanına "span etiketini ekle."
   myList[i].appendChild(span);
 }
 
+// Item Oluştur
+
 function createItem(){
-// FontAwesome'dan "circle-check" simgesini temsil eden "i" etiketi oluştur
   var faCircle = document.createElement("i");
   faCircle.classList.add("fa-solid", "fa-circle-check");
-
-  // FontAwesome'dan "circle" simgesini temsil eden "i" etiketi oluştur
   var faCheck = document.createElement("i");
   faCheck.classList.add("fa-regular", "fa-circle");
 
-  // "li" etiketi oluştur
-  var li = document.createElement("li");
-
-  // "myInput" alanındaki değeri al
-  var span = document.createElement("SPAN");
-  var inputValue = document.getElementById("myInput").value;
-
-  // "t" değişkeni ile metin düğümü oluştur ve "li" etiketine ekle
-  var t = document.createTextNode(" " + inputValue);
+  var li = document.createElement("li"); 
+  var t = document.createTextNode(" " + input.value);
   li.appendChild(faCircle);
   li.appendChild(faCheck);
-  span.appendChild(t);
-  li.appendChild(span);
-  var alert = document.getElementById("alert");
-  if (inputValue === '') {
-    inputError.style.pointerEvents= "none"
-    inputError.style.userSelect= "none"
+  li.appendChild(t);
+
+  if (input.value === '') {
+    input.style.pointerEvents= "none"
+    input.style.userSelect= "none"
     alert.style.display = "flex";
   } else {
-    // "myUl" listesine "li" elemanını ekle
-    document.getElementById("myUl").appendChild(li);
+    // taskList'e li etiketini ekle.
+    taskList.appendChild(li);
   }
 
   // "myInput" alanının içeriğini temizle
-  document.getElementById("myInput").value = "";
+  input.value = "";
 
   // "span" etiketi oluştur ve "li" etiketine ekle
   var span = document.createElement("SPAN");
@@ -91,55 +56,54 @@ function createItem(){
   li.appendChild(span);
 }
 
-//yeniElement() fonksiyonu
-var inputError = document.getElementById("myInput")
-inputError.style.pointerEvents= "auto"
-inputError.style.userSelect= "auto"
 
 function yeniElement() {
   createItem()
-  // Eğer "myInput" alanı boşsa, önce inputa erişimi engelle, sonra uyarı mesajını göster
   control()
-
-  // "close" sınıfına sahip tüm etiketleri al ve tıklama olayını ekleyerek kapat
-  var close = document.getElementsByClassName("close");
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function () {
       var div = this.parentElement;
       div.style.display = "none";
       control()
-      inputError.style.pointerEvents= "auto"
-      inputError.style.userSelect= "auto"
+      input.style.pointerEvents= "auto"
+      input.style.userSelect= "auto"
     }
   }
+  
 }
 
-//Enter tuşu ile input'u YeniElement()e yönlendir
 
-var input = document.getElementById("myInput");
-input.addEventListener("keyup", function (event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    yeniElement();
-  }
-});
-
+  input.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      yeniElement();
+    }
+  });
 
 //Close butonuna tıklayınca li'ler'in displayleri kapatılacak.
-var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function () {
     var div = this.parentElement;
     div.style.display = "none";
     control()
+    
   }
 
 }
 
-//Tıklanılan li etiketlerinin classlist'ine checked ekle.
-var list = document.querySelector('ul');
-list.addEventListener('click', function (ev) {
+// Task List'de li etiketine tıklayınca checked ekle.
+
+// var listItems = document.querySelectorAll('#taskList li');
+
+// for (var i = 0; i < listItems.length; i++) {
+//   listItems[i].addEventListener('click', function() {
+//     this.classList.toggle('checked');
+//     console.log(this.classList)
+//   });
+// }
+
+taskList.addEventListener('click', function (ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
   }
@@ -147,6 +111,11 @@ list.addEventListener('click', function (ev) {
 
 
 
+
+
+
+
+// Toggle
 var toggle = document.querySelector('#mode');
 
 toggle.addEventListener('click', function () {
@@ -160,8 +129,8 @@ toggle.addEventListener('click', function () {
 //Alert kapat fonksiyonu
 function alertClose() {
   document.getElementById("alert").style.display = "none";
-  inputError.style.pointerEvents= "auto"
-  inputError.style.userSelect= "auto"
+  input.style.pointerEvents= "auto"
+  input.style.userSelect= "auto"
   
 }
 
@@ -194,30 +163,6 @@ function control(){
     bos.style.display = "none";
   }
 
-}
-
-function Load(){
-  const todoListElement = document.querySelector('#myUl');
-  const todoList = [];
-  console.log(todoList)
-
-  // ul elementi altındaki li elementlerinin textContent'ini todoList dizisine ekleyin
-todoListElement.querySelectorAll('li').forEach(function(li) {
-  todoList.push(li.textContent);
-});
-
-window.addEventListener('load', function() {
-  const todoListElement = document.querySelector('#myUl');
-  todoList.forEach(function(item) {
-    const li = document.createElement('li');
-    li.textContent = item;
-    todoListElement.appendChild(li);
-  });
-});
-}
-
-function ListeGuncelle(){
-  
 }
 
 

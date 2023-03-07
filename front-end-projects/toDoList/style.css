@@ -141,9 +141,13 @@ ul li:hover {
     background-color: #dbdbdb;
 }
 
-ul li.checked span {
+ul li.checked{
     color: #6a6a6a;
     text-decoration: line-through;
+}
+
+ul li span{
+    border: 1px solid red;
 }
 
 ul li.checked .fa-solid {
