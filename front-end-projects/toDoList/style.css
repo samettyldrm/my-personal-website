@@ -138,23 +138,14 @@ ul li {
 }
 
 ul li:hover {
-    background-color: #dbdbdb;
+    background-color: #d4d7f5;
 }
 
 ul li.checked{
     color: #6a6a6a;
     text-decoration: line-through;
+    list-style: none;
 }
-
-ul li span{
-    /* border: 1px solid red; */
-}
-
-ul li.checked .fa-solid {
-    /* color: red; */
-
-}
-
 
 ul li .fa-solid {
     color: #0b834f;
@@ -242,7 +233,7 @@ ul li.checked .fa-regular {
             <i class="fa-solid fa-sun"></i> */
 #mode {
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    position: absolute;
+    position: fixed;
     right: 2rem;
     cursor: pointer;
     color: white;
@@ -252,6 +243,22 @@ ul li.checked .fa-regular {
     border-radius: 1rem;
 }
 
+#back {
+    position:fixed;
+    right: 2rem;
+    top: 90%;
+    cursor: pointer;
+}
+
+#back a{
+    text-decoration: none;
+    color: #000000;
+
+}
+
+#back:hover{
+    right: 2.5rem;
+}
 
 #mode .fa-sun {
     display: none;
@@ -297,7 +304,8 @@ ul li.checked .fa-regular {
     color: white;
 }
 
-.darkMode .container {
+.darkMode .container,
+.darkMode #back a {
     transition: 0.2s ease;
     background-color: var(--dark-mode-color);
     color: white;
