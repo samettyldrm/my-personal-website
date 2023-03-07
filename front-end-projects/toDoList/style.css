@@ -256,8 +256,10 @@ ul li.checked .fa-regular {
 
 }
 
-#back:hover{
+#back:hover,
+#back a:hover{
     right: 2.5rem;
+    color: #007bff;
 }
 
 #mode .fa-sun {
@@ -309,6 +311,11 @@ ul li.checked .fa-regular {
     transition: 0.2s ease;
     background-color: var(--dark-mode-color);
     color: white;
+}
+
+.darkMode #back:hover,
+.darkMode #back a:hover{
+    color: #a0cbfa;
 }
 
 .darkMode h1 i {
