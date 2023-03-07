@@ -147,7 +147,7 @@ ul li.checked{
 }
 
 ul li span{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 ul li.checked .fa-solid {
