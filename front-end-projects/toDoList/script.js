@@ -6,11 +6,14 @@ var taskList = document.getElementById("taskList");
 var close = document.getElementsByClassName("close");
 var myList = document.getElementsByTagName("li");
 var bodyClass = document.querySelector(".bodyClass");
+let value = localStorage.getItem("darkModeOn");
 let items;
 
 loadItems();
 // localStorage.clear();
 eventListeners();
+controlMode();
+
 
 
 function eventListeners() {
@@ -178,32 +181,28 @@ function alertClose() {
 
 //---------------------------// Dark Mode - Toggle //---------------------------//
 
-// Önce local storage'daki mevcut değeri alın
-let value = localStorage.getItem("darkModeOn");
+
 
 //darkMode fonksiyonu
 function toggleDarkMode() {
   bodyClass.classList.toggle("darkMode");
-// Değer true ise false, false ise true olarak değiştirin
-value = value === "true" ? "false" : "true";
-// Değiştirilmiş değeri local storage'a kaydedin
-localStorage.setItem("darkModeOn", value);
+  value = value === "true" ? "false" : "true";
+  localStorage.setItem("darkModeOn", value);
+  controlMode();
 }
 
-if (value==="true"){
-  bodyClass.classList.add("darkMode")
-} else {
-  bodyClass.classList.remove("darkMode")
-}
-
-// Toggle
-var toggle = document.querySelector('#mode');
-toggle.addEventListener('click', function () {
-  var on = toggle.classList.toggle('sun');
-  document.querySelector('.fa-sun').style.display = on ? 'inline-block' : 'none';
-  document.querySelector('.fa-moon').style.display = on ? 'none' : 'inline-block';
+function controlMode() {
+  if (value === "true") {
+    bodyClass.classList.add("darkMode");
+    document.querySelector("#mode .fa-sun").style.display = "inline-block"
+    document.querySelector("#mode .fa-moon").style.display = "none"
+  } else {
+    bodyClass.classList.remove("darkMode");
+    document.querySelector("#mode .fa-sun").style.display = "none"
+    document.querySelector("#mode .fa-moon").style.display = "inline-block"
   }
-);
+}
+
 
 //---------------------------// Dark Mode - Toggle //---------------------------//
 
