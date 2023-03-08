@@ -12,6 +12,7 @@ loadItems();
 // localStorage.clear();
 eventListeners();
 
+
 function eventListeners() {
   // delete an item
   taskList.addEventListener('click', deleteItem);
@@ -29,17 +30,17 @@ function loadItems() {
 }
 
 // Local Storage'den item getir.
-function getItemsFromLS(){
-  if(localStorage.getItem('items')===null){
+function getItemsFromLS() {
+  if (localStorage.getItem('items') === null) {
     items = [];
-  }else{
+  } else {
     items = JSON.parse(localStorage.getItem('items'));
   }
   return items;
 }
 
 // Local Storage'ye gönder.
-function setItemToLS(text){
+function setItemToLS(text) {
   items = getItemsFromLS();
   console.log(input.value)
   items.push(text);
@@ -48,7 +49,7 @@ function setItemToLS(text){
 
 // Local Storage'dan item sil
 
-function deleteItemFromLS(text){
+function deleteItemFromLS(text) {
   items = getItemsFromLS();
   var index = items.indexOf(text);
   if (index !== -1) {
@@ -77,13 +78,13 @@ for (i = 0; i < myList.length; i++) {
 }
 
 // Item Oluştur
-function createItem(text){
+function createItem(text) {
   var faCircle = document.createElement("i");
   faCircle.classList.add("fa-solid", "fa-circle-check");
   var faCheck = document.createElement("i");
   faCheck.classList.add("fa-regular", "fa-circle");
   const p = document.createElement("span");
-  const li = document.createElement("li"); 
+  const li = document.createElement("li");
   li.appendChild(faCircle);
   li.appendChild(faCheck);
   p.appendChild(document.createTextNode(text));
@@ -102,36 +103,36 @@ function createItem(text){
 // yeniElement() fonksiyonu
 function yeniElement() {
   if (input.value === '') {
-    input.style.pointerEvents= "none"
-    input.style.userSelect= "none"
+    input.style.pointerEvents = "none"
+    input.style.userSelect = "none"
     alert.style.display = "flex";
   } else {
-  createItem(input.value);
-  setItemToLS(input.value);
-  input.value = "";
-  control()
+    createItem(input.value);
+    setItemToLS(input.value);
+    input.value = "";
+    control()
   }
-  
+
 }
 
 // Enter ile YeniElement()'e giriş.
-  input.addEventListener("keyup", function (event) {
-    if (event.keyCode === 13) {
-      event.preventDefault();
-      yeniElement();
-    }
-  });
-
-  var i;
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function () {
-      // var div = this.parentElement;
-      // div.style.display = "none";
-      deleteItem(e)
-      
-    }
-  
+input.addEventListener("keyup", function (event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    yeniElement();
   }
+});
+
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function () {
+    // var div = this.parentElement;
+    // div.style.display = "none";
+    deleteItem(e)
+
+  }
+
+}
 
 
 function deleteItem(e) {
@@ -157,7 +158,7 @@ taskList.addEventListener('click', function (ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
 
-  }else if (ev.target.tagName === 'SPAN'){
+  } else if (ev.target.tagName === 'SPAN') {
     ev.target.parentElement.classList.toggle('checked');
   }
 }, false);
@@ -169,16 +170,16 @@ taskList.addEventListener('click', function (ev) {
 //Alert kapat fonksiyonu
 function alertClose() {
   document.getElementById("alert").style.display = "none";
-  input.style.pointerEvents= "auto"
-  input.style.userSelect= "auto"
+  input.style.pointerEvents = "auto"
+  input.style.userSelect = "auto"
 }
 
 //---------------------------// ALARM //---------------------------//
 
 //---------------------------// Dark Mode - Toggle //---------------------------//
 
-  // Önce local storage'daki mevcut değeri alın
-  let value = localStorage.getItem("darkModeOn");
+// Önce local storage'daki mevcut değeri alın
+let value = localStorage.getItem("darkModeOn");
 
 //darkMode fonksiyonu
 function toggleDarkMode() {
@@ -195,8 +196,6 @@ if (value==="true"){
   bodyClass.classList.remove("darkMode")
 }
 
-
-
 // Toggle
 var toggle = document.querySelector('#mode');
 toggle.addEventListener('click', function () {
@@ -206,25 +205,22 @@ toggle.addEventListener('click', function () {
   }
 );
 
-
-
-
 //---------------------------// Dark Mode - Toggle //---------------------------//
 
 //---------------------------// Control //---------------------------//
 
-function control(){
+function control() {
   var li = document.querySelectorAll("li");
   var bos = document.getElementById("bos");
   var allNone = true;
-  
+
   for (var i = 0; i < li.length; i++) {
     if (li[i].style.display !== "none") {
       allNone = false;
       break;
     }
   }
-  
+
   if (allNone) {
     bos.style.display = "block";
   } else {
