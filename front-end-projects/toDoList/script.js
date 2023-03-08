@@ -160,11 +160,41 @@ function deleteItem(e) {
 taskList.addEventListener('click', function (ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
+    const taskText = ev.target.textContent;
+    const isTaskChecked = localStorage.getItem(taskText) === "checked";
+    if (isTaskChecked) {
+      localStorage.setItem(taskText, "unchecked");
+    } else {
+      localStorage.setItem(taskText, "checked");
+    }
+    checkedGuncelle()
 
   } else if (ev.target.tagName === 'SPAN') {
     ev.target.parentElement.classList.toggle('checked');
+    const taskText = ev.target.parentElement.textContent;
+    const isTaskChecked = localStorage.getItem(taskText) === "checked";
+    if (isTaskChecked) {
+      localStorage.setItem(taskText, "unchecked");
+    } else {
+      localStorage.setItem(taskText, "checked");
+    }
+    checkedGuncelle()
   }
 }, false);
+
+function checkedGuncelle() {
+for (let i = 0; i < localStorage.length; i++) {
+  const key = localStorage.key(i);
+  const value = localStorage.getItem(key);
+  
+  if (value === "checked") {
+    console.log(key);
+  }
+}
+}
+
+
+
 
 //---------------------------// ITEM EKLE - SİL //---------------------------//
 
