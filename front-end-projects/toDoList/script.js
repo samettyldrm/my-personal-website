@@ -82,11 +82,12 @@ function createItem(text){
   faCircle.classList.add("fa-solid", "fa-circle-check");
   var faCheck = document.createElement("i");
   faCheck.classList.add("fa-regular", "fa-circle");
-
+  const p = document.createElement("span");
   const li = document.createElement("li"); 
   li.appendChild(faCircle);
   li.appendChild(faCheck);
-  li.appendChild(document.createTextNode(text));
+  p.appendChild(document.createTextNode(text));
+  li.appendChild(p)
   taskList.appendChild(li);
 
   // "span" etiketi oluştur ve "li" etiketine ekle
@@ -154,13 +155,11 @@ function deleteItem(e) {
 
 // Task List'de li etiketine tıklayınca checked ekle.
 
-const taskItems = JSON.parse(localStorage.getItem('taskItems')) || {};
 taskList.addEventListener('click', function (ev) {
   if (ev.target.tagName === 'LI') {
-    // const taskId = ev.target.dataset.taskId;
-    // taskItems[taskId].checked = !taskItems[taskId].checked;
-    // localStorage.setItem('taskItems', JSON.stringify(taskItems));
     ev.target.classList.toggle('checked');
+  }else if (ev.target.tagName === 'SPAN'){
+    ev.target.parentElement.classList.toggle('checked');
   }
 }, false);
 
