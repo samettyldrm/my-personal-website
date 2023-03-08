@@ -33,6 +33,7 @@ function createItem(){
   var t = document.createTextNode(" " + input.value);
   li.appendChild(faCircle);
   li.appendChild(faCheck);
+
   li.appendChild(t);
 
   if (input.value === '') {
