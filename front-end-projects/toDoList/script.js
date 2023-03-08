@@ -151,19 +151,16 @@ function deleteItem(e) {
 }
 
 
-
-
 // Task List'de li etiketine tıklayınca checked ekle.
 
 taskList.addEventListener('click', function (ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
+
   }else if (ev.target.tagName === 'SPAN'){
     ev.target.parentElement.classList.toggle('checked');
   }
 }, false);
-
-
 
 //---------------------------// ITEM EKLE - SİL //---------------------------//
 
@@ -180,14 +177,25 @@ function alertClose() {
 
 //---------------------------// Dark Mode - Toggle //---------------------------//
 
+  // Önce local storage'daki mevcut değeri alın
+  let value = localStorage.getItem("darkModeOn");
+
 //darkMode fonksiyonu
 function toggleDarkMode() {
   bodyClass.classList.toggle("darkMode");
+// Değer true ise false, false ise true olarak değiştirin
+value = value === "true" ? "false" : "true";
+// Değiştirilmiş değeri local storage'a kaydedin
+localStorage.setItem("darkModeOn", value);
 }
 
-//ToggleButton
-var toggleButton = document.getElementById("mode");
-toggleButton.addEventListener("click", toggleDarkMode);
+if (value==="true"){
+  bodyClass.classList.add("darkMode")
+} else {
+  bodyClass.classList.remove("darkMode")
+}
+
+
 
 // Toggle
 var toggle = document.querySelector('#mode');
@@ -195,9 +203,8 @@ toggle.addEventListener('click', function () {
   var on = toggle.classList.toggle('sun');
   document.querySelector('.fa-sun').style.display = on ? 'inline-block' : 'none';
   document.querySelector('.fa-moon').style.display = on ? 'none' : 'inline-block';
-});
-
-
+  }
+);
 
 
 
