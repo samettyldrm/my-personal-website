@@ -160,10 +160,11 @@ function deleteItem(e) {
 taskList.addEventListener('click', function (ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
+    // Bu kısımda checked etiketi LocalStorage'e de kaydediliyor. 
     const taskText = ev.target.textContent;
     const isTaskChecked = localStorage.getItem(taskText) === "checked";
     if (isTaskChecked) {
-      localStorage.setItem(taskText, "unchecked");
+      localStorage.setItem(taskText, "");
     } else {
       localStorage.setItem(taskText, "checked");
     }
@@ -174,13 +175,14 @@ taskList.addEventListener('click', function (ev) {
     const taskText = ev.target.parentElement.textContent;
     const isTaskChecked = localStorage.getItem(taskText) === "checked";
     if (isTaskChecked) {
-      localStorage.setItem(taskText, "unchecked");
+      localStorage.setItem(taskText, "");
     } else {
       localStorage.setItem(taskText, "checked");
     }
     checkedGuncelle()
   }
 }, false);
+checkedGuncelle()
 
 function checkedGuncelle() {
 for (let i = 0; i < localStorage.length; i++) {
@@ -188,7 +190,11 @@ for (let i = 0; i < localStorage.length; i++) {
   const value = localStorage.getItem(key);
   
   if (value === "checked") {
-    console.log(key);
+    for (let i=0 ; i<taskList.childElementCount; i++){
+      // console.log(taskList.children)
+      console.log(taskList.children[i].textContent);
+    }
+    
   }
 }
 }

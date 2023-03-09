@@ -19,6 +19,7 @@
     border: none;
     transition: 0.2s ease;
 
+
 }
 
 /*base html codes*/
@@ -28,7 +29,7 @@ html {
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
-    overflow: auto;
+    overflow-x: hidden;
 }
 
 html::-webkit-scrollbar {
@@ -306,7 +307,7 @@ p {
 }
 
 .projects .cards a div{
-    height: 17rem;
+    height: 100%;
 }
 
 .cards ul {
