@@ -58,7 +58,7 @@ h1 i {
 #bos {
     text-align: center;
     /* border: 1px solid red; */
-    display: block;
+    display: none;
 }
 
 .add {
