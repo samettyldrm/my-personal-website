@@ -72,15 +72,15 @@ function deleteItemFromLS(text) {
 
 //---------------------------// ITEM EKLE - SİL //---------------------------//
 
-var i;
-for (i = 0; i < myList.length; i++) {
-  var span = document.createElement("SPAN")
-  span.className = "close";
-  var icon = document.createElement("i");
-  icon.className = "fas fa-times";
-  span.appendChild(icon);
-  myList[i].appendChild(span);
-}
+// var i;
+// for (i = 0; i < myList.length; i++) {
+//   var span = document.createElement("SPAN")
+//   span.className = "close";
+//   var icon = document.createElement("i");
+//   icon.className = "fas fa-times";
+//   span.appendChild(icon);
+//   myList[i].appendChild(span);
+// }
 
 // Item Oluştur
 function createItem(text) {
@@ -103,6 +103,7 @@ function createItem(text) {
   span.className = "close";
   span.appendChild(icon);
   li.appendChild(span);
+  if (true) { }
 }
 
 // yeniElement() fonksiyonu
@@ -127,17 +128,6 @@ input.addEventListener("keyup", function (event) {
     yeniElement();
   }
 });
-
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function () {
-    // var div = this.parentElement;
-    // div.style.display = "none";
-    deleteItem(e)
-
-  }
-
-}
 
 
 function deleteItem(e) {
@@ -166,45 +156,46 @@ taskList.addEventListener('click', function (ev) {
     const taskText = ev.target.textContent;
     const isTaskChecked = localStorage.getItem(taskText) === "checked";
     if (isTaskChecked) {
-      localStorage.setItem(taskText, "");
+      localStorage.removeItem(taskText);
     } else {
       localStorage.setItem(taskText, "checked");
     }
-    checkedGuncelle()
+    updateChecked();
 
   } else if (ev.target.tagName === 'SPAN') {
     ev.target.parentElement.classList.toggle('checked');
     const taskText = ev.target.parentElement.textContent;
     const isTaskChecked = localStorage.getItem(taskText) === "checked";
     if (isTaskChecked) {
-      localStorage.setItem(taskText, "");
+      localStorage.removeItem(taskText);
     } else {
       localStorage.setItem(taskText, "checked");
     }
-    checkedGuncelle()
+    updateChecked();
   }
 }, false);
 
+// value değeri checked olanları listele
 
 function updateChecked() {
-for (let i = 0; i < localStorage.length; i++) {
-  checkedKeys = []
-  const key = localStorage.key(i);
-  const value = localStorage.getItem(key);
- 
-  if (value === "checked"){
-    checkedKeys.push(key)
-    for(let i=0 ; i<taskList.childElementCount; i++){
-      const checkedItem = taskList.children[i].textContent
-      if (checkedKeys.includes(checkedItem)) {
-        taskList.children[i].classList.add('checked');
-        console.log(taskList.children[i])
-        console.log(checkedKeys)
-      } 
+  for (let i = 0; i < localStorage.length; i++) {
+    items = localStorage.getItem("items")
+    checkedKeys = []
+    const key = localStorage.key(i);
+    const value = localStorage.getItem(key);
+
+    if (value === "checked") {
+      checkedKeys.push(key)
+      for (let i = 0; i < taskList.childElementCount; i++) {
+        const checkedItem = taskList.children[i].textContent
+        if (checkedKeys.includes(checkedItem)) {
+          taskList.children[i].classList.add('checked');
+        }
+      }
     }
-  }
-  }
 }
+}
+
 
 //---------------------------// ITEM EKLE - SİL //---------------------------//
 
