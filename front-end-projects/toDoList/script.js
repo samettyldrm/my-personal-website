@@ -13,6 +13,8 @@ loadItems();
 // localStorage.clear();
 eventListeners();
 controlMode();
+updateChecked();
+
 
 
 
@@ -182,25 +184,27 @@ taskList.addEventListener('click', function (ev) {
     checkedGuncelle()
   }
 }, false);
-checkedGuncelle()
 
-function checkedGuncelle() {
+
+function updateChecked() {
 for (let i = 0; i < localStorage.length; i++) {
+  checkedKeys = []
   const key = localStorage.key(i);
   const value = localStorage.getItem(key);
-  
-  if (value === "checked") {
-    for (let i=0 ; i<taskList.childElementCount; i++){
-      // console.log(taskList.children)
-      console.log(taskList.children[i].textContent);
+ 
+  if (value === "checked"){
+    checkedKeys.push(key)
+    for(let i=0 ; i<taskList.childElementCount; i++){
+      const checkedItem = taskList.children[i].textContent
+      if (checkedKeys.includes(checkedItem)) {
+        taskList.children[i].classList.add('checked');
+        console.log(taskList.children[i])
+        console.log(checkedKeys)
+      } 
     }
-    
+  }
   }
 }
-}
-
-
-
 
 //---------------------------// ITEM EKLE - SİL //---------------------------//
 
