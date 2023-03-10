@@ -10,13 +10,10 @@ let value = localStorage.getItem("darkModeOn");
 let items;
 
 loadItems();
-// localStorage.clear();
+addChecked();
 eventListeners();
 controlMode();
-updateChecked();
-
-
-
+// updateChecked();
 
 function eventListeners() {
   // delete an item
@@ -47,7 +44,6 @@ function getItemsFromLS() {
 // Local Storage'ye gönder.
 function setItemToLS(text) {
   items = getItemsFromLS();
-  console.log(input.value)
   items.push(text);
   localStorage.setItem('items', JSON.stringify(items));
 }
@@ -66,21 +62,7 @@ function deleteItemFromLS(text) {
 
 //---------------------------// Local Storage End //---------------------------//
 
-//CLOSE SİMGESİ EKLE
 
-//Tüm "li" etiketlerini al
-
-//---------------------------// ITEM EKLE - SİL //---------------------------//
-
-// var i;
-// for (i = 0; i < myList.length; i++) {
-//   var span = document.createElement("SPAN")
-//   span.className = "close";
-//   var icon = document.createElement("i");
-//   icon.className = "fas fa-times";
-//   span.appendChild(icon);
-//   myList[i].appendChild(span);
-// }
 
 // Item Oluştur
 function createItem(text) {
@@ -116,10 +98,41 @@ function yeniElement() {
     createItem(input.value);
     setItemToLS(input.value);
     input.value = "";
-    control()
+    control();
   }
 
 }
+
+// value değeri checked olanları listele
+// let checkedKeys = [];
+
+
+
+let checkedKeys = [];
+
+function updateChecked() {
+  checkedKeys = [];
+
+  for (let i = 0; i < localStorage.length; i++) {
+    items = localStorage.getItem("items")
+    const key = localStorage.key(i);
+    const value = localStorage.getItem(key);
+
+    if (value === "checked") {
+      checkedKeys.push(key)
+      for (let i = 0; i < taskList.childElementCount; i++) {
+        const checkedItem = taskList.children[i].textContent
+        if (checkedKeys.includes(checkedItem)) {
+          taskList.children[i].classList.add('checked');
+        }
+      }
+    }
+  }
+}
+
+// checkedKeys dizisini başka bir değişkene atayarak dışarıda kullanma
+updateChecked();
+const myCheckedKeys = checkedKeys;
 
 // Enter ile YeniElement()'e giriş.
 input.addEventListener("keyup", function (event) {
@@ -129,26 +142,34 @@ input.addEventListener("keyup", function (event) {
   }
 });
 
+updateChecked();
 
 function deleteItem(e) {
   if (e.target.className === 'fas fa-times') {
-    if (confirm("Gerçekten silmek mi istiyorsun?")) {
-      e.target.parentElement.parentElement.remove();
-      console.log(e.target.parentElement)
-      control()
+    control()
+    deletedItem = e.target.parentElement.parentElement;
 
-      // delete item from LS
-      deleteItemFromLS(e.target.parentElement.parentElement.textContent)
-      console.log(e.target.parentElement.parentElement.textContent)
+    updateChecked();
+    const myCheckedKeys = checkedKeys;
+
+    if (myCheckedKeys.includes(deletedItem.textContent)) {
+      localStorage.removeItem(deletedItem.textContent)
+
     }
+
+    deletedItem.remove();
+
+    // delete item from LS
+    deleteItemFromLS(e.target.parentElement.parentElement.textContent)
   }
 
   e.preventDefault()
 }
 
 
-// Task List'de li etiketine tıklayınca checked ekle.
 
+// Task List'de li etiketine tıklayınca checked ekle.
+function addChecked() {
 taskList.addEventListener('click', function (ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
@@ -174,30 +195,9 @@ taskList.addEventListener('click', function (ev) {
     updateChecked();
   }
 }, false);
-
-// value değeri checked olanları listele
-
-function updateChecked() {
-  for (let i = 0; i < localStorage.length; i++) {
-    items = localStorage.getItem("items")
-    checkedKeys = []
-    const key = localStorage.key(i);
-    const value = localStorage.getItem(key);
-
-    if (value === "checked") {
-      checkedKeys.push(key)
-      for (let i = 0; i < taskList.childElementCount; i++) {
-        const checkedItem = taskList.children[i].textContent
-        if (checkedKeys.includes(checkedItem)) {
-          taskList.children[i].classList.add('checked');
-        }
-      }
-    }
-}
 }
 
 
-//---------------------------// ITEM EKLE - SİL //---------------------------//
 
 //---------------------------// ALARM //---------------------------//
 
@@ -260,8 +260,5 @@ function control() {
 }
 
 //---------------------------// Control //---------------------------//
-
-
-
 
 
