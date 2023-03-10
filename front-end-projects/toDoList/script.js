@@ -146,7 +146,6 @@ updateChecked();
 
 function deleteItem(e) {
   if (e.target.className === 'fas fa-times') {
-    control()
     deletedItem = e.target.parentElement.parentElement;
 
     updateChecked();
@@ -158,6 +157,7 @@ function deleteItem(e) {
     }
 
     deletedItem.remove();
+    control()
 
     // delete item from LS
     deleteItemFromLS(e.target.parentElement.parentElement.textContent)
