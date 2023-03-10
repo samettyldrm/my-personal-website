@@ -3,7 +3,6 @@
 var input = document.querySelector('#myInput');
 var alert = document.getElementById("alert");
 var taskList = document.getElementById("taskList");
-var close = document.getElementsByClassName("close");
 var myList = document.getElementsByTagName("li");
 var bodyClass = document.querySelector(".bodyClass");
 let value = localStorage.getItem("darkModeOn");
@@ -18,6 +17,7 @@ controlMode();
 function eventListeners() {
   // delete an item
   taskList.addEventListener('click', deleteItem);
+  taskList.addEventListener('click', editItem);
 }
 //---------------------------// BAŞLANGIÇ //---------------------------//
 
@@ -78,12 +78,16 @@ function createItem(text) {
   li.appendChild(p)
   taskList.appendChild(li);
 
+  var editIcon = document.createElement("i");
+  editIcon.className = "fa-solid fa-marker"
+  // li.appendChild(editIcon);
+
   // "span" etiketi oluştur ve "li" etiketine ekle
   var span = document.createElement("SPAN");
   var icon = document.createElement("i");
   icon.className = "fas fa-times";
-  span.className = "close";
   span.appendChild(icon);
+  
   li.appendChild(span);
   if (true) { }
 }
@@ -143,6 +147,12 @@ input.addEventListener("keyup", function (event) {
 });
 
 updateChecked();
+
+function editItem(e){
+  if (e.target.className === 'fa-solid fa-marker'){
+    console.log("fa solid aktif")
+  }
+}
 
 function deleteItem(e) {
   if (e.target.className === 'fas fa-times') {
