@@ -81,7 +81,6 @@ li:hover::after{
 /* İÇERİK */
 
 .menu {
-    border: 1px solid red;
     margin: 1rem auto 1rem auto;
     padding: 1rem;
     justify-content:flex-start;
