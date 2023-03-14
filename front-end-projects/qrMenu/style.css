@@ -125,11 +125,12 @@ li:hover::after{
 
 .card .br{
     /* display: none; */
-    background-color: #2346a5;
+    background-color: #DF2E38;
     color: white;
     padding: 0.4rem;
     margin: 0.2rem;
     border-radius: 0.5rem;
+    font-weight: bold;
 }
 
 .card .br span{
