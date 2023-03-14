@@ -12,12 +12,9 @@ function filterMenu(ul, li) {
       // clickedLi öğesi üzerinde checked sınıfını ekleyin
       clickedLi.classList.toggle('checked');
   
-      console.log(clickedLi.textContent)
       menu.forEach(a => {
         const text = clickedLi.textContent;
-        console.log(a);
-        console.log(text);
-        // console.log(classList.textContent);
+
         if (a.className.includes(text)) {
           a.style.display = "block";
         } else {
@@ -39,13 +36,9 @@ function control(){
     const clickedLi = e.target;
     // clickedLi öğesi üzerinde checked sınıfını ekleyin
     clickedLi.classList.toggle('checked');
-
-    console.log(clickedLi.textContent)
     menu.forEach(a=>{
         const text = clickedLi.textContent;
-        console.log(a);
-        console.log(text);
-        // console.log(classList.textContent);
+
         if (a.className.includes(text)){
             a.style.display = "block";
         } else{
@@ -72,22 +65,18 @@ fetch('data.csv', {
     const rows = data.split('\n'); // Satırları ayır
     rows.forEach(row=>{
         const columns = row.split(';');
-        // console.log(columns[0]);
 
         //CARD
 
         const card = document.createElement('div');
         card.classList.add('card', `${columns[0]}`);
-        // card.classList.add((columns[0]));
-        // card.classList.add(document.createTextNode(columns[0]))
-        console.log(columns[0])
 
         //GÖRSEL
 
         const gorsel = document.createElement('div');
         gorsel.classList.add('gorsel');
         const img = document.createElement('img');
-        img.src= `/front-end-projects/qrMenu/images/${columns[1]}.jpg`
+        img.src= `/front-end-projects/qrMenu/images/menu/${columns[1]}.jpg`
 
         //METİN
 
@@ -107,8 +96,10 @@ fetch('data.csv', {
 
         const br1 = document.createElement('p');
         br1.classList.add('br');
-        // text = `Fiyat : ${}`
-        br1.appendChild(document.createTextNode(columns[4]));
+        // text2 = "<p>Fiyat:</p>"
+        // br1.appendChild(document.createTextNode(columns[4]));
+        // br1.appendChild(text2);
+        br1.innerHTML = `Fiyat: ${(columns[4])}`
 
         // const br2 = document.createElement('p');
         // br2.classList.add('br');

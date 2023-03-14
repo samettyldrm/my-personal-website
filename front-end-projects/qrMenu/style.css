@@ -11,6 +11,17 @@ html {
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
     overflow: auto;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1.2rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    background-color:#212134;
 }
 
 body {
@@ -30,24 +41,26 @@ body {
 
 }
 .navbar {
-    /* padding: 2rem; */
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .navbar ul{
+    padding: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .navbar ul li{
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     position: relative;
     padding: 0.5rem 2rem;
-    display: flex;
-    flex-direction: row;
-    /* font-size: 150%; */
     border-radius: 1rem;
     cursor: pointer;
     background-color: transparent;
@@ -56,7 +69,7 @@ body {
 li::after {
     content: '';
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: -2px;
     width: 0%;
     height: 5px;
@@ -81,22 +94,22 @@ li:hover::after{
 /* İÇERİK */
 
 .menu {
-    margin: 1rem auto 1rem auto;
-    padding: 1rem;
-    justify-content:flex-start;
+    /* margin: 1rem auto 1rem auto; */
+    /* padding: 0,5rem; */
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: center;
 }
 
-.menu div{
-    /* gap: 1rem; */
-}
 .card {
-    box-shadow: 0px 0px 17px -2px rgb(159, 159, 159);
-    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
     border-radius: 2rem;
-    padding: 0 0 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* padding: 10px; */
+    width: 15rem;
+    margin: 1rem;
 }
 
 .card:hover{
@@ -108,15 +121,44 @@ li:hover::after{
     gap: 0;
 }
 
-.card .gorsel img {
-    /* width: 100%; */
-    width: 100%;
-    border-radius: 2rem 2rem 0 0 ;  
+.card .gorsel{
+    max-width: 100%;
 }
 
 .card .metin{
+    /* height: 20rem; */
+}
+
+
+.card .gorsel img {
+    /* width: 100%; */
+    /* max-width: 100%;
+    height: auto;*/
+    border-radius: 2rem 2rem 0 0 ; 
+    max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card .urunAd,
+.card .urunDetay{
     padding: 0 1rem;
     /* text-align: left; */
+}
+
+.card .urunAd{
+    font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card .urunDetay{
+    font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.card .fiyat {
+    padding: 0;
 }
 
 .card .urunAd{
@@ -124,15 +166,47 @@ li:hover::after{
 }
 
 .card .br{
-    /* display: none; */
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #ff5733;
+    text-align: center;
+    /* margin-bottom: 0; */
     background-color: #DF2E38;
     color: white;
-    padding: 0.4rem;
-    margin: 0.2rem;
-    border-radius: 0.5rem;
-    font-weight: bold;
+    padding: 0.8rem 0.4rem;
+    cursor: pointer;
+    border-radius: 0 0 2rem 2rem; 
+}
+
+.card .br:hover{
+    background-color: black;
 }
 
 .card .br span{
     font-weight: bolder;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:758px){
+    html{
+        font-size: 55%;
+    }
+
+    .card {
+        width: 20rem;
+        margin: 1rem;
+    }
+
+    .navbar ul li{
+        padding: 0.5rem 1rem;
+        display: flex;
+        flex-direction: row;
+        /* font-size: 150%; */
+        border-radius: 1rem;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
 }
