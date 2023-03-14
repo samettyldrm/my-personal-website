@@ -1,35 +1,35 @@
-﻿DÖNER;et-doner;ET DÖNER - KG;Ürün Açıklaması;₺350
-DÖNER;et-doner;ET DÖNER - TAM;Ürün Açıklaması;₺45
-DÖNER;et-doner;ET DÖNER - YARIM;Ürün Açıklaması;₺30
-DÖNER;tavuk-doner;TAVUK DÖNER - KG;Ürün Açıklaması;₺200
-DÖNER;tavuk-doner;TAVUK DÖNER - TAM;Ürün Açıklaması;₺35
-DÖNER;tavuk-doner;TAVUK DÖNER - YARIM;Ürün Açıklaması;₺25
-DÖNER;iskender;İSKENDER;Ürün Açıklaması;₺80
-IZGARA;adana;ACILI - ADANA ŞİŞ PORSİYON - 1 ŞİŞ;Ürün Açıklaması;₺50
-IZGARA;adana;ACILI - ADANA ŞİŞ DÜRÜM - 1 ŞİŞ;Ürün Açıklaması;₺50
-IZGARA;adana;ACISIZ - ADANA ŞİŞ PORSİYON - 1 ŞİŞ;Ürün Açıklaması;₺50
-IZGARA;adana;ACISIZ - ADANA ŞİŞ DÜRÜM - 1 ŞİŞ;Ürün Açıklaması;₺50
-IZGARA;kofte;KÖFTE PORSİYON (150gr);Ürün Açıklaması;₺55
-IZGARA;kofte;KÖFTE EKMEK (100gr);Ürün Açıklaması;₺35
-IZGARA;kofte;BEYTİ KEBAP;Ürün Açıklaması;₺50
-IZGARA;kofte;URFA KEBAP;Ürün Açıklaması;₺40
-IZGARA;tavuk-kanat;TAVUK KANAT;Ürün Açıklaması;₺35
-IZGARA;tavuk-citir;TAVUK ÇITIR;Ürün Açıklaması;₺30
-FIRIN;default;KIYMALI PİDE;Ürün Açıklaması;₺40
-FIRIN;default;KAŞARLI PİDE;Ürün Açıklaması;₺40
-FIRIN;default;KUŞBAŞI PİDE;Ürün Açıklaması;₺50
-FIRIN;default;KAŞAR-KIYMA PİDE;Ürün Açıklaması;₺45
-FIRIN;default;KAŞAR-KUŞBAŞI PİDE;Ürün Açıklaması;₺55
-FIRIN;default;LAHMACUN;Ürün Açıklaması;₺20
-TATLILAR;default;BAKLAVA PORSİYON - 100GR;Ürün Açıklaması;₺20
-TATLILAR;default;BAKLAVA - KG;Ürün Açıklaması;₺100
-ATIŞTIRMALIK;default;MANTI - 1KG;Ürün Açıklaması;₺90
-ATIŞTIRMALIK;default;SARMA - PORSİYON;Ürün Açıklaması;₺20
-ATIŞTIRMALIK;default;SARMA - KG;Ürün Açıklaması;₺90
-ATIŞTIRMALIK;default;ÇİĞ KÖFTE - KG;Ürün Açıklaması;₺130
-ATIŞTIRMALIK;default;ÇİĞ KÖFTE - 500GR;Ürün Açıklaması;₺65
-ATIŞTIRMALIK;default;ÇİĞ KÖFTE - PORSİYON;Ürün Açıklaması;₺30
-İÇECEKLER;default;YAYIK AYRAN - 1 LİTRE;Ürün Açıklaması;₺20
-İÇECEKLER;default;YAYIK AYRAN - BARDAK;Ürün Açıklaması;₺7
-İÇECEKLER;default;LİMONATA 1 LİTRE;Ürün Açıklaması;₺20
-İÇECEKLER;kofte;KOLA;Ürün Açıklaması;₺25
+﻿DÖNER;et-doner;ET DÖNER;KG;₺350
+DÖNER;et-doner;ET DÖNER;TAM EKMEK - LAVAŞ;₺45
+DÖNER;et-doner;ET DÖNER;YARIM EKMEK - LAVAŞ;₺30
+DÖNER;tavuk-doner;TAVUK DÖNER;KG;₺200
+DÖNER;tavuk-doner;TAVUK DÖNER;TAM EKMEK - LAVAŞ;₺35
+DÖNER;tavuk-doner;TAVUK DÖNER;YARIM EKMEK - LAVAŞ;₺25
+DÖNER;iskender;İSKENDER;BOL TEREYAĞLI;₺80
+IZGARA;adana;ACILI - ADANA;ŞİŞ PORSİYON - 1 ŞİŞ;₺50
+IZGARA;adana;ACILI - ADANA ;ŞİŞ DÜRÜM - 1 ŞİŞ;₺50
+IZGARA;adana;ACISIZ - ADANA;ŞİŞ PORSİYON - 1 ŞİŞ;₺50
+IZGARA;adana;ACISIZ - ADANA;ŞİŞ DÜRÜM - 1 ŞİŞ;₺50
+IZGARA;kofte;KÖFTE;PORSİYON (150gr);₺55
+IZGARA;kofte;KÖFTE;EKMEK (100gr);₺35
+IZGARA;kofte;BEYTİ KEBAP;BEYTİ KEBAP;₺50
+IZGARA;kofte;URFA KEBAP;URFA KEBAP;₺40
+IZGARA;tavuk-kanat;TAVUK KANAT;TAVUK KANAT;₺35
+IZGARA;tavuk-citir;TAVUK ÇITIR;TAVUK ÇITIR;₺30
+FIRIN;default;KIYMALI PİDE;KIYMALI PİDE;₺40
+FIRIN;default;KAŞARLI PİDE;KAŞARLI PİDE;₺40
+FIRIN;default;KUŞBAŞI PİDE;KUŞBAŞI PİDE;₺50
+FIRIN;default;KAŞAR-KIYMA PİDE;KAŞAR-KIYMA PİDE;₺45
+FIRIN;default;KAŞAR-KUŞBAŞI PİDE;KAŞAR-KUŞBAŞI PİDE;₺55
+FIRIN;default;LAHMACUN;LAHMACUN;₺20
+TATLILAR;default;BAKLAVA;PORSİYON (100gr);₺20
+TATLILAR;default;BAKLAVA;1KG;₺100
+ATIŞTIRMALIK;default;MANTI;1KG;₺90
+ATIŞTIRMALIK;default;SARMA;PORSİYON;₺20
+ATIŞTIRMALIK;default;SARMA;1KG;₺90
+ATIŞTIRMALIK;default;ÇİĞ KÖFTE;1KG;₺130
+ATIŞTIRMALIK;default;ÇİĞ KÖFTE;500GR;₺65
+ATIŞTIRMALIK;default;ÇİĞ KÖFTE;PORSİYON;₺30
+İÇECEKLER;default;YAYIK AYRAN;1 LİTRE;₺20
+İÇECEKLER;default;YAYIK AYRAN;BARDAK;₺7
+İÇECEKLER;default;LİMONATA;1 LİTRE;₺20
+;;;;
