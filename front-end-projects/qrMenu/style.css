@@ -306,8 +306,9 @@ li:hover::after {
 
 @media (max-width:758px) {
     .navbar {
+        width: 100%;
         padding: 0 0.5rem;
-        font-size: 55%;
+        font-size: 45%;
         overflow-x: scroll;
     }
 
@@ -318,6 +319,14 @@ li:hover::after {
 
     .navbar ul li {
         padding: 0;
+    }
+
+    .navbar ul {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 0.4rem;
+        align-items: center;
     }
 
 }
