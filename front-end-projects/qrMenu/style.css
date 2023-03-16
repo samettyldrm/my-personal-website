@@ -43,6 +43,9 @@ body {
 
 }
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -50,10 +53,15 @@ body {
 }
 
 .navbar ul{
-    padding: 0;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 0 2px 4px rgba(7, 7, 7, 0.2); */
+    border-radius: 2rem;
+    top: 0rem;
+    padding: 1rem;
+    /* position: fixed; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 
@@ -98,8 +106,8 @@ li:hover::after{
 /* İÇERİK */
 
 .menu {
-    /* margin: 1rem auto 1rem auto; */
-    /* padding: 0,5rem; */
+    /* position: relative; */
+    margin-top: 6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -157,6 +165,8 @@ li:hover::after{
 }
 
 .card .urunDetay{
+    color: #666565;
+    font-style: italic;
     font-size: 1rem;
   margin-bottom: 10px;
 }
@@ -193,7 +203,7 @@ li:hover::after{
 
 /* RESPONSIVE */
 
-@media (max-width:758px){
+@media screen and (max-width:758px){
     html{
         font-size: 55%;
     }
@@ -203,6 +213,30 @@ li:hover::after{
         margin: 1rem;
     }
 
+    .menu{
+        margin-top: 0;
+    }
+
+    .navbar{
+        z-index: 1;
+        width: 100%;
+        font-size: 150%;
+        position: fixed;
+        top: 95%;
+        bottom: 0;
+        margin: 0;
+    }
+
+    .navbar ul{
+        width: 100%;
+        border-radius: 0;
+        background-color:#171717;
+    }
+
+    .navbar ul li.checked{
+        color: white;
+    }
+    
     .navbar ul li{
         padding: 0.5rem 1rem;
         display: flex;

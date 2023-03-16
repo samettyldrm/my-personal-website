@@ -2,6 +2,8 @@ const li = document.querySelectorAll('li');
 const ul = document.querySelector('ul');
 const menu = document.querySelectorAll(".menu > div");
 const menudiv = document.querySelector('.menu')
+
+
 filterMenu(ul,li);
 function filterMenu(ul, li) {
     const menu = document.querySelectorAll(".menu > div");
@@ -131,8 +133,3 @@ fetch('data.csv', {
 
 
   
-
-
-  
-  
- 
