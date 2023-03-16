@@ -3,7 +3,7 @@
 
 :root {
     --dark-mode-color: #212134;
-    --blue:#503e9d;
+    --blue: #503e9d;
 
 }
 
@@ -17,13 +17,13 @@ html {
 }
 
 html::-webkit-scrollbar {
-    width: 1.2rem;
+    width: 1rem;
     background-color: white;
 }
 
 html::-webkit-scrollbar-thumb {
     border-radius: 3rem;
-    background-color:#212134;
+    background-color: #212134;
 }
 
 body {
@@ -42,39 +42,47 @@ body {
     /* overflow: hidden; */
 
 }
+
 .navbar {
     position: fixed;
-    top: 0;
+    background-color: #fff;
     width: 100%;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 0;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
 }
 
-.navbar ul{
-    background-color: rgb(255, 255, 255);
-    /* box-shadow: 0 2px 4px rgba(7, 7, 7, 0.2); */
-    border-radius: 2rem;
-    top: 0rem;
-    padding: 1rem;
-    /* position: fixed; */
+.navbar ul {
+    /* padding: 0; */
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    gap: 2rem;
+    align-items: center;
 }
 
 
-.navbar ul li{
+.navbar ul li {
     color: #818080;
     display: flex;
     justify-content: center;
     text-decoration: none;
     position: relative;
-    padding: 0.5rem 2rem;
+    /* padding: 0.5rem 2rem; */
     border-radius: 1rem;
     cursor: pointer;
     background-color: transparent;
+}
+
+
+.navbar span {
+    margin: 0 0.2rem;
+    background-color: #282828;
+    color: #fff;
+    padding: 0.1rem 0.5rem;
+    border-radius: 1rem;
 }
 
 li::after {
@@ -86,18 +94,20 @@ li::after {
     height: 2px;
     background-color: rgb(37, 37, 37);
     border-radius: 1rem;
-    transition: width 0.3s ease-in-out; /* geçiş efekti için transition kullan */
-}
-  
-li.checked::after {
-    width: 100%; /* checked durumunda alt çizgi genişliğini %100 olarak ayarla */
+    transition: width 0.3s ease-in-out;
+    /* geçiş efekti için transition kullan */
 }
 
-li:hover::after{
+li.checked::after {
+    width: 100%;
+    /* checked durumunda alt çizgi genişliğini %100 olarak ayarla */
+}
+
+li:hover::after {
     width: 100%;
 }
 
-.navbar ul li.checked{
+.navbar ul li.checked {
     color: #171717;
     text-underline-position: above;
     font-weight: bold;
@@ -106,145 +116,208 @@ li:hover::after{
 /* İÇERİK */
 
 .menu {
-    /* position: relative; */
-    margin-top: 6rem;
+    margin-top: 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    z-index: -1;
 }
 
 .card {
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
     border-radius: 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    /* padding: 10px; */
     width: 15rem;
     margin: 1rem;
+    cursor: pointer;
 }
 
-.card:hover{
+.selected {
+    background-color: #fff;
+    width: 20rem;
+    height: 25%;
+    position: fixed;
+    margin-top: 5rem;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 1000;
+
+}
+
+.selected img {
+    width: 100%;
+    height: 100%;
+}
+
+.selected .metin {
+    background-color: #fff;
+}
+
+.card:hover {
     box-shadow: 0px 0px 17px -2px rgb(43, 43, 43);
 }
 
-.card div{
-    /* width: 100%; */
+.card div {
     gap: 0;
 }
 
-.card .gorsel{
-    max-width: 100%;
+.card .gorsel {
+    height: 180px;
 }
-
-.card .metin{
-    /* height: 20rem; */
-}
-
 
 .card .gorsel img {
-    /* width: 100%; */
-    /* max-width: 100%;
-    height: auto;*/
-    border-radius: 2rem 2rem 0 0 ; 
-    max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+    /* max-width: 100%; */
+    /* height: auto; */
+    margin-bottom: 10px;
 }
 
 .card .urunAd,
-.card .urunDetay{
+.card .urunDetay {
     padding: 0 1rem;
     /* text-align: left; */
 }
 
-.card .urunAd{
+.card .urunAd {
     font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.card .urunDetay{
+.card .urunDetay {
     color: #666565;
     font-style: italic;
     font-size: 1rem;
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .card .fiyat {
     padding: 0;
 }
 
-.card .urunAd{
+.card .urunAd {
     font-weight: bold;
 }
 
-.card .br{
+.card .br {
     font-size: 1rem;
     margin-bottom: 0;
     font-weight: bold;
-    color: #ff5733;
     text-align: center;
-    /* margin-bottom: 0; */
-    background-color: #DF2E38;
-    color: white;
+    background: rgb(255, 51, 0);
+    background: linear-gradient(45deg, #F5515F 35%, #A1051D 100%);
+    color: rgb(255, 255, 255);
     padding: 0.8rem 0.4rem;
     cursor: pointer;
-    border-radius: 0 0 2rem 2rem; 
+    border-radius: 0 0 2rem 2rem;
 }
 
-.card .br:hover{
-    background-color: black;
+.card .br:hover {
+    background: black;
 }
 
-.card .br span{
+.card .br:hover::after {
+    content: ' SEPETE EKLE!';
+    font-size: small;
+}
+
+.card .br span {
     font-weight: bolder;
 }
 
+/* CART */
+
+.cart {
+    display: none;
+    width: 25%;
+    position: fixed;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(8, 95, 208, 0.2);
+    right: 2rem;
+    top: 3rem;
+    z-index: 1000;
+    /* justify-content: space-between; */
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 0;
+}
+
+.cart h4 {
+    padding: 0 2rem;
+}
+
+.cart .cart-metin img {
+    width: 5rem;
+    border-radius: 5rem;
+}
+
+.cart .cart-metin {
+    padding: 0.5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.cart .cart-toplam {
+    height: 2rem;
+    width: 55%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    padding: 1rem;
+    border-radius: 3rem;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+.cart-toplam .toplamFiyat {
+    background-color: rgb(255, 107, 54);
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 0 0 0 0.5rem;
+    color: #000;
+}
+
+.cart-toplam i {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.cart-toplam .toplamUrun{
+    padding: 0 0.5rem;
+}
+
+
 /* RESPONSIVE */
 
-@media screen and (max-width:758px){
-    html{
+@media (max-width:758px) {
+    .navbar {
+        padding: 0 0.5rem;
         font-size: 55%;
+        overflow-x: scroll;
     }
 
     .card {
-        width: 20rem;
+        /* width: 25%; */
         margin: 1rem;
     }
 
-    .menu{
-        margin-top: 0;
-    }
-
-    .navbar{
-        z-index: 1;
-        width: 100%;
-        font-size: 100%;
-        position: fixed;
-        top: 95%;
-        bottom: 0;
-        margin: 0;
-    }
-
-    .navbar ul{
-        width: 100%;
-        border-radius: 0;
-        background-color:#171717;
-    }
-
-    .navbar ul li.checked{
-        color: white;
-    }
-    
-    .navbar ul li{
-        padding: 0.5rem 1rem;
-        display: flex;
-        flex-direction: row;
-        /* font-size: 150%; */
-        border-radius: 1rem;
-        cursor: pointer;
-        background-color: transparent;
+    .navbar ul li {
+        padding: 0;
     }
 
 }

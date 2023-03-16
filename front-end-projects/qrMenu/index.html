@@ -15,17 +15,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="control()">
+<body>
     
     <div class="navbar">
         <ul>
             <!-- <li class="checked">HEPSİ</li> -->
-            <li class="checked">DÖNER</li>
+            <li class="checked">TÜMÜ</li>
+            <li>DÖNER</li>
             <li>IZGARA</li>
             <li>FIRIN</li>
             <li>TATLILAR</li>
             <li>ATIŞTIRMALIK</li>
             <li>İÇECEK</li>
+            <i class="fa-solid fa-cart-shopping"><span>0</span></i>
         </ul>
     </div>
     <div class="menu">
@@ -38,11 +40,35 @@
                 <p class="urunDetay">Et döner ile alakalı açıklama</p>
                 <div class="fiyat">
                     <p class="br">KG: ₺450</p>
-                    <p class="br">TAM: ₺60</p>
-                    <p class="br">YARIM: ₺40</p>
                 </div>
             </div>
         </div> -->
+    </div>
+
+    <div class="cart">
+        <h4>Sepetim</h4>
+        <div class="cart-metin">
+            <img src="../qrMenu/images/menu/iskender-min.jpg" alt="">
+            <p class="cart-urunAd">ET DÖNER</p>
+            <p class="cart-adet">x2</p>
+            <p class="cart-fiyat">₺450</p>
+        </div>
+        <div class="cart-metin">
+            <img src="../qrMenu/images/menu/iskender-min.jpg" alt="">
+            <p class="cart-urunAd">ET DÖNER</p>
+            <p class="cart-adet">x2</p>
+            <p class="cart-fiyat">₺450</p>
+        </div>
+        <div class="cart-metin">
+            <img src="../qrMenu/images/menu/iskender-min.jpg" alt="">
+            <p class="cart-urunAd">ET DÖNER</p>
+            <p class="cart-adet">x2</p>
+            <p class="cart-fiyat">₺450</p>
+        </div>
+        <div class="cart-toplam">
+            <i class="fa-solid fa-cart-shopping"><p class="toplamUrun">2 ürün</p></i><p class="toplamFiyat">₺900</p>
+        </div>
+
     </div>
 </body>
 <script src="script.js"></script>
