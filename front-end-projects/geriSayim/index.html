@@ -1,37 +1,110 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Sayaç Örneği</title>
-    <style>
-		@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,600&display=swap');
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap');
 
-        html{
-            background-color: black;
-            box-sizing: border-box;
-			font-family: 'Comfortaa', cursive;
-        }
-        #countdown{
-            text-align: center;
-            font-size: 2rem;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 85vh;
-			line-height: 3rem;
-        }
+		html {
+			background-color: black;
+			box-sizing: border-box;
+			font-family: 'Orbitron', sans-serif;
+		}
 
+		html.hover{
+			background-image: url("https://a-static.besthdwallpaper.com/blue-and-green-nature-wallpaper-1024x576-57_44.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+		}
 		
+		#countdown {
+			/* border: 1px solid red; */
+			text-align: center;
+			/* margin-top: 18%; */
+			color: white;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+			flex-direction: row;
+			gap: 0.5rem;
+			justify-content: center;
+			align-items: center;
+			/* height: 20vh; */
+			padding: 0 15rem;
+		}
+
+		.hover{
+
+			background-color: azure;
+		}
 
 
-    </style>
+		#countdown p {
+			font-weight: bolder;
+			padding: 1rem;
+			font-size: 2rem;
+			margin: 0;
+		}
+
+		div h3 {
+			color: white;
+			text-align: center;
+			margin-top: 18%;
+			font-weight: lighter;
+		}
+
+		div h3:hover {
+			/* color: black; */
+		}
+	</style>
 </head>
+
 <body>
-	<div id="countdown"></div>
+	<div>
+		<h3 id="title">2023 CUMHURBAŞKANLIĞI SEÇİMİ'NE</h3>
+	</div>
+	<div id="countdown">
+		<p class="hafta"></p>
+		<p class="gun"></p>
+		<p class="saat"></p>
+		<p class="dakika"></p>
+		<p class="saniye"></p>
+		<p class="salise"></p>
+		<h4>HAFTA</h4>
+		<h4>GÜN</h4>
+		<h4>SAAT</h4>
+		<h4>DAKİKA</h4>
+		<h4>SANİYE</h4>
+		<h4>SALİSE</h4>
+	</div>
 
 	<script>
 		// sayaç değişkenlerini tanımla
 		var countdown = document.getElementById("countdown");
+		var hafta = document.querySelector(".hafta");
+		var gun = document.querySelector(".gun");
+		var saat = document.querySelector(".saat");
+		var dakika = document.querySelector(".dakika");
+		var saniye = document.querySelector(".saniye");
+		var salise = document.querySelector(".salise");
+		var title = document.querySelector("#title");
+		var html = document.querySelector("html")
+
+		title.addEventListener('mouseover', () => {
+			title.innerHTML = "AKP'NİN GİDİŞİNE";
+			html.classList.add('hover');
+			
+		})
+
+		title.addEventListener('mouseout', () => {
+			title.innerHTML = "2023 CUMHURBAŞKANLIĞI SEÇİMİ'NE";
+			html.style.backgroundColor = 'black'
+			html.classList.remove('hover');
+
+		})
+
+
 		var newYearDate = new Date("May 15, 2023 00:00:00").getTime();
 		var interval = setInterval(updateCountdown, 10); // her 10ms'de bir güncellenecek
 
@@ -48,8 +121,15 @@
 			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 			var milliseconds = distance % 1000;
 
+			hafta.innerHTML = weeks
+			gun.innerHTML = days
+			saat.innerHTML = hours
+			dakika.innerHTML = minutes
+			saniye.innerHTML = seconds
+			salise.innerHTML = milliseconds
+
 			// HTML'yi güncelle
-			countdown.innerHTML = "AKP'NİN GİTMESİNE SON<br>" + weeks + " HAFTA " + days + " GÜN " + hours + " SAAT " + minutes + " DAKİKA " + seconds + " SANİYE " + milliseconds + " SALİSE!";
+			// countdown.innerHTML = "A*P'NİN GİDİŞİNE SON<br>" + weeks + " HAFTA " + days + " GÜN " + hours + " SAAT " + minutes + " DAKİKA " + seconds + " SANİYE " + milliseconds + " SALİSE!";
 
 			// zaman dolduysa sayaçtan çık
 			if (distance < 0) {
@@ -59,4 +139,5 @@
 		}
 	</script>
 </body>
+
 </html>
