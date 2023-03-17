@@ -6,13 +6,14 @@ const menudiv = document.querySelector('.menu');
 filterMenu(ul, li);
 
 function filterMenu(ul, li) {
-  // const menu = document.querySelectorAll(".menu > div");
-  const menudiv = document.querySelector('.menu')
+  const menu = document.querySelectorAll(".menu > div");
+  // const menudiv = document.querySelector('.menu')
 
   ul.addEventListener('click', (e) => {
     const clickedLi = e.target;
     // clickedLi öğesi üzerinde checked sınıfını ekleyin
-    clickedLi.classList.toggle('checked');
+    if (clickedLi.tagName === 'LI'){
+      clickedLi.classList.toggle('checked');
 
     menu.forEach(a => {
       const text = clickedLi.textContent;
@@ -31,6 +32,8 @@ function filterMenu(ul, li) {
         liItem.classList.remove('checked');
       }
     });
+    }
+    
   });
 }
 
@@ -41,7 +44,7 @@ function control() {
     const text = checkedLi.textContent;
     menu.forEach(a => {
       if (a.className.includes(text)) {
-        console.log(a.className)
+        // console.log(a.className)
         a.style.display = "block";
       }
       else if ('TÜMÜ'.includes(text)) {
@@ -140,7 +143,74 @@ getData().then(data => {
         const cartText = document.querySelector('span')
         cartText.innerHTML = `${cart}`
 
-        console.log(br2.parent)
+        thisCard = a.parentElement.parentElement.parentElement //Bu kısım bize card'ı veriyor.
+
+        let photoUrl =  thisCard.children[0].children[0].src //fotoğraf linkini aldık.
+        photoUrl = photoUrl.substring(21)
+        // console.log(photoUrl.substring(21))
+
+        
+        console.log(thisCard.children[1].children[0].textContent) //ürün ismini aldık.
+        console.log(thisCard.children[1].children[2].children[0].textContent) //ürün fiyatını aldık.
+
+        body = document.querySelector('body');
+
+        cartDiv = document.createElement('div');
+        cartDiv.classList.add('cart');
+        body.appendChild(cartDiv);
+
+        sepetim = document.createElement('h4');
+        sepetim.innerHTML = 'Sepetim';
+        cartDiv.appendChild(sepetim);
+
+        cartMetin = document.createElement('div');
+        cartMetin.classList.add('cart-metin');
+        cartDiv.appendChild(cartMetin);
+
+        cartImg = document.createElement('img');
+        cartImg.src = photoUrl
+        cartMetin.appendChild(cartImg);
+  
+        cartUrunAd = document.createElement('p');
+        cartUrunAd.classList.add('cart-urunAd');
+        cartUrunAd.innerHTML= thisCard.children[1].children[0].textContent;
+        cartMetin.appendChild(cartUrunAd);
+
+        cartAdet = document.createElement('p');
+        cartAdet.classList.add('cart-adet');
+        cartAdet.innerHTML= cart
+        cartMetin.appendChild(cartAdet);
+
+        cartFiyat = document.createElement('p');
+        cartAdet.classList.add('cart-fiyat');
+        cartFiyat.innerHTML= thisCard.children[1].children[2].children[0].textContent;
+        cartMetin.appendChild(cartFiyat);
+
+
+        cartToplam = document.createElement('div');
+        cartToplam.classList.add('cart-toplam');
+        cartDiv.appendChild(cartToplam);
+
+        cartI = document.createElement('i');
+        cartI.classList.add('fa-cart-shopping', 'fa-solid');
+        cartToplam.appendChild(cartI);
+
+        pToplamUrun = document.createElement('p');
+        pToplamUrun.classList.add('toplamUrun');
+        pToplamUrun.innerHTML= `${cart} ürün`
+        cartI.appendChild(pToplamUrun);
+
+        pToplamFiyat = document.createElement('p');
+        pToplamFiyat.classList.add('toplamFiyat');
+        pToplamFiyat.innerHTML= thisCard.children[1].children[2].children[0].textContent;
+        cartI.appendChild(pToplamFiyat);
+
+
+
+
+        
+
+        
 
 
       })
