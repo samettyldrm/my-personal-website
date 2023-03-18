@@ -233,16 +233,14 @@ li:hover::after {
 
 .cart {
     /* display: none; */
-    width: 25%;
+    width: 25rem;
     position: fixed;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(8, 95, 208, 0.2);
     right: 2rem;
     top: 3rem;
     z-index: 1000;
-    /* justify-content: space-between; */
     align-items: center;
-    border: 1px solid black;
     border-radius: 2rem;
     padding: 0;
 }
@@ -251,18 +249,45 @@ li:hover::after {
     padding: 0 2rem;
 }
 
-.cart .cart-metin img {
-    width: 5rem;
-    border-radius: 5rem;
+.cart.open{
+    display: block;
 }
 
-.cart .cart-metin {
-    padding: 0.5rem 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.fa-cart-shopping{
+    cursor: pointer;
 }
+
+.cart-metin {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    display: grid;
+    font-size: 1rem;
+    align-items: center;
+    grid-template-columns: 2fr 2fr 1fr;
+    column-gap: 0.5rem;
+}
+
+.cart-urunAd{
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+}
+
+.cart-adet{
+    font-weight: lighter;
+}
+
+.cart-metin:hover{
+    background-color: #f2f2f2;
+}
+
+.cart .cart-metin img {
+    width: 7rem;
+    height: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
 
 
 .cart .cart-toplam {
