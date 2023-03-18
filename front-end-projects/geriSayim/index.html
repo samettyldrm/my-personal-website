@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Sayaç Örneği</title>
+	<title>2023 Seçim Sayaç</title>
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap');
 
@@ -12,64 +12,61 @@
 			font-family: 'Orbitron', sans-serif;
 		}
 
+		.container{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 95vh;
+		}
+
 		#countdown {
-			/* border: 1px solid red; */
 			text-align: center;
-			/* margin-top: 18%; */
 			color: white;
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-			flex-direction: row;
-			gap: 0.5rem;
-			justify-content: center;
-			align-items: center;
-			/* height: 20vh; */
-			padding: 0 15rem;
+			column-gap: 2rem;
+			
 		}
-
-		.hover {
-
-			background-color: azure;
-		}
-
 
 		#countdown p {
+			width: 5rem;
 			font-weight: bolder;
 			padding: 1rem;
 			font-size: 2rem;
 			margin: 0;
 		}
 
-		div h3 {
+		#title{
+			max-height: 80%;
+			display: flex;
+			flex-direction: row;
 			color: white;
 			text-align: center;
-			margin-top: 18%;
 			font-weight: lighter;
-		}
-
-		div h3:hover {
-			/* color: black; */
 		}
 	</style>
 </head>
 
 <body>
-	<div>
-		<h3 id="title">2023 CUMHURBAŞKANLIĞI SEÇİMİ'NE</h3>
-	</div>
-	<div id="countdown">
-		<p class="hafta"></p>
-		<p class="gun"></p>
-		<p class="saat"></p>
-		<p class="dakika"></p>
-		<p class="saniye"></p>
-		<p class="salise"></p>
-		<h4>HAFTA</h4>
-		<h4>GÜN</h4>
-		<h4>SAAT</h4>
-		<h4>DAKİKA</h4>
-		<h4>SANİYE</h4>
-		<h4>SALİSE</h4>
+	<div class="container">
+		<div>
+			<h3 id="title">2023 CUMHURBAŞKANLIĞI SEÇİMİ'NE</h3>
+		</div>
+		<div id="countdown">
+			<p class="hafta"></p>
+			<p class="gun"></p>
+			<p class="saat"></p>
+			<p class="dakika"></p>
+			<p class="saniye"></p>
+			<p class="salise"></p>
+			<h4>HAFTA</h4>
+			<h4>GÜN</h4>
+			<h4>SAAT</h4>
+			<h4>DAKİKA</h4>
+			<h4>SANİYE</h4>
+			<h4>SALİSE</h4>
+		</div>
 	</div>
 
 	<script>
