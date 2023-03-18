@@ -15,7 +15,7 @@ function filterMenu(ul, li) {
     const clickedLi = e.target;
     // clickedLi öğesi üzerinde checked sınıfını ekleyin
     if (clickedLi.tagName === 'LI') {
-      clickedLi.classList.toggle('checked');
+      clickedLi.classList.add('checked');
 
       menu.forEach(a => {
         const text = clickedLi.textContent;
@@ -169,16 +169,19 @@ getData().then(data => {
         this.toplamFiyat = 0;
       }
 
-      urunEkle(ad, fiyat, stok) {
-        const urun = {
-          ad: ad,
-          fiyat: fiyat,
-          stok: stok
-          
-        };
-        this.urunler.push(urun);
-        this.toplamFiyat += urun.fiyat;
-        return urun;
+      urunEkle(ad, fiyat, stok, url) {
+        let urunIndex = this.urunler.findIndex(urun => urun.ad === ad);
+        if (urunIndex !== -1) {
+          this.urunler[urunIndex].stok += stok;
+        } else {
+          this.urunler.push({
+            ad,
+            fiyat,
+            stok,
+            url
+          });
+        }
+        this.toplamFiyat += fiyat * stok;
       }
     }
 
@@ -199,13 +202,9 @@ getData().then(data => {
 
         let photoUrl = thisCard.children[0].children[0].src //fotoğraf linkini aldık.
         photoUrl = photoUrl.substring(21)
-
         yeniUrunAd = thisCard.children[1].children[0].textContent;
         yeniUrunFiyat = parseFloat(thisCard.children[1].children[2].children[0].textContent);
         yeniUrunAdet = 1
-
-        sepet.urunEkle(yeniUrunAd, yeniUrunFiyat, photoUrl);
-        console.log(sepet.urunler)
 
         body = document.querySelector('body');
 
@@ -217,29 +216,34 @@ getData().then(data => {
         sepetim.innerHTML = 'Sepetim';
         cartDiv.appendChild(sepetim);
 
+        sepet.urunEkle(yeniUrunAd, yeniUrunFiyat, 1, photoUrl);
+        // console.log(sepet.urunler)
+        sepet.urunler.forEach((urun)=>{
+
         cartMetin = document.createElement('div');
         cartMetin.classList.add('cart-metin');
         cartDiv.appendChild(cartMetin);
 
         cartImg = document.createElement('img');
-        cartImg.src = photoUrl
+        cartImg.src = urun.url;
         cartMetin.appendChild(cartImg);
 
         cartUrunAd = document.createElement('p');
         cartUrunAd.classList.add('cart-urunAd');
-        cartUrunAd.innerHTML = sepet.urunler[0].ad
+        cartUrunAd.innerHTML = urun.ad;
         cartMetin.appendChild(cartUrunAd);
 
         cartAdet = document.createElement('p');
         cartAdet.classList.add('cart-adet');
-        cartAdet.innerHTML = cart
+        cartAdet.innerHTML = urun.stok
         cartUrunAd.appendChild(cartAdet);
 
         cartFiyat = document.createElement('p');
         cartFiyat.classList.add('cart-fiyat');
-        cartFiyat.innerHTML = `${sepet.toplamFiyat} ₺`
+        cartFiyat.innerHTML = `${urun.fiyat*urun.stok} ₺`
         cartMetin.appendChild(cartFiyat);
 
+        })
 
         cartToplam = document.createElement('div');
         cartToplam.classList.add('cart-toplam');
@@ -258,17 +262,13 @@ getData().then(data => {
         pToplamFiyat.classList.add('toplamFiyat');
         pToplamFiyat.innerHTML = `${sepet.toplamFiyat} ₺`
         cartI.appendChild(pToplamFiyat);
-
-        cartIcon.addEventListener('click', () => {
-          cartDiv.classList.toggle('open');
-        })
       })
     })
   })
 })
 
 cartIcon.addEventListener('click', () => {
-  console.log('bi şeyler')
+  cartDiv.classList.toggle('open');
 })
 
 
