@@ -201,7 +201,9 @@ getData().then(data => {
         thisCard = a.parentElement.parentElement.parentElement //Bu kısım bize card'ı veriyor.
 
         let photoUrl = thisCard.children[0].children[0].src //fotoğraf linkini aldık.
-        photoUrl = photoUrl.substring(21)
+        
+        // photoUrl = photoUrl.substring(21)
+        // console.log(photoUrl)
         yeniUrunAd = thisCard.children[1].children[0].textContent;
         yeniUrunFiyat = parseFloat(thisCard.children[1].children[2].children[0].textContent);
         yeniUrunAdet = 1
