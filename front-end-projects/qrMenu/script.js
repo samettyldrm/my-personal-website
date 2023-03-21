@@ -350,8 +350,8 @@ getData().then(data => {
           if (sepetUrun) {
             sepet.urunCikar(sepetUrun);
             let x = sepetUrun.stok;
-            // sepetUrun.stok -= x;
-            // sepet.toplamFiyat -= sepetUrun.fiyat * x;
+            //sepetUrun.stok -= x;
+            sepet.toplamFiyat -= sepetUrun.fiyat * x;
             sepet.toplamAdet -= x;
             console.log(sepet)
             pToplamFiyat.innerHTML = `${sepet.toplamFiyat} ₺`
