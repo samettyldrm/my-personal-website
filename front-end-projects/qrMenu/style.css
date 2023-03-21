@@ -173,7 +173,7 @@ li:hover::after {
 }
 
 .card .gorsel {
-    height: 12rem;
+    /* height: 12rem; */
 }
 
 .card .gorsel img {
@@ -242,8 +242,10 @@ li:hover::after {
 /* CART */
 
 .cart {
+    overflow-y: scroll;
+    max-height: 85vh;
     display: none;
-    width: 25rem;
+    width: 30rem;
     position: fixed;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgb(58, 58, 175);
@@ -283,6 +285,13 @@ li:hover::after {
     font-weight: bolder;
 }
 
+.cart-urunDetay {
+    display: flex;
+    /* flex-direction: row; */
+    font-size: 75%;
+    font-weight: lighter;
+}
+
 .cart-adet{
     font-weight: lighter;
 }
@@ -292,7 +301,7 @@ li:hover::after {
 }
 
 .cart .cart-metin img {
-    width: 7rem;
+    width: 8rem;
     height: 100%;
     border-radius: 0.5rem 0 0 0.5rem;
 }
@@ -300,6 +309,7 @@ li:hover::after {
 
 
 .cart .cart-toplam {
+    z-index: 20;
     height: 2rem;
     width: auto;
     margin: 1rem;
@@ -307,7 +317,7 @@ li:hover::after {
     justify-content: center;
     align-items: center;
     background-color: rgb(39, 39, 39);
-    position: relative;
+    position:static;
     padding: 1rem;
     border-radius: 3rem;
     font-weight: bolder;
@@ -339,9 +349,13 @@ li:hover::after {
 }
 
 .cart .fa-xmark{
-    position: absolute;
-    right: 0;
-    top: 0;
+    position:absolute;
+    right: 1.5rem;
+    margin-bottom: 6rem;
+}
+
+.fa-xmark:hover{
+    color: #c72f2f;
 }
 
 .fa-minus, 
