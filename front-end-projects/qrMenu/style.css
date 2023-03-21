@@ -76,10 +76,19 @@ body {
     background-color: transparent;
 }
 
+.fa-cart-shopping{
+    cursor: pointer;
+}
+
+/* .fa-cart-shopping:hover{
+    color: #2c2c53;
+} */
 
 .navbar span {
+    position: relative;
+    bottom: 0.4rem;
     margin: 0 0.2rem;
-    background-color: #282828;
+    background-color: #c72f2f;
     color: #fff;
     padding: 0.1rem 0.5rem;
     border-radius: 1rem;
@@ -164,16 +173,17 @@ li:hover::after {
 }
 
 .card .gorsel {
-    height: 180px;
+    height: 12rem;
 }
 
 .card .gorsel img {
+    height: 100%;
     background-color: #fff;
     width: 100%;
     border-radius: 2rem 2rem 0 0;
-    /* max-width: 100%; */
+    max-width: 100%;
     /* height: auto; */
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .card .urunAd,
@@ -200,7 +210,7 @@ li:hover::after {
 }
 
 .card .urunAd {
-    font-weight: bold;
+    
 }
 
 .card .br {
@@ -232,9 +242,9 @@ li:hover::after {
 /* CART */
 
 .cart {
-    /* display: none; */
+    display: none;
     width: 25rem;
-    position: absolute;
+    position: fixed;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgb(58, 58, 175);
     right: -150rem;
@@ -252,11 +262,7 @@ li:hover::after {
 
 .cart.open{
     right: 2rem;
-    /* display: block; */
-}
-
-.fa-cart-shopping{
-    cursor: pointer;
+    display: block;
 }
 
 .cart-metin {
@@ -300,7 +306,7 @@ li:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: rgb(39, 39, 39);
     position: relative;
     padding: 1rem;
     border-radius: 3rem;
@@ -325,7 +331,6 @@ li:hover::after {
 
 .cart span{
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -365,12 +370,22 @@ li:hover::after {
 
 /* RESPONSIVE */
 
-@media (max-width:758px) {
+@media (max-width:784px) {
     .navbar {
+        background-color: #262627;
+        color: white;
         width: 100%;
-        padding: 0 0.5rem;
-        font-size: 45%;
+        font-size: 75%;
         overflow-x: scroll;
+        font-size: 55%;
+    }
+
+    .navbar ul li{
+        color: #b4b4b4;
+    }
+
+    .navbar ul li.checked{
+        color: white;
     }
 
     .card {
@@ -390,4 +405,58 @@ li:hover::after {
         align-items: center;
     }
 
+    .fa-cart-shopping:hover{
+        color: #d6d6d6;
+    }
+
+    .cart {
+        position: absolute;
+        right: 1rem;
+        left: 1rem;
+        display: none;
+        width: 90%;
+        position: absolute;
+        font-size: 75%;
+        
+    }
+    
+    .cart.open{
+        display: block;
+    }
+
+    .menu {
+        margin-top: 3rem;
+        /* z-index: -1; */
+    }
+
+    .card {
+        margin: 1rem;
+    }
+
+    .menu > div {
+        width: 40%;
+    }
+
+    .metin p.urunAd{
+        font-size: 0.8rem;
+    }
+
+    .metin p.urunDetay {
+        font-size: 0.65rem;
+    }
+
+    .metin p.br{
+        font-size: 85%;
+    }
+
+    .metin p.br:hover::after{
+        font-size: 55%;
+    }
+
+    .card .gorsel {
+        height: 10rem;
+        width: auto;
+    }
+
+    
 }

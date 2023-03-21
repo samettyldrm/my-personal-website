@@ -111,7 +111,7 @@ getData().then(data => {
 
     const br = document.createElement('p');
     br.classList.add('br');
-    br.innerHTML = `${(columns[4])}`
+    br.innerHTML = `${(columns[4])} ₺ `
 
     const shopIcon = document.createElement('i');
     shopIcon.classList.add('fa-solid', 'fa-cart-shopping');
@@ -265,32 +265,6 @@ getData().then(data => {
         cartFiyat.innerHTML = `${urun.fiyat * urun.stok} ₺`
         cartMetin.appendChild(cartFiyat);
 
-        cartArti.addEventListener('click', () => {
-          urun.stok += 1;
-          cartAdet.innerHTML = urun.stok;
-          cartFiyat.innerHTML = `${urun.fiyat * urun.stok} ₺` 
-          sepet.toplamFiyat += urun.fiyat;
-          sepet.toplamAdet += 1;
-          pToplamFiyat.innerHTML = `${sepet.toplamFiyat} ₺`
-          pToplamUrun.innerHTML = `${sepet.toplamAdet} ürün`
-        })
-        
-
-        cartEksi.addEventListener('click', () => {
-          if (urun.stok>1){
-            urun.stok -= 1;
-          cartAdet.innerHTML = urun.stok;
-          cartUrunAd.appendChild(cartAdetSpan);
-          cartFiyat.innerHTML = `${urun.fiyat * urun.stok} ₺` 
-          sepet.toplamFiyat -= urun.fiyat;
-          sepet.toplamAdet -= 1;
-          pToplamFiyat.innerHTML = `${sepet.toplamFiyat} ₺`
-          pToplamUrun.innerHTML = `${sepet.toplamAdet} ürün`
-          }
-          
-
-        })
-
       })
 
       cartToplam = document.createElement('div');
@@ -303,7 +277,7 @@ getData().then(data => {
 
       pToplamUrun = document.createElement('p');
       pToplamUrun.classList.add('toplamUrun');
-      console.log(sepet.urunSayisi())
+      // console.log(sepet.urunSayisi())
       pToplamUrun.innerHTML = `${sepet.toplamAdet} ürün`
       cartI.appendChild(pToplamUrun);
 
@@ -311,6 +285,72 @@ getData().then(data => {
       pToplamFiyat.classList.add('toplamFiyat');
       pToplamFiyat.innerHTML = `${sepet.toplamFiyat} ₺`
       cartI.appendChild(pToplamFiyat);
+
+      faPlus = document.querySelectorAll('.fa-plus');
+      faPlus.forEach(a => {
+        a.addEventListener('click', () => {
+          tiklanilanDiv = a.parentElement.parentElement.innerHTML.split('<span>')[0]
+          const sepetUrun = sepet.urunler.find(urun => urun.ad === tiklanilanDiv);
+          if (sepetUrun) {
+            sepetUrun.stok += 1;
+            a.parentElement.children[1].innerHTML = sepetUrun.stok;
+            a.parentElement.parentElement.parentElement.children[2].innerHTML = `${sepetUrun.fiyat * sepetUrun.stok} ₺`
+            sepet.toplamFiyat += sepetUrun.fiyat;
+            sepet.toplamAdet += 1;
+            pToplamFiyat.innerHTML = `${sepet.toplamFiyat} ₺`
+            pToplamUrun.innerHTML = `${sepet.toplamAdet} ürün`
+          }
+        })
+      });
+
+      faMinus = document.querySelectorAll('.fa-minus');
+      faMinus.forEach(a => {
+        a.addEventListener('click', () => {
+          tiklanilanDiv = a.parentElement.parentElement.innerHTML.split('<span>')[0]
+          const sepetUrun = sepet.urunler.find(urun => urun.ad === tiklanilanDiv);
+          if (sepetUrun) {
+            if (sepetUrun.stok>1){
+              sepetUrun.stok -= 1;
+              a.parentElement.children[1].innerHTML = sepetUrun.stok;
+              a.parentElement.parentElement.parentElement.children[2].innerHTML = `${sepetUrun.fiyat * sepetUrun.stok} ₺`
+              sepet.toplamFiyat -= sepetUrun.fiyat;
+              sepet.toplamAdet -= 1;
+              pToplamFiyat.innerHTML = `${sepet.toplamFiyat} ₺`
+              pToplamUrun.innerHTML = `${sepet.toplamAdet} ürün`
+            }
+            
+          }
+        })
+      });
+
+
+      // faPlus.addEventListener('click', () => {
+      //   console.log(faPlus)
+      // })
+
+      // cartArti.addEventListener('click', () => {
+      //   console.log(cartArti)
+      //   sepet.urun.stok += 1;
+      //   cartAdet.innerHTML = urun.stok;
+      //   cartFiyat.innerHTML = `${urun.fiyat * urun.stok} ₺` 
+      //   sepet.toplamFiyat += urun.fiyat;
+      //   sepet.toplamAdet += 1;
+      //   pToplamFiyat.innerHTML = `${sepet.toplamFiyat} ₺`
+      //   pToplamUrun.innerHTML = `${sepet.toplamAdet} ürün`
+      // })
+
+      // cartEksi.addEventListener('click', () => {
+      //   if (urun.stok>1){
+      //     sepet.urun.stok -= 1;
+      //   cartAdet.innerHTML = urun.stok;
+      //   cartUrunAd.appendChild(cartAdetSpan);
+      //   cartFiyat.innerHTML = `${urun.fiyat * urun.stok} ₺` 
+      //   sepet.toplamFiyat -= urun.fiyat;
+      //   sepet.toplamAdet -= 1;
+      //   pToplamFiyat.innerHTML = `${sepet.toplamFiyat} ₺`
+      //   pToplamUrun.innerHTML = `${sepet.toplamAdet} ürün`
+      //   }})
+
     })
   })
 })
