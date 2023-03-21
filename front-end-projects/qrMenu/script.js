@@ -348,11 +348,12 @@ getData().then(data => {
           const urunId = tiklanilanDiv + "_" + tiklanilanDetay;
           const sepetUrun = sepet.urunler.find(urun => urun.id === urunId);
           if (sepetUrun) {
-            sepet.urunCikar(sepetUrun);
+  
             let x = sepetUrun.stok;
             //sepetUrun.stok -= x;
             sepet.toplamFiyat -= sepetUrun.fiyat * x;
             sepet.toplamAdet -= x;
+            sepet.urunCikar(sepetUrun);
             console.log(sepet)
             pToplamFiyat.innerHTML = `${sepet.toplamFiyat} ₺`
             pToplamUrun.innerHTML = `${sepet.toplamAdet} ürün`
