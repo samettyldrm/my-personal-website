@@ -194,12 +194,13 @@ getData().then(data => {
 
   const br2 = document.querySelectorAll('.br')
   const sepet = new Sepet();
-  let cart = 0;
+  // let cart = 0;
   br2.forEach(a => {
+
     a.addEventListener('click', () => {
-      cart += 1;
+      // sepet.toplamAdet += 1;
       const cartText = document.querySelector('span')
-      cartText.innerHTML = `${cart}`;
+      
 
       thisCard = a.parentElement.parentElement.parentElement //Bu kısım bize card'ı veriyor.
 
@@ -208,8 +209,6 @@ getData().then(data => {
       yeniUrunDetay = thisCard.children[1].children[1].textContent;
       yeniUrunFiyat = parseFloat(thisCard.children[1].children[2].children[0].textContent);
       yeniUrunId = yeniUrunAd + "_" + yeniUrunDetay
-
-
 
       body = document.querySelector('body');
       cartDiv = document.querySelector('.cart')
@@ -229,12 +228,12 @@ getData().then(data => {
         cartDiv.appendChild(sepetim);
       }
 
-
+    
       sepet.urunEkle(yeniUrunAd, yeniUrunDetay, yeniUrunFiyat, 1, photoUrl, yeniUrunId);
-      // console.log(sepet.urunler)
-      sepet.urunler.forEach((urun) => {
+      cartText.innerHTML = `${sepet.toplamAdet}`;
 
-        console.log(urun.stok)
+
+      sepet.urunler.forEach((urun) => {
 
         cartMetin = document.createElement('div');
         cartMetin.classList.add('cart-metin');
@@ -307,7 +306,6 @@ getData().then(data => {
           const sepetUrun = sepet.urunler.find(urun => urun.id === urunId);
           if (sepetUrun) {
             sepetUrun.stok += 1;
-            console.log(sepetUrun)
             a.parentElement.children[1].innerHTML = sepetUrun.stok;
             a.parentElement.parentElement.parentElement.children[3].innerHTML = `${sepetUrun.fiyat * sepetUrun.stok} ₺`
             sepet.toplamFiyat += sepetUrun.fiyat;
@@ -329,7 +327,6 @@ getData().then(data => {
           if (sepetUrun) {
             if (sepetUrun.stok > 1) {
               sepetUrun.stok -= 1;
-              console.log(sepetUrun)
               a.parentElement.children[1].innerHTML = sepetUrun.stok;
               a.parentElement.parentElement.parentElement.children[3].innerHTML = `${sepetUrun.fiyat * sepetUrun.stok} ₺`
               sepet.toplamFiyat -= sepetUrun.fiyat;
@@ -351,14 +348,17 @@ getData().then(data => {
           const urunId = tiklanilanDiv + "_" + tiklanilanDetay;
           const sepetUrun = sepet.urunler.find(urun => urun.id === urunId);
           if (sepetUrun) {
-            let x = sepetUrun.stok; //4
-            sepetUrun.stok = 0;
-              sepet.toplamFiyat -= sepetUrun.fiyat * x;
-              sepet.toplamAdet -= x;
-              pToplamFiyat.innerHTML = `${sepet.toplamFiyat} ₺`
-              pToplamUrun.innerHTML = `${sepet.toplamAdet} ürün`
-              cartText.innerHTML = `${sepet.toplamAdet}`
-              a.parentElement.remove();
+            sepet.urunCikar(sepetUrun);
+            let x = sepetUrun.stok;
+            // sepetUrun.stok -= x;
+            // sepet.toplamFiyat -= sepetUrun.fiyat * x;
+            sepet.toplamAdet -= x;
+            console.log(sepet)
+            pToplamFiyat.innerHTML = `${sepet.toplamFiyat} ₺`
+            pToplamUrun.innerHTML = `${sepet.toplamAdet} ürün`
+            cartText.innerHTML = `${sepet.toplamAdet}`
+            a.parentElement.remove();
+            // sepet.urunCikar(sepetUrun);
           }
         })
       });
@@ -369,13 +369,13 @@ getData().then(data => {
 cartDiv = document.querySelector('.cart');
 
 cartIcon.addEventListener('click', () => {
-  if (cartDiv){
+  if (cartDiv) {
     cartDiv.classList.toggle('open');
-  }else {
+  } else {
     alert('Sepetin şu an boş!')
   }
-    
-  
+
+
 })
 
 
