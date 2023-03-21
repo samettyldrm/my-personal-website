@@ -353,11 +353,12 @@ getData().then(data => {
             //sepetUrun.stok -= x;
             sepet.toplamFiyat -= sepetUrun.fiyat * x;
             sepet.toplamAdet -= x;
-            sepet.urunCikar(sepetUrun);
+
             console.log(sepet)
             pToplamFiyat.innerHTML = `${sepet.toplamFiyat} ₺`
             pToplamUrun.innerHTML = `${sepet.toplamAdet} ürün`
             cartText.innerHTML = `${sepet.toplamAdet}`
+            sepet.urunCikar(sepetUrun);
             a.parentElement.remove();
             // sepet.urunCikar(sepetUrun);
           }
