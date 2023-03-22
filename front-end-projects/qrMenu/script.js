@@ -362,14 +362,25 @@ getData().then(data => {
           const urunId = tiklanilanDiv + "_" + tiklanilanDetay;
           const sepetUrun = sepet.urunler.find(urun => urun.id === urunId);
           if (sepetUrun) {
+<<<<<<< HEAD
             let urununSepettekiAdeti = sepetUrun.stok; //2
             sepetUrun.stok = 0; // stok sıfır yapılır
             sepet.urunCikar(sepetUrun); // ürünü sepetten çıkar
             sepet.toplamFiyat -= sepetUrun.fiyat * urununSepettekiAdeti;
             sepet.toplamAdet -= urununSepettekiAdeti;
+=======
+  
+            let x = sepetUrun.stok;
+            //sepetUrun.stok -= x;
+            sepet.toplamFiyat -= sepetUrun.fiyat * x;
+            sepet.toplamAdet -= x;
+
+            console.log(sepet)
+>>>>>>> 1ac02de327b4c8ef31785bd3d5cbaedea4a74f95
             pToplamFiyat.innerHTML = `${sepet.toplamFiyat} ₺`
             pToplamUrun.innerHTML = `${sepet.toplamAdet} ürün`
             cartText.innerHTML = `${sepet.toplamAdet}`
+            sepet.urunCikar(sepetUrun);
             a.parentElement.remove();
             console.log(pToplamFiyat)
             cartControl()
