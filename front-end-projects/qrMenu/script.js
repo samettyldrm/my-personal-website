@@ -199,6 +199,17 @@ getData().then(data => {
   br2.forEach(a => {
 
     a.addEventListener('click', () => {
+      body = document.querySelector('body');
+      sepeteEklendi = document.querySelector('.sepeteEklendi');
+      sepeteEklendi = document.createElement('div');
+      sepeteEklendi.innerHTML = 'Ürününüz sepete eklendi!';
+      sepeteEklendi.classList.add('sepeteEklendi');
+      body.appendChild(sepeteEklendi);
+
+      setTimeout(function () {
+        sepeteEklendi.remove();
+      }, 2000);
+
       // sepet.toplamAdet += 1;
       const cartText = document.querySelector('span')
 
@@ -211,7 +222,7 @@ getData().then(data => {
       yeniUrunFiyat = parseFloat(thisCard.children[1].children[2].children[0].textContent);
       yeniUrunId = yeniUrunAd + "_" + yeniUrunDetay
 
-      body = document.querySelector('body');
+
       cartDiv = document.querySelector('.cart')
 
       if (!cartDiv) {
@@ -304,7 +315,7 @@ getData().then(data => {
         console.log(pToplamUrun)
         if (pToplamUrun.innerHTML === '0 ürün') {
           cartDiv.innerHTML = '<div class= "bosNot" >Sepet şu an boş. Hadi bir ürün ekle!</div>'
-          
+
         }
       }
 
@@ -388,11 +399,11 @@ cartIcon.addEventListener('click', () => {
     cartDiv.classList.toggle('open');
   } else {
     body = document.querySelector('body');
-        cartDiv = document.createElement('div');
-        cartDiv.classList.add('cart');
-        cartDiv.innerHTML = '<div class= "bosNot" >Sepet şu an boş. Hadi bir ürün ekle!</div>'
-        body.appendChild(cartDiv);
-     
+    cartDiv = document.createElement('div');
+    cartDiv.classList.add('cart');
+    cartDiv.innerHTML = '<div class= "bosNot" >Sepet şu an boş. Hadi bir ürün ekle!</div>'
+    body.appendChild(cartDiv);
+
   }
 })
 
