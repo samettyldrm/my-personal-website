@@ -387,6 +387,20 @@ li:hover::after {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.87);
 }
 
+#siparisVer{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#siparisVer:hover{
+    color: var(--black);
+}
+
 @keyframes example {
     0% {opacity: 0;}
     50% {opacity:1}

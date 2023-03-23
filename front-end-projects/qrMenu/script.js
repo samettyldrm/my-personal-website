@@ -309,6 +309,22 @@ getData().then(data => {
       pToplamFiyat.innerHTML = `${sepet.toplamFiyat} ₺`
       cartI.appendChild(pToplamFiyat);
 
+      siparisVer = document.createElement('button');
+      siparisVer.id = 'siparisVer';
+      siparisVer.type = 'submit'
+      siparisVer.innerHTML = 'Sipariş Ver';
+      cartI.appendChild(siparisVer);
+
+      siparisVer.addEventListener('click' , () => {
+        console.log(siparisVer.parentElement.parentElement.parentElement);
+        console.log(sepet.urunler.forEach((urun)=>{
+          // console.log(urun.ad, urun.detay, urun.stok, urun.fiyat, urun.stok*urun.fiyat);
+          const metin = `${urun.ad} - ${urun.detay} - ${urun.stok, urun.fiyat} - Toplam Fiyat: ${urun.stok*urun.fiyat} - Sepet Toplam: ${sepet.toplamFiyat}`;
+          console.log(metin);
+
+        }))
+      })
+
 
       // cartMetin = document.querySelector('.cart-metin');
       function cartControl() {
