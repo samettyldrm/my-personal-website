@@ -4,7 +4,6 @@ const menu = document.querySelectorAll(".menu > div");
 const menudiv = document.querySelector('.menu');
 const cartIcon = document.querySelector("#cartIcon");
 const navbar = document.querySelector('.navbar')
-// const cart = document.getElementsByClassName('.cart')
 
 filterMenu(ul, li);
 
@@ -89,7 +88,9 @@ getData().then(data => {
     const gorsel = document.createElement('div');
     gorsel.classList.add('gorsel');
     const img = document.createElement('img');
-    img.src = `/front-end-projects/qrMenu/images/menu/${columns[1]}-min.jpg`
+    img.src = `/front-end-projects/qrMenu/images/menu/${columns[1]}-min.webp`
+    img.width = img.width / 10;
+    img.height = img.height / 10;
     img.loading = 'lazy'
 
     //METİN
@@ -114,13 +115,8 @@ getData().then(data => {
 
     const shopIcon = document.createElement('i');
     shopIcon.classList.add('fa-solid', 'fa-cart-shopping');
-    // shopIcon.innerHTML = ' Sepete Ekle';
-
-
 
     fiyat.appendChild(br);
-    // fiyat.appendChild(br2);
-    // fiyat.appendChild(br3);
 
     metin.appendChild(urunAd);
     metin.appendChild(urunDetay);
@@ -131,9 +127,9 @@ getData().then(data => {
     card.appendChild(gorsel);
     gorsel.appendChild(img);
     card.appendChild(metin);
-    control();
-    filterMenu(ul, li);
   })
+  control();
+  filterMenu(ul, li);
 
   ///SEPET
 
@@ -315,11 +311,11 @@ getData().then(data => {
       siparisVer.innerHTML = 'Sipariş Ver';
       cartI.appendChild(siparisVer);
 
-      siparisVer.addEventListener('click' , () => {
+      siparisVer.addEventListener('click', () => {
         console.log(siparisVer.parentElement.parentElement.parentElement);
-        console.log(sepet.urunler.forEach((urun)=>{
+        console.log(sepet.urunler.forEach((urun) => {
           // console.log(urun.ad, urun.detay, urun.stok, urun.fiyat, urun.stok*urun.fiyat);
-          const metin = `${urun.ad} - ${urun.detay} - ${urun.stok, urun.fiyat} - Toplam Fiyat: ${urun.stok*urun.fiyat} - Sepet Toplam: ${sepet.toplamFiyat}`;
+          const metin = `${urun.ad} - ${urun.detay} - ${urun.stok, urun.fiyat} - Toplam Fiyat: ${urun.stok * urun.fiyat} - Sepet Toplam: ${sepet.toplamFiyat}`;
           console.log(metin);
 
         }))
