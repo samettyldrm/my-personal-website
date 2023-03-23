@@ -204,7 +204,7 @@ getData().then(data => {
 
       setTimeout(function () {
         sepeteEklendi.remove();
-      }, 2000);
+      }, 6000);
 
       // sepet.toplamAdet += 1;
       const cartText = document.querySelector('span')
