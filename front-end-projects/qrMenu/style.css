@@ -425,7 +425,7 @@ li:hover::after {
     left: 1rem;
     top: 1rem;
     animation-name: example;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
