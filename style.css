@@ -306,6 +306,24 @@ p {
     grid-template-columns: 1fr 2fr 1fr;
 }
 
+.cards a:hover img{
+    display: block;
+    
+}
+.cards a img{
+    width: 100%;
+    display: none;
+    transform: none;
+    transition: 0.5s ease-in-out;
+    z-index: 1;
+
+    
+    
+    /* border-radius: 2rem; */
+}
+
+
+
 .projects .cards a div{
     height: 100%;
 }

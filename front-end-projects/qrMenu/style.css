@@ -50,7 +50,7 @@ body {
 
 .baslik {
     color: var(--white);
-    color: linear-gradient(45deg, rgba(31, 31, 31, 1) 23%, rgba(82, 82, 81, 0.9781162464985994) 66%);
+    /* color: linear-gradient(45deg, rgb(246, 246, 246) 23%, rgba(201, 201, 87, 0.978) 2%); */
     z-index: 1;
     text-align: center;
     font-size: 55%;
@@ -571,6 +571,27 @@ li:hover::after {
 
     .metin p.br:hover::after {
         font-size: 55%;
+    }
+
+    .sepeteEklendi {
+        background-color: var(--green);
+        color: var(--white);
+        border-radius: 1rem;
+        font-weight: bold;
+        padding: 1rem;
+        position: fixed;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        left: 1rem;
+        top:auto;
+        bottom: 1rem;
+        height: 1.5rem;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
     }
 
 
