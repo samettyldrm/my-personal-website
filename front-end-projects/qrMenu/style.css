@@ -98,7 +98,7 @@ li::after {
     bottom: -2px;
     width: 0%;
     height: 1px;
-    background-color: var(--white2);
+    background-color: #f4a914;
     border-radius: 1rem;
     transition: width 0.3s ease-in-out;
 }
@@ -458,8 +458,9 @@ li:hover::after {
     .navbar {
         display: none;
         position: absolute;
-        margin-top: 0;
+        /* margin-top: 0; */
         z-index: 1000;
+        
     }
 
     .card .gorsel img {
@@ -472,20 +473,14 @@ li:hover::after {
     }
 
     .navbar ul li {
-        color: #363636;
-    }
-
-    .navbar ul li.checked {
-        /* color: rgb(255, 255, 255); */
-    }
-
-    .navbar ul li {
         color: rgb(248, 245, 245);
         background-color: var(--red);
         padding: 0.5rem;
         border-radius: 0.5rem 0 0 0.5rem;
         width: 7rem;
         background: var(--dark-mode-color);
+        box-shadow: 0 2px 3px rgba(242, 238, 238, 0.2);
+        text-align: right;
     }
 
     li::after {
@@ -501,12 +496,11 @@ li:hover::after {
         position: fixed;
         right: 0rem;
         bottom: 2.5rem;
-
         display: flex;
         flex-direction: column;
         gap: 0.1rem;
-        justify-content: flex-end;
-        align-items: end;
+        justify-content: end;
+        /* align-items: end; */
     }
 
     #mobileMenu {
