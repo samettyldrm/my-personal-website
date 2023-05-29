@@ -27,9 +27,9 @@ body{
 }
 
 .fa-circle-play{
-    position: absolute;
+    /* position: absolute;
     right: -15%;
-    top: -15%;
+    top: -15%; */
     cursor: pointer;
 }
 
@@ -86,6 +86,7 @@ body{
     background-color: rgb(219, 27, 27);
 
 }
+
 
 
 .fa-thumbtack{
