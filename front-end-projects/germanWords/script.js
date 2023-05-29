@@ -21,12 +21,54 @@ xhr.onreadystatechange = function () {
     turTr = lines[randomInt].split(";")[2];
     kelimeTr = lines[randomInt].split(";")[3];
 
-    document.querySelector("#turDe").innerHTML= turDe;
-    document.querySelector("#kelimeDe").innerHTML= kelimeDe;
-    document.querySelector("#turTr").innerHTML= "( " + turTr + " )";
-    document.querySelector("#kelimeTr").innerHTML= kelimeTr;
+    document.querySelector("#turDe").innerHTML = turDe;
+    document.querySelector("#kelimeDe").innerHTML = kelimeDe;
+    document.querySelector("#turTr").innerHTML = "( " + turTr + " )";
+    document.querySelector("#kelimeTr").innerHTML = kelimeTr;
 
     console.log(turDe, kelimeDe, turTr, kelimeTr);
+
+    // Almanca metni okutmak için konuşma fonksiyonu
+    function okuMetni(metin) {
+      const konusma = new SpeechSynthesisUtterance();
+      konusma.lang = "de-DE"; // Almanca dil kodu
+      konusma.text = metin;
+
+      // Konuşma seslendiricisi seçimi (opsiyonel)
+      const seslendirici = window.speechSynthesis
+        .getVoices()
+        .find((voice) => voice.lang === "de-DE");
+      if (seslendirici) {
+        konusma.voice = seslendirici;
+      }
+
+      // Konuşmayı başlat
+      speechSynthesis.speak(konusma);
+    }
+
+    // Örnek metni okut
+    okuMetni(kelimeDe);
+
+        // Almanca metni okutmak için konuşma fonksiyonu
+        function okuMetniTr(metin) {
+          const konusma = new SpeechSynthesisUtterance();
+          konusma.lang = "tr-TR"; // Almanca dil kodu
+          konusma.text = metin;
+    
+          // Konuşma seslendiricisi seçimi (opsiyonel)
+          const seslendirici = window.speechSynthesis
+            .getVoices()
+            .find((voice) => voice.lang === "de-DE");
+          if (seslendirici) {
+            konusma.voice = seslendirici;
+          }
+    
+          // Konuşmayı başlat
+          speechSynthesis.speak(konusma);
+        }
+    
+        // Örnek metni okut
+        okuMetniTr(kelimeTr);
   }
 };
 xhr.send();
