@@ -53,6 +53,27 @@ body{
     font-size: small;
 }
 
+#not div{
+    align-items: center;
+    text-align: center;
+}
+
+.btn{
+    padding: 0.3rem 1rem;
+    font-size:medium;
+    border-radius: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: white;
+    background-color: rgb(219, 27, 27);
+
+}
+
+
 .fa-thumbtack{
     transform: rotate(-45deg);
 }
