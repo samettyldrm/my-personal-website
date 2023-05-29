@@ -1,638 +1,639 @@
-﻿Nomen;das Haus;Adlar;ev;
-Nomen;die Wohnung;Adlar;daire;
-Nomen;der Balkon;Adlar;balkon;
-Nomen;die Tür;Adlar;kapı;
-Nomen;das Fenster;Adlar;pencere;
-Nomen;die Klingel;Adlar;zil;
-Nomen;das Auto;Adlar;araba;
-Nomen;das Handy;Adlar;cep telefonu;
-Nomen;die Lampe;Adlar;lamba;
-Nomen;der Mann;Adlar;erkek;
-Nomen;die Frau;Adlar;kadın;
-Nomen;das Kind;Adlar;çocuk;
-Nomen;die Nachbarin;Adlar;komsu (kadın);
-Nomen;der Sohn;Adlar;ogul;
-Nomen;der Sportlehrer;Adlar;spor ögretmeni;
-Nomen;der Vogel;Adlar;kus;
-Nomen;der Hund;Adlar;köpek;
-Nomen;das Hotel;Adlar;otel;
-Nomen;die Bank;Adlar;banka;
-Nomen;das Rathaus;Adlar;belediye binası;
-Nomen;das Amt;Adlar;resmi daire, görev;
-Nomen;der Name;Adlar;ad (soyad için de kullanılır);
-Nomen;der Vorname;Adlar;ön ad;
-Nomen;der Familienname;Adlar;soyadı;
-Nomen;die Adresse;Adlar;adres;
-Nomen;der Ort;Adlar;yer, mahal;
-Nomen;der Wohnort;Adlar;ikamet yeri;
-Nomen;die Straße;Adlar;sokak, cadde;
-Nomen;der Platz;Adlar;meydan;
-Nomen;die Allee;Adlar;bulvar, iki yanı agaçlı yol;
-Nomen;die Zahl;Adlar;sayı;
-Nomen;die Postleitzahl;Adlar;posta kodu;
-Nomen;die Nummer;Adlar;numara;
-Nomen;die Hausnummer;Adlar;kapı numarası;
-Nomen;die Telefonnummer;Adlar;telefon numarası;
-Nomen;die E-Mail-Adresse;Adlar;e-posta adresi;
-Nomen;das Land;Adlar;ülke;
-Verben;sein;Eylemler;olmak, bulunmak;
-Verben;kommen;Eylemler;gelmek;
-Verben;heißen;Eylemler;adı … olmak;
-Verben;wohnen;Eylemler;oturmak, ikamet etmek;
-Verben;buchstabieren;Eylemler;hecelemek (bir sözcügün haflerini tek tek söylemek);
-Adjektive;neu;Önadlar;yeni;
-Adjektive;nett;Önadlar;hos;
-Adjektive;unsympathisch;Önadlar;antipatik;
-Adjektive;interessant;Önadlar;ilginç;
-Adjektive;aggressiv;Önadlar;saldırgan;
-Adjektive;fröhlich -   traurig;Önadlar;neseli -   üzgün;
-Adjektive;super;Önadlar;süper;
-Adjektive;nah;Önadlar;yakın;
-Fragewörter;Wo?;Soru Sözcükleri;Nerede?;
-Fragewörter;Woher?;Soru Sözcükleri;Nereden?;
-Fragewörter;Wer?;Soru Sözcükleri;Kim?;
-Fragewörter;Wie?;Soru Sözcükleri;Nasıl?;
-Wendungen;Hallo!;Deyisler;Merhaba!;
-Wendungen;Willkommen!;Deyisler;Hos geldiniz!;
-Wendungen;Guten Tag!;Deyisler;İyi günler!;
-Wendungen;Grüß Gott! (süddt., österr.);Deyisler;Merhaba (Güney Almanya ve Avusturya'da kullanılır);
-Wendungen;Tschüss!;Deyisler;Hosça kal (samimi);
-Wendungen;Auf Wiedersehen!;Deyisler;Hosça kalın (genel/resmi);
-Wendungen;Entschuldigung!;Deyisler;Affedersiniz!/Özür dilerim!;
-Wendungen;Wie bitte?;Deyisler;Efendim?;
-Wendungen;Freut mich.;Deyisler;Memnun oldum.;
-Wendungen;Danke.;Deyisler;Tesekkürler.;
-Kleine Wörter;ja -  nein;Kısa Sözcükler;evet -  hayır;
-Kleine Wörter;und;Kısa Sözcükler;ve;
-Kleine Wörter;da;Kısa Sözcükler;orada, surada, iste!;
-Kleine Wörter;hier;Kısa Sözcükler;burada;
-Kleine Wörter;bitte;Kısa Sözcükler;buyurun, lütfen;
-Kleine Wörter;sehr;Kısa Sözcükler;çok;
-Nomen;der Montag;Adlar;pazartesi;
-Nomen;der Dienstag;Adlar;salı;
-Nomen;der Mittwoch;Adlar;çarsamba;
-Nomen;der Donnerstag;Adlar;persembe;
-Nomen;der Freitag;Adlar;cuma;
-Nomen;der Samstag;Adlar;cumartesi;
-Nomen;der Sonntag;Adlar;pazar;
-Nomen;der Morgen;Adlar;sabah;
-Nomen;der Vormittag;Adlar;ögleden önce;
-Nomen;der Mittag;Adlar;ögle;
-Nomen;der Nachmittag;Adlar;ögleden sonra;
-Nomen;der Abend;Adlar;aksam;
-Nomen;die Nacht;Adlar;gece;
-Nomen;das Wochenende;Adlar;hafta sonu;
-der Beruf;der Arzt;meslek;doktor;
-der Beruf;die Ärztin;meslek;doktor (kadın);
-der Beruf;der Psychologe;meslek;psikolog;
-der Beruf;die Psychologin;meslek;psikolog (kadın);
-der Beruf;der Taxifahrer;meslek;taksi soförü;
-der Beruf;die Taxifahrerin;meslek;taksi soförü (kadın);
-der Beruf;der Krankenpfleger;meslek;hasta bakıcı;
-der Beruf;die Krankenschwester;meslek;hemsire;
-der Beruf;der DJ !*di:dZeI?;meslek;diskjokey;
-der Beruf;die Hausfrau;meslek;ev kadını;
-der Beruf;der Hausmann;meslek;ev erkegi;
-der Beruf;der Bäcker;meslek;fırıncı;
-der Beruf;die Bäckerin;meslek;fırıncı (kadın);
-der Beruf;der Ingenieur;meslek;mühendis;
-der Beruf;die Ingenieurin;meslek;mühendis (kadın);
-der Beruf;der Lehrer;meslek;ögretmen;
-der Beruf;die Lehrerin;meslek;ögretmen (kadın);
-der Beruf;der Kellner;meslek;garson;
-der Beruf;die Kellnerin;meslek;garson (kadın);
-der Beruf;der Polizist;meslek;polis;
-der Beruf;die Polizistin;meslek;polis (kadın);
-der Beruf;der Koch;meslek;asçı;
-der Beruf;die Köchin;meslek;asçı (kadın);
-der Beruf;die Sekretärin;meslek;kadın sekreter;
-der Beruf;die Hebamme;meslek;ebe;
-der Beruf;der Bauarbeiter;meslek;insaat isçisi;
-der Beruf;die Bauarbeiterin;meslek;insaat isçisi (kadın);
-der Beruf;der Raumpfleger;meslek;temizlik isçisi;
-der Beruf;die Raumpflegerin;meslek;temizlik isçisi (kadın);
-der Beruf;der Student;meslek;üniversite ögrencisi;
-der Beruf;die Studentin;meslek;üniversite ögrencisi (kadın);
-der Beruf;der Kollege;meslek;meslektas, is arkadası;
-der Beruf;die Kollegin;meslek;meslektas, is arkadası (kadın);
-der Beruf;(der) Herr;meslek;Bay;
-der Beruf;(die) Frau;meslek;Bayan;
-Nomen;der Eingang;Adlar;giris;
-Nomen;das WC;Adlar;tuvalet;
-Nomen;die Information;Adlar;danısma;
-Nomen;das Café;Adlar;kafeterya, kahvehane;
-Nomen;der Aufzug;Adlar;asansör;
-Nomen;die Station;Adlar;bölüm (hastanede);
-Nomen;das Krankenhaus;Adlar;hastane;
-Nomen;das Restaurant;Adlar;restoran;
-Nomen;die Schule;Adlar;okul;
-Nomen;der Supermarkt;Adlar;süpermarket;
-Nomen;das Büro;Adlar;ofis;
-Nomen;die Disco;Adlar;diskotek;
-Nomen;die Arbeit;Adlar;is;
-Verben;arbeiten;Eylemler;çalısmak;
-Verben;haben, hat;Eylemler;sahip olmak;
-Verben;Dienst haben;Eylemler;görevde olmak, nöbetçi olmak;
-Verben;frei haben;Eylemler;izinli olmak;
-Verben;Zeit haben;Eylemler;zamanı olmak;
-Verben;Stress haben;Eylemler;stres altında bulunmak;
-Verben;schlafen, schläft;Eylemler;uyumak;
-Verben;frühstücken;Eylemler;kahvaltı etmek;
-Verben;spielen;Eylemler;oynamak;
-Verben;Saxofon spielen;Eylemler;saksofon çalmak;
-Verben;kochen;Eylemler;pisirmek;
-Verben;putzen;Eylemler;temizlemek;
-Verben;telefonieren;Eylemler;telefon etmek;
-Verben;einkaufen gehen, geht einkaufen;Eylemler;alısverise gitmek;
-Verben;fernsehen, sieht fern;Eylemler;televizyon izlemek;
-Verben;hören;Eylemler;duymak;
-Verben;Musik hören;Eylemler;müzik dinlemek;
-Verben;machen;Eylemler;yapmak;
-Verben;Yoga machen;Eylemler;yoga yapmak;
-Verben;studieren;Eylemler;üniversite egitimi almak;
-Adjektive;gut - schelcht;Önadlar;iyi -kötü;
-Adjektive;viel - wenig;Önadlar;çok - az;
-Adjektive;freundlich -unfreundlich;Önadlar;"sevimli/cana yakın/güler yüzlü -sevimsiz/soguk/
-nezaketsiz";
-Adjektive;interessant - alngweilig;Önadlar;ilginç -sıkıcı;
-Adjektive;ruhig - sterssig;Önadlar;sakin -stresli;
-Adjektive;fit - müde;Önadlar;zinde -yorgun, halsiz;
-Fragewörter;Was?;Soru Sözcükleri;Ne?;
-Fragewörter;Wann?;Soru Sözcükleri;Ne zaman?;
-Fragewörter;Warum?;Soru Sözcükleri;Neden? Niçin?;
-Wendungen;von früh bis spät;Deyisler;sabahtan aksama kadar;
-Wendungen;rund um die Uhr;Deyisler;yirmi dört saat;
-Wendungen;zu Hause;Deyisler;evde;
-Wendungen;Guten Morgen!;Deyisler;Günaydın!;
-Wendungen;Wie geht’s?;Deyisler;Ne haber?;
-Wendungen;Wie geht es dir/euch/Ihnen?;Deyisler;Nasılsın/Nasılsınız?;
-Wendungen;Mir geht es gut/schlecht.;Deyisler;İyiyim/İyi degilim.;
-Wendungen;Darf ich vorstellen?;Deyisler;Sizi tanıstırabilir miyim?;
-Wendungen;Angenehm.;Deyisler;Memnun oldum.;
-Kleine Wörter;oder;Kısa Sözcükler;veya, ya da;
-Kleine Wörter;vielleicht;Kısa Sözcükler;belki;
-Kleine Wörter;mit;Kısa Sözcükler;ile, beraber;
-Kleine Wörter;immer;Kısa Sözcükler;daima;
-Kleine Wörter;oft;Kısa Sözcükler;sık sık;
-Kleine Wörter;manchmal;Kısa Sözcükler;bazen;
-Kleine Wörter;nie;Kısa Sözcükler;hiç, asla;
-Nomen;die Familie, -n;Adlar;aile;
-Nomen;der Mann,–¨ er;Adlar;erkek, koca (es);
-Nomen;die Frau, -en;Adlar;kadın, karı (es);
-Nomen;die Eltern (nur Pl.);Adlar;anne ve baba, ebeveyn;
-Nomen;der Vater,–¨;Adlar;baba;
-Nomen;die Mutter, –¨;Adlar;anne;
-Nomen;der Sohn,–¨ e;Adlar;ogul;
-Nomen;die Tochter,–¨;Adlar;kız;
-Nomen;die Großeltern (nur Pl.);Adlar;büyükanne ve büyükbaba;
-Nomen;der Großvater,–¨;Adlar;dede, büyükbaba;
-Nomen;die Großmutter,–¨;Adlar;büyükanne;
-Nomen;die Schwiegereltern (nur Pl.);Adlar;kayınvalide ve kayınpeder;
-Nomen;der Schwiegervater,–¨;Adlar;kayınpeder;
-Nomen;die Schwiegermutter,–¨;Adlar;kayınvalide;
-Nomen;der Schwiegersohn,–¨ e;Adlar;damat;
-Nomen;die Schwiegertochter,–¨;Adlar;gelin;
-Nomen;die Geschwister (nur Pl.);Adlar;kardesler;
-Nomen;der Bruder,–¨;Adlar;erkek kardes;
-Nomen;die Schwester, -n;Adlar;kız kardes;
-Nomen;der Enkel, -;Adlar;torun;
-Nomen;die Enkelin, -nen;Adlar;torun (kız);
-Nomen;der Schwager, -;Adlar;kayınbirader, eniste, bacanak;
-Nomen;die Schwägerin, -nen;Adlar;yenge, baldız, görümce, elti;
-Nomen;der Neffe, -n;Adlar;erkek yegen;
-Nomen;die Nichte, -n;Adlar;kız yegen;
-Nomen;der Onkel, -;Adlar;amca, dayı;
-Nomen;die Tante, -n;Adlar;teyze, hala;
-Nomen;der Cousin, -s !ku*z5:?;Adlar;kuzen;
-Nomen;die Cousine, -n !kusi:ne?;Adlar;kuzin;
-Nomen;das Baby, -s !*be:bi:?;Adlar;bebek;
-Nomen;der Freund, -e;Adlar;(erkek) arkadas;
-Nomen;die Freundin, -nen;Adlar;(bayan) arkadas;
-Nomen;der Chef, -s;Adlar;sef, patron, amir;
-Nomen;die Leute (nur Pl.);Adlar;insanlar;
-Nomen;die Sprache, -n;Adlar;dil;
-Nomen;die Freizeit (nur Sg.);Adlar;bos zaman;
-Nomen;das Leben (nur Sg.);Adlar;hayat;
-Nomen;die Pause, -n;Adlar;ara, mola;
-Nomen;die Mittagspause, -n;Adlar;ögle paydosu/arası;
-Nomen;das Essen, -n;Adlar;yemek;
-Nomen;das Mittagessen, -n;Adlar;ögle yemegi;
-Nomen;das Abendessen, -;Adlar;aksam yemegi;
-Nomen;das Frühstück, -e;Adlar;kahvaltı;
-Nomen;die Kantine, -n;Adlar;kantin;
-Nomen;der Hunger (nur Sg.);Adlar;açlık;
-Nomen;die Schokolade (nur Sg.);Adlar;çikolata;
-die Stunde, -n;die Minute, -n;saat (zaman dilimi olarak);dakika;
-die Stunde, -n;die Uhr, -en;saat (zaman dilimi olarak);saat;
-Nomen;der Kuss,–¨ e;Adlar;öpücük;
-Nomen;die Musik (nur Sg.);Adlar;müzik;
-Nomen;der Tanz (hier nur Sg.);Adlar;dans;
-Nomen;der Film, -e;Adlar;film;
-Nomen;das Theater, -;Adlar;tiyatro;
-Nomen;das Theaterstück, -e;Adlar;tiyatro oyunu;
-Nomen;das Fest, -e;Adlar;bayram, parti, senlik;
-Nomen;die Party, -s;Adlar;parti, eglence;
-Nomen;der Sport (nur Sg.);Adlar;spor;
-Nomen;das Konzert, -e;Adlar;konser;
-Verben;leben;Eylemler;yasamak;
-Verben;sprechen, spricht;Eylemler;konusmak;
-Verben;essen, isst;Eylemler;yemek;
-Verben;zu Mittag essen;Eylemler;ögle yemegi yemek;
-Verben;mitkommen, kommt mit;Eylemler;(birlikte) gelmek;
-Verben;treffen, trifft;Eylemler;karsılasmak, bulusmak;
-Verben;Freunde treffen;Eylemler;arkadaslarla bulusmak;
-Verben;bleiben;Eylemler;kalmak;
-Verben;zu Hause bleiben;Eylemler;evde kalmak/oturmak;
-Verben;grillen;Eylemler;ızgara/mangal yapmak;
-Verben;besuchen;Eylemler;ziyaret etmek;
-Verben;Freunde besuchen;Eylemler;arkadasları ziyaret etmek;
-Verben;gehen;Eylemler;gitmek;
-Verben;ins Kino gehen;Eylemler;sinemaya gitmek;
-Verben;tanzen gehen;Eylemler;dansa gitmek;
-Verben;spazieren gehen;Eylemler;gezmek;
-Verben;ansehen, sieht an;Eylemler;bakmak, izlemek;
-Verben;DVDs ansehen;Eylemler;DVD izlemek;
-Verben;beginnen;Eylemler;baslamak;
-Verben;machen;Eylemler;yapmak;
-Verben;Sport machen;Eylemler;spor yapmak;
-Verben;Mittagspause machen;Eylemler;ögle paydosu yapmak;
-Verben;Schluss machen;Eylemler;bitirmek;
-Verben;Feierabend machen;Eylemler;paydos etmek;
-Verben;spielen;Eylemler;oynamak;
-Verben;Fußball spielen;Eylemler;futbol oynamak;
-Verben;Schach spielen;Eylemler;satranç oynamak;
-Verben;fahren, fährt;Eylemler;(bir araçla) gitmek;
-Verben;Rad fahren;Eylemler;bisiklete binmek;
-Verben;möchte;Eylemler;istiyor/arzu ediyor;
-Adjektive;genervt;Önadlar;sinirli;
-Adjektive;enttäuscht;Önadlar;üzgün, hayal kırıklıgına ugramıs;
-Adjektive;begeistert;Önadlar;coskulu;
-Adjektive;wütend;Önadlar;kızgın;
-Adjektive;süß;Önadlar;tatlı;
-Adjektive;klein;Önadlar;küçük;
-Adjektive;hübsch;Önadlar;güzel;
-Adjektive;spannend;Önadlar;sürükleyici, heyecanlı;
-Adjektive;warm;Önadlar;sıcak;
-Adjektive;pünktlich;Önadlar;dakik;
-Adjektive;verheiratet;Önadlar;evli;
-Fragewörter;Wie viel?;Soru Sözcükleri;"Kaç …?; Ne kadar?";
-Wendungen;Entschuldigung!;Deyisler;Affedersiniz!;
-Wendungen;Wie viel Uhr ist es?;Deyisler;Saat kaç?;
-Wendungen;Um wie viel Uhr …?;Deyisler;Saat kaçta …?;
-Wendungen;Tut mir leid!;Deyisler;Özür dilerim! Üzgünüm!;
-Wendungen;Bis bald!;Deyisler;Yakında görüsmek üzere!;
-Wendungen;Bis dann!;Deyisler;Görüsmek üzere!;
-Kleine Wörter;erst;Kısa Sözcükler;henüz, ancak, önce, daha;
-Kleine Wörter;schon;Kısa Sözcükler;çoktan, bile;
-Kleine Wörter;heute;Kısa Sözcükler;bugün;
-Kleine Wörter;morgen;Kısa Sözcükler;yarın;
-Kleine Wörter;endlich;Kısa Sözcükler;en sonunda, nihayet;
-Präpositionen;um (Zeit);ilgeçler;…de;
-Präpositionen;gegen (Zeit);ilgeçler;… dogru;
-Präpositionen;von;ilgeçler;-den, -dan;
-Nomen;die Ware, -n;Adlar;mal, ürün;
-Nomen;das Lebensmittel, -;Adlar;gıda ürünü;
-Nomen;der Apfel,–¨;Adlar;elma;
-Nomen;die Banane, -n;Adlar;muz;
-Nomen;die Zitrone, -n;Adlar;limon;
-Nomen;das Brot, -e;Adlar;ekmek;
-Nomen;die Butter, -;Adlar;tereyagı;
-Nomen;das Ei, -er;Adlar;yumurta;
-Nomen;der Fisch, -e;Adlar;balık;
-Nomen;das Fleisch (nur Sg.);Adlar;et;
-Nomen;die Tomate, -n;Adlar;domates;
-Nomen;der Käse (nur Sg.);Adlar;peynir;
-Nomen;der Reis (nur Sg.);Adlar;"pirinç (""pilav"" için de bu sözcük kullanılır)";
-Nomen;der Salat, -e;Adlar;salata;
-Nomen;der Schinken, -;Adlar;jambon;
-Nomen;das Mehl (nur Sg.);Adlar;un;
-Nomen;der Tee (nur Sg.);Adlar;çay;
-Nomen;der Kaffee (nur Sg.);Adlar;kahve;
-Nomen;die Milch (nur Sg.);Adlar;süt;
-Nomen;das Wasser (nur Sg.);Adlar;su;
-Nomen;das Mineralwasser, -;Adlar;maden suyu;
-Nomen;der Wein, -e;Adlar;sarap;
-Nomen;das Bier, -e;Adlar;bira;
-Nomen;die Cola, -s;Adlar;kola;
-Nomen;der Kühlschrank,–¨ e;Adlar;buzdolabı;
-Nomen;das Toilettenpapier (nur Sg.);Adlar;tuvalet kâgıdı;
-Nomen;die Zeitung, -en;Adlar;gazete;
-Nomen;die Zigarette, -n;Adlar;sigara;
-Nomen;die Zahnpasta (nur Sg.);Adlar;dis macunu;
-Nomen;die Suppe, -n;Adlar;çorba;
-Nomen;das Gericht, -e;Adlar;yemek;
-Nomen;die Kartoffel, -n;Adlar;patates;
-Nomen;der Kuchen, -;Adlar;pasta, kek;
-Nomen;das Omelett, -s;Adlar;omlet;
-Nomen;die Pizza, -s/-en;Adlar;pizza;
-Nomen;das Salz (nur Sg.);Adlar;tuz;
-Nomen;der Zucker (nur Sg.);Adlar;seker;
-Nomen;der Pfeffer (nur Sg.);Adlar;karabiber;
-Nomen;das Öl (nur Sg.);Adlar;sıvı yag;
-Nomen;die Zwiebel, -n;Adlar;sogan;
-Nomen;der Knoblauch (nur Sg.);Adlar;sarımsak;
-Nomen;der Einkaufszettel, -;Adlar;alısveris listesi;
-Nomen;der Markt,–¨ e;Adlar;pazar (yeri);
-Nomen;der Stand,–¨ e;Adlar;tezgâh;
-Nomen;das Obst (nur Sg.);Adlar;meyve;
-Nomen;das Gemüse (nur Sg.);Adlar;sebze;
-Nomen;der Verkäufer, -;Adlar;satıcı;
-Nomen;die Verkäuferin, -nen;Adlar;satıcı (kadın);
-Nomen;der Kunde, -n;Adlar;müsteri;
-Nomen;die Kundin, -nen;Adlar;müsteri (kadın);
-Nomen;die Woche, - n;Adlar;hafta;
-Nomen;die Nachricht, -en;Adlar;haber;
-Nomen;der Termin, -e;Adlar;randevu, kararlastırılan saat/gün;
-Nomen;das Regal, -e;Adlar;raf;
-Nomen;die Theke, -n;Adlar;tezgâh;
-Nomen;das Getränk, -e;Adlar;içecek;
-Nomen;die Abteilung, -en;Adlar;bölüm, reyon;
-Nomen;die Kasse, -n;Adlar;kasa;
-Nomen;die Tankstelle, -n;Adlar;benzin istasyonu;
-Nomen;die Dose, -n;Adlar;teneke kutu;
-Nomen;die Flasche, -n;Adlar;sise;
-Nomen;die Packung, -en;Adlar;paket;
-Nomen;das Stück, -e;Adlar;parça, adet, tane;
-Nomen;die Tüte, -n;Adlar;poset;
-Nomen;das Kilo, -s;Adlar;kilo;
-Nomen;das Gramm, (-e);Adlar;gram;
-Nomen;der Liter, -;Adlar;litre;
-Nomen;der Preis, -e;Adlar;fiyat;
-Nomen;der Euro;Adlar;euro, avro;
-Nomen;der Cent;Adlar;cent;
-Nomen;das Angebot, -e;Adlar;markette/magazada indirimli ürün;
-Verben;backen;Eylemler;fırında pisirmek;
-Verben;braten, brät;Eylemler;kızartmak;
-Verben;brauchen;Eylemler;ihtiyacı olmak;
-Verben;fragen;Eylemler;sormak;
-Verben;mögen, mag;Eylemler;sevmek, hoslanmak;
-Verben;trinken;Eylemler;içmek;
-Verben;helfen, hilft;Eylemler;yardım etmek;
-Verben;suchen;Eylemler;aramak;
-Verben;finden;Eylemler;bulmak;
-Verben;kaufen;Eylemler;satın almak;
-Verben;verkaufen;Eylemler;satmak;
-Verben;kosten;Eylemler;fiyatı … olmak;
-Verben;stimmen;Eylemler;dogru olmak;
-Verben;Recht haben;Eylemler;haklı olmak;
-Verben;aufstehen, steht auf;Eylemler;(ayaga) kalkmak;
-Verben;losfahren, fährt los;Eylemler;yola çıkmak;
-Verben;wegfahren, fährt weg;Eylemler;gitmek, ayrılmak;
-Verben;abholen, holt ab;Eylemler;karsılamak;
-Verben;zurückkommen, kommt zurück;Eylemler;geri gelmek;
-Verben;einkaufen, kauft ein;Eylemler;satın almak, alısveris yapmak;
-Verben;einpacken, packt ein;Eylemler;sarmak, paketlemek;
-Verben;anfangen, fängt an;Eylemler;baslamak;
-Verben;aufpassen, passt auf;Eylemler;dikkatli olmak;
-Verben;es gibt;Eylemler;var;
-Verben;auf haben - zu haben;Eylemler;açık olmak -kapalı olmak;
-Adjektive;zufrieden -unzufrieden;Önadlar;hosnut -hosnutsuz;
-Adjektive;kaputt;Önadlar;bozuk, kırık;
-Adjektive;leer;Önadlar;bos;
-Adjektive;gesund -ungesund;Önadlar;saglıklı -saglıksız;
-Adjektive;billig - teuer;Önadlar;ucuz -pahalı;
-Adjektive;günstig - nicht günstig;Önadlar;hesaplı -ucuz degil;
-Adjektive;frisch;Önadlar;taze;
-Adverbien;rechts - links;Belirteçler;sag -sol;
-Adverbien;oben -unten;Belirteçler;yukarıda -asagıda;
-Adverbien;vorn - hinten;Belirteçler;önde -arkada;
-Fragewörter;Wie oft?;Soru Sözcükleri;Ne sıklıkta?;
-Fragewörter;Wie lange?;Soru Sözcükleri;Ne kadar zaman?/Ne zamandan beri?;
-Wendungen;So ein Mist!;Deyisler;Lanet olsun! Hay aksi!;
-Wendungen;Entschuldigung, ich habe ein Problem!;Deyisler;Özür dilerim, bir problemim var.;
-Wendungen;Warten Sie einen Moment!;Deyisler;Lütfen bekleyiniz!;
-Wendungen;Was wünschen Sie?;Deyisler;Ne arzu ediyorsunuz/etmistiniz?;
-Wendungen;Vielen Dank!;Deyisler;Tesekkür ederim.;
-Wendungen;Ist alles in Ordnung?;Deyisler;Her sey yolunda mı?;
-Wendungen;Danke, das war’s.;Deyisler;Tesekkürler, bu kadar.;
-Wendungen;Ich bin kurz weg.;Deyisler;Az sonra gelecegim.;
-Wendungen;Wie alt sind Sie?;Deyisler;Kaç yasındasınız?;
-Kleine Wörter;aber;Kısa Sözcükler;ama;
-Kleine Wörter;gern;Kısa Sözcükler;seve seve, memnuniyetle;
-Kleine Wörter;jetzt;Kısa Sözcükler;simdi;
-Kleine Wörter;nur;Kısa Sözcükler;yalnız;
-Kleine Wörter;zweimal;Kısa Sözcükler;iki kez;
-Kleine Wörter;für;Kısa Sözcükler;için;
-Nomen;das Haar, -e;Adlar;saç;
-Nomen;das Auge, -n;Adlar;göz;
-Nomen;die Größe, -n;Adlar;boy, beden, büyüklük;
-Nomen;die Kleidung (nur Sg.);Adlar;giyim, kıyafet;
-Nomen;die Brille, -n;Adlar;gözlük;
-Nomen;die Farbe, -n;Adlar;renk;
-Nomen;die Haarfarbe;Adlar;saç rengi;
-Nomen;das Au-pair, -s;Adlar;çocuk bakıcısı, au-pair;
-Nomen;der Junge, -n;Adlar;erkek çocuk;
-Nomen;das Mädchen, -;Adlar;kız çocuk;
-Nomen;der Fragebogen,–¨;Adlar;anket;
-Nomen;das Alter (nur Sg.);Adlar;yas;
-Nomen;das Geschlecht, -er;Adlar;cinsiyet;
-Nomen;der Familienstand (nur Sg.);Adlar;medeni hâli;
-Nomen;der Führerschein, -e;Adlar;ehliyet, sürücü belgesi;
-Nomen;der Mensch, -en;Adlar;insan;
-Nomen;das Tier, -e;Adlar;hayvan;
-Nomen;das Hobby, -s;Adlar;hobi;
-Nomen;die Hausarbeit, -en;Adlar;ev isi;
-Nomen;die Hausaufgabe, -n;Adlar;ev ödevi;
-Nomen;der Kontakt, -e;Adlar;kontak, temas;
-Nomen;das Team, -s;Adlar;ekip, takım;
-Nomen;das Werkzeug, -e;Adlar;âlet, araç;
-Nomen;der Computer, -;Adlar;bilgisayar;
-Nomen;die Landkarte, -n;Adlar;harita;
-Nomen;die Zeichnung, -en;Adlar;çizgi, resim;
-Nomen;der Text, -e;Adlar;metin;
-Nomen;die Volkshochschule, -n (die VHS);Adlar;Halk Egitim Merkezi;
-Nomen;der Kurs, -e;Adlar;kurs;
-Nomen;das Sekretariat, -e;Adlar;sekreterlik;
-Nomen;die Toilette, -n;Adlar;tuvalet;
-Nomen;der Raum,–¨ e;Adlar;oda;
-Nomen;das Gebäude, -;Adlar;bina;
-Nomen;der Bahnhof,–¨ e;Adlar;istasyon;
-Nomen;der Flughafen,–¨;Adlar;hava limanı;
-Nomen;die Polizei (nur Sg.);Adlar;polis;
-Nomen;die Bücherei, -en;Adlar;kütüphane;
-Nomen;die Kirche, -n;Adlar;kilise;
-Nomen;der Kindergarten,–¨;Adlar;anaokulu;
-Nomen;das Schwimmbad,–¨ er;Adlar;yüzme havuzu;
-Nomen;die Post (nur Sg.);Adlar;postane;
-Nomen;der Brief, -e;Adlar;mektup;
-Nomen;der Park, -s;Adlar;park;
-Nomen;der Berg, -e;Adlar;dag;
-Nomen;die Brücke, -n;Adlar;köprü;
-Nomen;die Ampel, -n;Adlar;trafik ısıgı;
-Nomen;die Kreuzung, -en;Adlar;kavsak;
-Nomen;die Ecke, -n;Adlar;köse;
-Nomen;das Zentrum, Zentren;Adlar;merkez;
-Nomen;die Station, -en;Adlar;istasyon, durak;
-Nomen;die Endstation, -en;Adlar;son durak;
-Nomen;der Bus, -se;Adlar;otobüs;
-Nomen;die Straßenbahn, -en;Adlar;tramvay;
-Nomen;die U-Bahn, -en;Adlar;metro;
-Nomen;die S-Bahn, -en;Adlar;metro/banliyö treni;
-Nomen;das Taxi, -s;Adlar;taksi;
-Nomen;das Fahrrad,–¨ er;Adlar;bisiklet;
-Nomen;das Motorrad,–¨ er;Adlar;motosiklet;
-Nomen;der Zug,–¨ e;Adlar;tren;
-Nomen;das Flugzeug, -e;Adlar;uçak;
-Nomen;das Schiff, -e;Adlar;gemi;
-Verben;fahren, fährt;Eylemler;(bir araçla) gitmek, (araç) kullanmak;
-Verben;Auto fahren;Eylemler;araba kullanmak;
-Verben;gehen;Eylemler;gitmek;
-Verben;zu Fuß gehen;Eylemler;yürüyerek gitmek;
-Verben;aussehen, sieht aus;Eylemler;… gibi görünmek;
-Verben;tragen, trägt;Eylemler;tasımak;
-Verben;rauchen;Eylemler;sigara içmek;
-Verben;können, kann;Eylemler;-bilmek, beceriye sahip olmak;
-Verben;aufräumen, räumt auf;Eylemler;(…-i) toplamak/düzenlemek;
-Verben;lieben;Eylemler;sevmek;
-Verben;zeichnen;Eylemler;resim yapmak;
-Verben;nähen;Eylemler;(dikis) dikmek;
-Verben;stehen;Eylemler;ayakta durmak;
-Verben;reparieren;Eylemler;tamir etmek;
-Verben;rechnen;Eylemler;hesap yapmak;
-Verben;organisieren;Eylemler;organize etmek;
-Verben;kennen lernen, lernt kennen;Eylemler;biriyle tanısmak;
-Verben;wiederholen;Eylemler;tekrar etmek;
-Verben;nehmen, nimmt;Eylemler;almak;
-Verben;einsteigen, steigt ein;Eylemler;binmek;
-Verben;aussteigen, steigt aus;Eylemler;inmek;
-Verben;umsteigen, steigt um;Eylemler;aktarma yapmak;
-Verben;abfahren, fährt ab;Eylemler;hareket etmek, kalkmak (tren, otobüs vb.);
-Verben;ankommen, kommt an;Eylemler;gelmek, varmak;
-Verben;abbiegen, biegt ab;Eylemler;dönmek, sapmak;
-Adjektive;sportlich -unsportlich;Önadlar;sportif -spor yapmayan;
-Adjektive;elegant;Önadlar;zarif;
-Adjektive;jung -alt;Önadlar;genç -yaslı;
-Adjektive;groß - klein;Önadlar;büyük -küçük;
-Adjektive;lang - kurz;Önadlar;uzun -kısa;
-Adjektive;blond;Önadlar;sarı saçlı, sarısın;
-Adjektive;weiß;Önadlar;beyaz;
-Adjektive;schwarz;Önadlar;siyah;
-Adjektive;grau;Önadlar;gri;
-Adjektive;braun;Önadlar;kahverengi;
-Adjektive;rot;Önadlar;kırmızı;
-Adjektive;gelb;Önadlar;sarı;
-Adjektive;blau;Önadlar;mavi;
-Adjektive;grün;Önadlar;yesil;
-Adjektive;modern -unmodern;Önadlar;modern -demode;
-Adjektive;schön;Önadlar;güzel;
-Adjektive;männlich - weiblich;Önadlar;eril, erkek -disi, kadın;
-Adjektive;ledig;Önadlar;bekâr;
-Adjektive;wichtig -unwichtig;Önadlar;önemli -önemsiz;
-Adjektive;selbstständig;Önadlar;bagımsız;
-Adjektive;nervös;Önadlar;sinirli;
-Adjektive;weit - nah;Önadlar;uzak -yakın;
-Fragewörter;Wohin?;Soru Sözcükleri;Nereye?;
-Wendungen;Hilfe!;Deyisler;İmdat!;
-Wendungen;Ja, genau!;Deyisler;Tamamen öyle! Aynen öyle!;
-Wendungen;Ja, natürlich!;Deyisler;Evet, tabii/elbette!;
-Wendungen;Ich finde, …;Deyisler;… buluyorum.;
-Wendungen;Ich denke, …;Deyisler;… düsünüyorum.;
-Wendungen;Tut mir leid.;Deyisler;Özür dilerim, üzgünüm.;
-Wendungen;zu spät kommen;Deyisler;geç kalmak;
-Wendungen;Ist hier noch frei?;Deyisler;… müsait mi? … bos mu?;
-Wendungen;Wie komme ich zum …?;Deyisler;…-e/-a nasıl gidebilirim?;
-Wendungen;Wie komme ich nach Hause?;Deyisler;Eve nasıl gidebilirim?;
-Kleine Wörter;sofort;Kısa Sözcükler;hemen;
-Kleine Wörter;egal;Kısa Sözcükler;fark etmez;
-Kleine Wörter;ein bisschen;Kısa Sözcükler;biraz;
-Kleine Wörter;man;Kısa Sözcükler;"…-ler/-lır (örn.: man sagt=derler; man schreibt=yazılır)";
-Kleine Wörter;geradeaus;Kısa Sözcükler;dümdüz;
-Kleine Wörter;nach links;Kısa Sözcükler;sola;
-Kleine Wörter;nach rechts;Kısa Sözcükler;saga;
-Kleine Wörter;weiter;Kısa Sözcükler;daha, ileri;
-Kleine Wörter;erst …, dann …;Kısa Sözcükler;il önce …, sonra …;
-Kleine Wörter;leider;Kısa Sözcükler;maalesef;
-Präpositionen;in;ilgeçler;-de, içinde;
-Präpositionen;an;ilgeçler;-de, -da, yanında, bitisiginde;
-Präpositionen;auf;ilgeçler;üstünde;
-Präpositionen;vom/von der;ilgeçler;-den, -dan;
-Präpositionen;zum /zur;ilgeçler;(bir yöne dogru) -e, -a;
-Präpositionen;bis zum/zur;ilgeçler;…e kadar;
-Präpositionen;um (Ort);ilgeçler;(mekan baglamında) etrafında, etrafına;
-Wichtige Arbeitsanweisungen;Hören Sie (den Dialog).;Önemli Çalısma Yönergeleri;Diyalogu dinleyin.;
-Wichtige Arbeitsanweisungen;Hören Sie noch einmal.;Önemli Çalısma Yönergeleri;Tekrar dinleyin.;
-Wichtige Arbeitsanweisungen;Sprechen Sie nach.;Önemli Çalısma Yönergeleri;Duydugunuzu tekrarlayın.;
-Wichtige Arbeitsanweisungen;Lesen Sie (den Text).;Önemli Çalısma Yönergeleri;(Metni) okuyun.;
-Wichtige Arbeitsanweisungen;Lesen Sie laut.;Önemli Çalısma Yönergeleri;Yüksek sesle okuyun.;
-Wichtige Arbeitsanweisungen;"Schreiben Sie eine SMS - eine E-Mail einen Steckbrief  …
-";Önemli Çalısma Yönergeleri;SMS (kısa mesaj) - e-posta - kısa öz geçmis … yazın.;
-Wichtige Arbeitsanweisungen;Sehen Sie das Bild an.;Önemli Çalısma Yönergeleri;Resme bakın.;
-Wichtige Arbeitsanweisungen;Gestalten Sie das leere Feld.;Önemli Çalısma Yönergeleri;Bos alanda uygulayın.;
-Wichtige Arbeitsanweisungen;Welche Wörter kennen Sie?;Önemli Çalısma Yönergeleri;Hangi sözcükleri biliyorsunuz?;
-Wichtige Arbeitsanweisungen;Was passt?;Önemli Çalısma Yönergeleri;Hangisi uygundur?;
-Wichtige Arbeitsanweisungen;Was ist richtig?;Önemli Çalısma Yönergeleri;Hangisi dogrudur?;
-Wichtige Arbeitsanweisungen;Sind Ihre Vermutungen richtig?;Önemli Çalısma Yönergeleri;Tahminleriniz dogru mu?;
-Wichtige Arbeitsanweisungen;Kreuzen Sie an.;Önemli Çalısma Yönergeleri;Çarpı koyun.;
-Wichtige Arbeitsanweisungen;Verbinden Sie.;Önemli Çalısma Yönergeleri;Eslestirin.;
-Wichtige Arbeitsanweisungen;Markieren Sie.;Önemli Çalısma Yönergeleri;İsaretleyin.;
-Wichtige Arbeitsanweisungen;Sortieren Sie.;Önemli Çalısma Yönergeleri;Sıralayın / sınıflandırın.;
-Wichtige Arbeitsanweisungen;Ordnen Sie (den Dialog).;Önemli Çalısma Yönergeleri;Diyalogu sıralayın.;
-Wichtige Arbeitsanweisungen;Ordnen Sie (die Bilder) zu.;Önemli Çalısma Yönergeleri;Resimleri sıralayın / eslestirin.;
-Wichtige Arbeitsanweisungen;Ergänzen Sie.;Önemli Çalısma Yönergeleri;Tamamlayın.;
-Wichtige Arbeitsanweisungen;Fragen Sie.;Önemli Çalısma Yönergeleri;Soru tümcesi olusturun.;
-Wichtige Arbeitsanweisungen;Antworten Sie.;Önemli Çalısma Yönergeleri;Yanıtlayın.;
-Wichtige Arbeitsanweisungen;Beantworten Sie die Frage.;Önemli Çalısma Yönergeleri;Soruyu yanıtlayın.;
-Wichtige Arbeitsanweisungen;Formulieren Sie Fragen.;Önemli Çalısma Yönergeleri;Soru tümceleri olusturun.;
-Wichtige Arbeitsanweisungen;Spekulieren Sie.;Önemli Çalısma Yönergeleri;Tahmin yürütün.;
-Wichtige Arbeitsanweisungen;Vergleichen Sie (mit der Lösung / mit Ihren Ideen).;Önemli Çalısma Yönergeleri;(Kendi düsüncelerinizle / yanıt anahtarı ile) karsılastırın.;
-Wichtige Arbeitsanweisungen;Üben Sie das Gespräch.;Önemli Çalısma Yönergeleri;Diyalogu çalısın.;
-Wichtige Arbeitsanweisungen;Variieren Sie.;Önemli Çalısma Yönergeleri;Çesitleme yapın.;
-Wichtige Arbeitsanweisungen;Wählen Sie.;Önemli Çalısma Yönergeleri;Seçin.;
-Wichtige Arbeitsanweisungen;Notieren Sie.;Önemli Çalısma Yönergeleri;Not edin.;
-Wichtige Arbeitsanweisungen;Sammeln Sie.;Önemli Çalısma Yönergeleri;Toplayın.;
-Wichtige Arbeitsanweisungen;Recherchieren Sie (im Internet).;Önemli Çalısma Yönergeleri;(İnternette) arastırın.;
-Wichtige Arbeitsanweisungen;Machen Sie eine Liste / eine Collage / ein Plakat / …;Önemli Çalısma Yönergeleri;Bir liste / kolaj / afis … yapın.;
-Wichtige Arbeitsanweisungen;Raten Sie.;Önemli Çalısma Yönergeleri;Tahmin edin.;
-Wichtige Arbeitsanweisungen;Benutzen Sie ein Wörterbuch.;Önemli Çalısma Yönergeleri;Sözlük kullanın.;
-Wichtige Arbeitsanweisungen;Achten Sie auf die Schlüsselwörter.;Önemli Çalısma Yönergeleri;Anahtar sözcüklere dikkat edin.;
-Wichtige Arbeitsanweisungen;Nehmen Sie sich auf.;Önemli Çalısma Yönergeleri;Kendi sesinizi kaydedin.;
-Wichtige Grammatikbegriffe;der Buchstabe, -n;Önemli Dilbilgisi Terinmleri;harf;
-Wichtige Grammatikbegriffe;der Laut, -e;Önemli Dilbilgisi Terinmleri;ses;
-Wichtige Grammatikbegriffe;der Vokal, -e;Önemli Dilbilgisi Terinmleri;ünlü, sesli, vokal;
-Wichtige Grammatikbegriffe;der Konsonant, -en;Önemli Dilbilgisi Terinmleri;ümsüz, sessiz, konsonant;
-Wichtige Grammatikbegriffe;das Wort,–¨ er;Önemli Dilbilgisi Terinmleri;sözcük, kelime;
-Wichtige Grammatikbegriffe;der Satz,–¨ e;Önemli Dilbilgisi Terinmleri;tümce, cümle;
-Wichtige Grammatikbegriffe;die Wortart, -en;Önemli Dilbilgisi Terinmleri;sözcük/kelime türü;
-Wichtige Grammatikbegriffe;der Artikel, -;Önemli Dilbilgisi Terinmleri;tanımlık;
-Wichtige Grammatikbegriffe;der bestimmte Artikel;Önemli Dilbilgisi Terinmleri;belirli tanımlık;
-Wichtige Grammatikbegriffe;der unbestimmte Artikel;Önemli Dilbilgisi Terinmleri;belirsiz tanımlık;
-Wichtige Grammatikbegriffe;der Negativartikel;Önemli Dilbilgisi Terinmleri;olumsuz tanımlık;
-Wichtige Grammatikbegriffe;der Possessivartikel;Önemli Dilbilgisi Terinmleri;iyelik adılı/zamiri;
-Wichtige Grammatikbegriffe;das Nomen, -;Önemli Dilbilgisi Terinmleri;isim, ad;
-Wichtige Grammatikbegriffe;das Verb, -en;Önemli Dilbilgisi Terinmleri;eylem, fiil;
-Wichtige Grammatikbegriffe;das Modalverb, -en;Önemli Dilbilgisi Terinmleri;kiplik eylemi, tarz fiili;
-Wichtige Grammatikbegriffe;das Adjektiv, -e;Önemli Dilbilgisi Terinmleri;önad, sıfat;
-Wichtige Grammatikbegriffe;das Pronomen, -;Önemli Dilbilgisi Terinmleri;adıl, zamir;
-Wichtige Grammatikbegriffe;das Personalpronomen, -;Önemli Dilbilgisi Terinmleri;kisi adılı/zamiri;
-Wichtige Grammatikbegriffe;das Adverb, -ien;Önemli Dilbilgisi Terinmleri;zarf, belirteç;
-Wichtige Grammatikbegriffe;die Präposition, -en;Önemli Dilbilgisi Terinmleri;ilgeç, edat;
-Wichtige Grammatikbegriffe;das Fragewort,–¨ er;Önemli Dilbilgisi Terinmleri;soru sözcügü;
-Wichtige Grammatikbegriffe;die Funktion, -en;Önemli Dilbilgisi Terinmleri;fonksiyon, islev;
-Wichtige Grammatikbegriffe;das Subjekt, -e;Önemli Dilbilgisi Terinmleri;özne;
-Wichtige Grammatikbegriffe;die Ergänzung, -en;Önemli Dilbilgisi Terinmleri;tümleç, tamlama;
-Wichtige Grammatikbegriffe;die Nominativ-Ergänzung;Önemli Dilbilgisi Terinmleri;nominatif/yalin hal tümleçi;
-Wichtige Grammatikbegriffe;die Akkusativ-Ergänzung;Önemli Dilbilgisi Terinmleri;belirtme durumundaki/-i halindaki nesne;
-Wichtige Grammatikbegriffe;die Temporalangabe, -n;Önemli Dilbilgisi Terinmleri;zaman belirten sözcük;
-Wichtige Grammatikbegriffe;die Lokalangabe, -n;Önemli Dilbilgisi Terinmleri;yer belirten sözcük;
-Wichtige Grammatikbegriffe;der Aussagesatz,–¨ e;Önemli Dilbilgisi Terinmleri;bildirme/ifade tümcesi;
-Wichtige Grammatikbegriffe;die W-Frage, -n;Önemli Dilbilgisi Terinmleri;"Almancada wer, wie, was … gibi soru sözcügü ile
-baslayan soru (Türkçedeki 5N1K soruları)";
-Wichtige Grammatikbegriffe;die Ja-/Nein-Frage, -n;Önemli Dilbilgisi Terinmleri;evet ya da hayır yanıtlanan soru;
-Wichtige Grammatikbegriffe;der Imperativ, -e;Önemli Dilbilgisi Terinmleri;emir kipi;
-Wichtige Grammatikbegriffe;die Negation, -en;Önemli Dilbilgisi Terinmleri;olumsuzluk/olumsuzlama;
-Das Verb;der Infinitiv, -e;Eylem, Fiil;eylemlik, mastar hali;
-Das Verb;die Konjugation, -en;Eylem, Fiil;eylem/fiil çekimi;
-Das Verb;regelmäßig;Eylem, Fiil;düzenli;
-Das Verb;unregelmäßig;Eylem, Fiil;düzensiz;
-Das Verb;trennbar;Eylem, Fiil;ayrılabilir, bölünebilir;
-Das Verb;der Verbstamm,–¨ e;Eylem, Fiil;eylem/fiil kökü;
-Das Verb;die Endung, -en;Eylem, Fiil;son ek/takı;
-Das Verb;das Präsens;Eylem, Fiil;"Almancada simdiki ve genis zaman (gelecek zaman için
-de kullanılır)";
-Das Nomen;maskulin;Ad, isim;eril, erkek;
-Das Nomen;neutral;Ad, isim;nötr;
-Das Nomen;feminin;Ad, isim;disi, kadın;
-Das Nomen;der Singular;Ad, isim;tekil;
-Das Nomen;der Plural;Ad, isim;çogul;
-Das Nomen;der Nominativ;Ad, isim;yalin hal, nominatif;
-Das Nomen;der Akkusativ;Ad, isim;belirtme durumu, -i hali;
+﻿Nomen;das Haus;Adlar;ev
+Nomen;die Wohnung;Adlar;daire
+Nomen;der Balkon;Adlar;balkon
+Nomen;die Tür;Adlar;kapı
+Nomen;das Fenster;Adlar;pencere
+Nomen;die Klingel;Adlar;zil
+Nomen;das Auto;Adlar;araba
+Nomen;das Handy;Adlar;cep telefonu
+Nomen;die Lampe;Adlar;lamba
+Nomen;der Mann;Adlar;erkek
+Nomen;die Frau;Adlar;kadın
+Nomen;das Kind;Adlar;çocuk
+Nomen;die Nachbarin;Adlar;komşu (kadın)
+Nomen;der Sohn;Adlar;oğul
+Nomen;der Sportlehrer;Adlar;spor öğretmeni
+Nomen;der Vogel;Adlar;kuş
+Nomen;der Hund;Adlar;köpek
+Nomen;das Hotel;Adlar;otel
+Nomen;die Bank;Adlar;banka
+Nomen;das Rathaus;Adlar;belediye binası
+Nomen;das Amt;Adlar;resmi daire, görev
+Nomen;der Name;Adlar;ad (soyad için de kullanılır)
+Nomen;der Vorname;Adlar;ön ad
+Nomen;der Familienname;Adlar;soyadı
+Nomen;die Adresse;Adlar;adres
+Nomen;der Ort;Adlar;yer, mahal
+Nomen;der Wohnort;Adlar;ikamet yeri
+Nomen;die Straße;Adlar;sokak, cadde
+Nomen;der Platz;Adlar;meydan
+Nomen;die Allee;Adlar;bulvar, iki yanı ağaçlı yol
+Nomen;die Zahl;Adlar;sayı
+Nomen;die Postleitzahl;Adlar;posta kodu
+Nomen;die Nummer;Adlar;numara
+Nomen;die Hausnummer;Adlar;kapı numarası
+Nomen;die Telefonnummer;Adlar;telefon numarası
+Nomen;die E-Mail-Adresse;Adlar;e-posta adresi
+Nomen;das Land;Adlar;ülke
+Verben;sein;Eylemler;olmak, bulunmak
+Verben;kommen;Eylemler;gelmek
+Verben;heißen;Eylemler;adı … olmak
+Verben;wohnen;Eylemler;oturmak, ikamet etmek
+Verben;buchstabieren;Eylemler;hecelemek (bir sözcüğün haflerini tek tek söylemek)
+Adjektive;neu;Önadlar;yeni
+Adjektive;nett;Önadlar;hoş
+Adjektive;unsympathisch;Önadlar;antipatik
+Adjektive;interessant;Önadlar;ilginç
+Adjektive;aggressiv;Önadlar;saldırgan
+Adjektive;fröhlich -   traurig;Önadlar;neşeli -   üzgün
+Adjektive;super;Önadlar;süper
+Adjektive;nah;Önadlar;yakın
+Fragewörter;Wo?;Soru Sözcükleri;Nerede?
+Fragewörter;Woher?;Soru Sözcükleri;Nereden?
+Fragewörter;Wer?;Soru Sözcükleri;Kim?
+Fragewörter;Wie?;Soru Sözcükleri;Nasıl?
+Wendungen;Hallo!;Deyişler;Merhaba!
+Wendungen;Willkommen!;Deyişler;Hoş geldiniz!
+Wendungen;Guten Tag!;Deyişler;İyi günler!
+Wendungen;Grüß Gott! (süddt., österr.);Deyişler;Merhaba (Güney Almanya ve Avusturya'da kullanılır)
+Wendungen;Tschüss!;Deyişler;Hoşça kal (samimi)
+Wendungen;Auf Wiedersehen!;Deyişler;Hoşça kalın (genel/resmi)
+Wendungen;Entschuldigung!;Deyişler;Affedersiniz!/Özür dilerim!
+Wendungen;Wie bitte?;Deyişler;Efendim?
+Wendungen;Freut mich.;Deyişler;Memnun oldum.
+Wendungen;Danke.;Deyişler;Teşekkürler.
+Kleine Wörter;ja -  nein;Kısa Sözcükler;evet -  hayır
+Kleine Wörter;und;Kısa Sözcükler;ve
+Kleine Wörter;da;Kısa Sözcükler;orada, şurada, işte!
+Kleine Wörter;hier;Kısa Sözcükler;burada
+Kleine Wörter;bitte;Kısa Sözcükler;buyurun, lütfen
+Kleine Wörter;sehr;Kısa Sözcükler;çok
+Nomen;der Montag;Adlar;pazartesi
+Nomen;der Dienstag;Adlar;salı
+Nomen;der Mittwoch;Adlar;çarşamba
+Nomen;der Donnerstag;Adlar;perşembe
+Nomen;der Freitag;Adlar;cuma
+Nomen;der Samstag;Adlar;cumartesi
+Nomen;der Sonntag;Adlar;pazar
+Nomen;der Morgen;Adlar;sabah
+Nomen;der Vormittag;Adlar;öğleden önce
+Nomen;der Mittag;Adlar;öğle
+Nomen;der Nachmittag;Adlar;öğleden sonra
+Nomen;der Abend;Adlar;akşam
+Nomen;die Nacht;Adlar;gece
+Nomen;das Wochenende;Adlar;hafta sonu
+der Beruf;der Arzt;meslek;doktor
+der Beruf;die Ärztin;meslek;doktor (kadın)
+der Beruf;der Psychologe;meslek;psikolog
+der Beruf;die Psychologin;meslek;psikolog (kadın)
+der Beruf;der Taxifahrer;meslek;taksi şoförü
+der Beruf;die Taxifahrerin;meslek;taksi şoförü (kadın)
+der Beruf;der Krankenpfleger;meslek;hasta bakıcı
+der Beruf;die Krankenschwester;meslek;hemşire
+der Beruf;der DJ !*di:dZeI?;meslek;diskjokey
+der Beruf;die Hausfrau;meslek;ev kadını
+der Beruf;der Hausmann;meslek;ev erkeği
+der Beruf;der Bäcker;meslek;fırıncı
+der Beruf;die Bäckerin;meslek;fırıncı (kadın)
+der Beruf;der Ingenieur;meslek;mühendis
+der Beruf;die Ingenieurin;meslek;mühendis (kadın)
+der Beruf;der Lehrer;meslek;öğretmen
+der Beruf;die Lehrerin;meslek;öğretmen (kadın)
+der Beruf;der Kellner;meslek;garson
+der Beruf;die Kellnerin;meslek;garson (kadın)
+der Beruf;der Polizist;meslek;polis
+der Beruf;die Polizistin;meslek;polis (kadın)
+der Beruf;der Koch;meslek;aşçı
+der Beruf;die Köchin;meslek;aşçı (kadın)
+der Beruf;die Sekretärin;meslek;kadın sekreter
+der Beruf;die Hebamme;meslek;ebe
+der Beruf;der Bauarbeiter;meslek;inşaat işçisi
+der Beruf;die Bauarbeiterin;meslek;inşaat işçisi (kadın)
+der Beruf;der Raumpfleger;meslek;temizlik işçisi
+der Beruf;die Raumpflegerin;meslek;temizlik işçisi (kadın)
+der Beruf;der Student;meslek;üniversite öğrencisi
+der Beruf;die Studentin;meslek;üniversite öğrencisi (kadın)
+der Beruf;der Kollege;meslek;meslektaş, iş arkadaşı
+der Beruf;die Kollegin;meslek;meslektaş, iş arkadaşı (kadın)
+der Beruf;(der) Herr;meslek;Bay
+der Beruf;(die) Frau;meslek;Bayan
+Nomen;der Eingang;Adlar;giriş
+Nomen;das WC;Adlar;tuvalet
+Nomen;die Information;Adlar;danışma
+Nomen;das Café;Adlar;kafeterya, kahvehane
+Nomen;der Aufzug;Adlar;asansör
+Nomen;die Station;Adlar;bölüm (hastanede)
+Nomen;das Krankenhaus;Adlar;hastane
+Nomen;das Restaurant;Adlar;restoran
+Nomen;die Schule;Adlar;okul
+Nomen;der Supermarkt;Adlar;süpermarket
+Nomen;das Büro;Adlar;ofis
+Nomen;die Disco;Adlar;diskotek
+Nomen;die Arbeit;Adlar;iş
+Verben;arbeiten;Eylemler;çalışmak
+Verben;haben, hat;Eylemler;sahip olmak
+Verben;Dienst haben;Eylemler;görevde olmak, nöbetçi olmak
+Verben;frei haben;Eylemler;izinli olmak
+Verben;Zeit haben;Eylemler;zamanı olmak
+Verben;Stress haben;Eylemler;stres altında bulunmak
+Verben;schlafen, schläft;Eylemler;uyumak
+Verben;frühstücken;Eylemler;kahvaltı etmek
+Verben;spielen;Eylemler;oynamak
+Verben;Saxofon spielen;Eylemler;saksofon çalmak
+Verben;kochen;Eylemler;pişirmek
+Verben;putzen;Eylemler;temizlemek
+Verben;telefonieren;Eylemler;telefon etmek
+Verben;einkaufen gehen, geht einkaufen;Eylemler;alışverişe gitmek
+Verben;fernsehen, sieht fern;Eylemler;televizyon izlemek
+Verben;hören;Eylemler;duymak
+Verben;Musik hören;Eylemler;müzik dinlemek
+Verben;machen;Eylemler;yapmak
+Verben;Yoga machen;Eylemler;yoga yapmak
+Verben;studieren;Eylemler;üniversite eğitimi almak
+Adjektive;gut - schelcht;Önadlar;iyi -kötü
+Adjektive;viel - wenig;Önadlar;çok - az
+Adjektive;freundlich -unfreundlich;Önadlar;"sevimli/cana yakın/güler yüzlü -sevimsiz/soğuk/
+nezaketsiz"
+Adjektive;interessant - alngweilig;Önadlar;ilginç -sıkıcı
+Adjektive;ruhig - sterssig;Önadlar;sakin -stresli
+Adjektive;fit - müde;Önadlar;zinde -yorgun, halsiz
+Fragewörter;Was?;Soru Sözcükleri;Ne?
+Fragewörter;Wann?;Soru Sözcükleri;Ne zaman?
+Fragewörter;Warum?;Soru Sözcükleri;Neden? Niçin?
+Wendungen;von früh bis spät;Deyişler;sabahtan akşama kadar
+Wendungen;rund um die Uhr;Deyişler;yirmi dört saat
+Wendungen;zu Hause;Deyişler;evde
+Wendungen;Guten Morgen!;Deyişler;Günaydın!
+Wendungen;Wie geht’s?;Deyişler;Ne haber?
+Wendungen;Wie geht es dir/euch/Ihnen?;Deyişler;Nasılsın/Nasılsınız?
+Wendungen;Mir geht es gut/schlecht.;Deyişler;İyiyim/İyi değilim.
+Wendungen;Darf ich vorstellen?;Deyişler;Sizi tanıştırabilir miyim?
+Wendungen;Angenehm.;Deyişler;Memnun oldum.
+Kleine Wörter;oder;Kısa Sözcükler;veya, ya da
+Kleine Wörter;vielleicht;Kısa Sözcükler;belki
+Kleine Wörter;mit;Kısa Sözcükler;ile, beraber
+Kleine Wörter;immer;Kısa Sözcükler;daima
+Kleine Wörter;oft;Kısa Sözcükler;sık sık
+Kleine Wörter;manchmal;Kısa Sözcükler;bazen
+Kleine Wörter;nie;Kısa Sözcükler;hiç, asla
+Nomen;die Familie, -n;Adlar;aile
+Nomen;der Mann,–¨ er;Adlar;erkek, koca (eş)
+Nomen;die Frau, -en;Adlar;kadın, karı (eş)
+Nomen;die Eltern (nur Pl.);Adlar;anne ve baba, ebeveyn
+Nomen;der Vater,–¨;Adlar;baba
+Nomen;die Mutter, –¨;Adlar;anne
+Nomen;der Sohn,–¨ e;Adlar;oğul
+Nomen;die Tochter,–¨;Adlar;kız
+Nomen;die Großeltern (nur Pl.);Adlar;büyükanne ve büyükbaba
+Nomen;der Großvater,–¨;Adlar;dede, büyükbaba
+Nomen;die Großmutter,–¨;Adlar;büyükanne
+Nomen;die Schwiegereltern (nur Pl.);Adlar;kayınvalide ve kayınpeder
+Nomen;der Schwiegervater,–¨;Adlar;kayınpeder
+Nomen;die Schwiegermutter,–¨;Adlar;kayınvalide
+Nomen;der Schwiegersohn,–¨ e;Adlar;damat
+Nomen;die Schwiegertochter,–¨;Adlar;gelin
+Nomen;die Geschwister (nur Pl.);Adlar;kardeşler
+Nomen;der Bruder,–¨;Adlar;erkek kardeş
+Nomen;die Schwester, -n;Adlar;kız kardeş
+Nomen;der Enkel, -;Adlar;torun
+Nomen;die Enkelin, -nen;Adlar;torun (kız)
+Nomen;der Schwager, -;Adlar;kayınbirader, enişte, bacanak
+Nomen;die Schwägerin, -nen;Adlar;yenge, baldız, görümce, elti
+Nomen;der Neffe, -n;Adlar;erkek yeğen
+Nomen;die Nichte, -n;Adlar;kız yeğen
+Nomen;der Onkel, -;Adlar;amca, dayı
+Nomen;die Tante, -n;Adlar;teyze, hala
+Nomen;der Cousin, -s !ku*z5:?;Adlar;kuzen
+Nomen;die Cousine, -n !kusi:ne?;Adlar;kuzin
+Nomen;das Baby, -s !*be:bi:?;Adlar;bebek
+Nomen;der Freund, -e;Adlar;(erkek) arkadaş
+Nomen;die Freundin, -nen;Adlar;(bayan) arkadaş
+Nomen;der Chef, -s;Adlar;şef, patron, amir
+Nomen;die Leute (nur Pl.);Adlar;insanlar
+Nomen;die Sprache, -n;Adlar;dil
+Nomen;die Freizeit (nur Sg.);Adlar;boş zaman
+Nomen;das Leben (nur Sg.);Adlar;hayat
+Nomen;die Pause, -n;Adlar;ara, mola
+Nomen;die Mittagspause, -n;Adlar;öğle paydosu/arası
+Nomen;das Essen, -n;Adlar;yemek
+Nomen;das Mittagessen, -n;Adlar;öğle yemeği
+Nomen;das Abendessen, -;Adlar;akşam yemeği
+Nomen;das Frühstück, -e;Adlar;kahvaltı
+Nomen;die Kantine, -n;Adlar;kantin
+Nomen;der Hunger (nur Sg.);Adlar;açlık
+Nomen;die Schokolade (nur Sg.);Adlar;çikolata
+die Stunde, -n;die Minute, -n;saat (zaman dilimi olarak);dakika
+die Stunde, -n;die Uhr, -en;saat (zaman dilimi olarak);saat
+Nomen;der Kuss,–¨ e;Adlar;öpücük
+Nomen;die Musik (nur Sg.);Adlar;müzik
+Nomen;der Tanz (hier nur Sg.);Adlar;dans
+Nomen;der Film, -e;Adlar;film
+Nomen;das Theater, -;Adlar;tiyatro
+Nomen;das Theaterstück, -e;Adlar;tiyatro oyunu
+Nomen;das Fest, -e;Adlar;bayram, parti, şenlik
+Nomen;die Party, -s;Adlar;parti, eğlence
+Nomen;der Sport (nur Sg.);Adlar;spor
+Nomen;das Konzert, -e;Adlar;konser
+Verben;leben;Eylemler;yaşamak
+Verben;sprechen, spricht;Eylemler;konuşmak
+Verben;essen, isst;Eylemler;yemek
+Verben;zu Mittag essen;Eylemler;öğle yemeği yemek
+Verben;mitkommen, kommt mit;Eylemler;(birlikte) gelmek
+Verben;treffen, trifft;Eylemler;karşılaşmak, buluşmak
+Verben;Freunde treffen;Eylemler;arkadaşlarla buluşmak
+Verben;bleiben;Eylemler;kalmak
+Verben;zu Hause bleiben;Eylemler;evde kalmak/oturmak
+Verben;grillen;Eylemler;ızgara/mangal yapmak
+Verben;besuchen;Eylemler;ziyaret etmek
+Verben;Freunde besuchen;Eylemler;arkadaşları ziyaret etmek
+Verben;;Eylemler;
+Verben;gehen;Eylemler;gitmek
+Verben;ins Kino gehen;Eylemler;sinemaya gitmek
+Verben;tanzen gehen;Eylemler;dansa gitmek
+Verben;spazieren gehen;Eylemler;gezmek
+Verben;ansehen, sieht an;Eylemler;bakmak, izlemek
+Verben;DVDs ansehen;Eylemler;DVD izlemek
+Verben;beginnen;Eylemler;başlamak
+Verben;machen;Eylemler;yapmak
+Verben;Sport machen;Eylemler;spor yapmak
+Verben;Mittagspause machen;Eylemler;öğle paydosu yapmak
+Verben;Schluss machen;Eylemler;bitirmek
+Verben;Feierabend machen;Eylemler;paydos etmek
+Verben;spielen;Eylemler;oynamak
+Verben;Fußball spielen;Eylemler;futbol oynamak
+Verben;Schach spielen;Eylemler;satranç oynamak
+Verben;fahren, fährt;Eylemler;(bir araçla) gitmek
+Verben;Rad fahren;Eylemler;bisiklete binmek
+Verben;möchte;Eylemler;istiyor/arzu ediyor
+Adjektive;genervt;Önadlar;sinirli
+Adjektive;enttäuscht;Önadlar;üzgün, hayal kırıklığına uğramış
+Adjektive;begeistert;Önadlar;coşkulu
+Adjektive;wütend;Önadlar;kızgın
+Adjektive;süß;Önadlar;tatlı
+Adjektive;klein;Önadlar;küçük
+Adjektive;hübsch;Önadlar;güzel
+Adjektive;spannend;Önadlar;sürükleyici, heyecanlı
+Adjektive;warm;Önadlar;sıcak
+Adjektive;pünktlich;Önadlar;dakik
+Adjektive;verheiratet;Önadlar;evli
+Fragewörter;Wie viel?;Soru Sözcükleri;"Kaç …?; Ne kadar?"
+Wendungen;Entschuldigung!;Deyişler;Affedersiniz!
+Wendungen;Wie viel Uhr ist es?;Deyişler;Saat kaç?
+Wendungen;Um wie viel Uhr …?;Deyişler;Saat kaçta …?
+Wendungen;Tut mir leid!;Deyişler;Özür dilerim! Üzgünüm!
+Wendungen;Bis bald!;Deyişler;Yakında görüşmek üzere!
+Wendungen;Bis dann!;Deyişler;Görüşmek üzere!
+Kleine Wörter;erst;Kısa Sözcükler;henüz, ancak, önce, daha
+Kleine Wörter;schon;Kısa Sözcükler;çoktan, bile
+Kleine Wörter;heute;Kısa Sözcükler;bugün
+Kleine Wörter;morgen;Kısa Sözcükler;yarın
+Kleine Wörter;endlich;Kısa Sözcükler;en sonunda, nihayet
+Präpositionen;um (Zeit);İlgeçler;#AD?
+Präpositionen;gegen (Zeit);İlgeçler;… doğru
+Präpositionen;von;İlgeçler;-den, -dan
+Nomen;die Ware, -n;Adlar;mal, ürün
+Nomen;das Lebensmittel, -;Adlar;gıda ürünü
+Nomen;der Apfel,–¨;Adlar;elma
+Nomen;die Banane, -n;Adlar;muz
+Nomen;die Zitrone, -n;Adlar;limon
+Nomen;das Brot, -e;Adlar;ekmek
+Nomen;die Butter, -;Adlar;tereyağı
+Nomen;das Ei, -er;Adlar;yumurta
+Nomen;der Fisch, -e;Adlar;balık
+Nomen;das Fleisch (nur Sg.);Adlar;et
+Nomen;die Tomate, -n;Adlar;domates
+Nomen;der Käse (nur Sg.);Adlar;peynir
+Nomen;der Reis (nur Sg.);Adlar;"pirinç (""pilav"" için de bu sözcük kullanılır)"
+Nomen;der Salat, -e;Adlar;salata
+Nomen;der Schinken, -;Adlar;jambon
+Nomen;das Mehl (nur Sg.);Adlar;un
+Nomen;der Tee (nur Sg.);Adlar;çay
+Nomen;der Kaffee (nur Sg.);Adlar;kahve
+Nomen;die Milch (nur Sg.);Adlar;süt
+Nomen;das Wasser (nur Sg.);Adlar;su
+Nomen;das Mineralwasser, -;Adlar;maden suyu
+Nomen;der Wein, -e;Adlar;şarap
+Nomen;das Bier, -e;Adlar;bira
+Nomen;die Cola, -s;Adlar;kola
+Nomen;der Kühlschrank,–¨ e;Adlar;buzdolabı
+Nomen;das Toilettenpapier (nur Sg.);Adlar;tuvalet kâğıdı
+Nomen;die Zeitung, -en;Adlar;gazete
+Nomen;die Zigarette, -n;Adlar;sigara
+Nomen;die Zahnpasta (nur Sg.);Adlar;diş macunu
+Nomen;die Suppe, -n;Adlar;çorba
+Nomen;das Gericht, -e;Adlar;yemek
+Nomen;die Kartoffel, -n;Adlar;patates
+Nomen;der Kuchen, -;Adlar;pasta, kek
+Nomen;das Omelett, -s;Adlar;omlet
+Nomen;die Pizza, -s/-en;Adlar;pizza
+Nomen;das Salz (nur Sg.);Adlar;tuz
+Nomen;der Zucker (nur Sg.);Adlar;şeker
+Nomen;der Pfeffer (nur Sg.);Adlar;karabiber
+Nomen;das Öl (nur Sg.);Adlar;sıvı yağ
+Nomen;die Zwiebel, -n;Adlar;soğan
+Nomen;der Knoblauch (nur Sg.);Adlar;sarımsak
+Nomen;der Einkaufszettel, -;Adlar;alışveriş listesi
+Nomen;der Markt,–¨ e;Adlar;pazar (yeri)
+Nomen;der Stand,–¨ e;Adlar;tezgâh
+Nomen;das Obst (nur Sg.);Adlar;meyve
+Nomen;das Gemüse (nur Sg.);Adlar;sebze
+Nomen;der Verkäufer, -;Adlar;satıcı
+Nomen;die Verkäuferin, -nen;Adlar;satıcı (kadın)
+Nomen;der Kunde, -n;Adlar;müşteri
+Nomen;die Kundin, -nen;Adlar;müşteri (kadın)
+Nomen;die Woche, - n;Adlar;hafta
+Nomen;die Nachricht, -en;Adlar;haber
+Nomen;der Termin, -e;Adlar;randevu, kararlaştırılan saat/gün
+Nomen;das Regal, -e;Adlar;raf
+Nomen;die Theke, -n;Adlar;tezgâh
+Nomen;das Getränk, -e;Adlar;içecek
+Nomen;die Abteilung, -en;Adlar;bölüm, reyon
+Nomen;die Kasse, -n;Adlar;kasa
+Nomen;die Tankstelle, -n;Adlar;benzin istasyonu
+Nomen;die Dose, -n;Adlar;teneke kutu
+Nomen;die Flasche, -n;Adlar;şişe
+Nomen;die Packung, -en;Adlar;paket
+Nomen;das Stück, -e;Adlar;parça, adet, tane
+Nomen;die Tüte, -n;Adlar;poşet
+Nomen;das Kilo, -s;Adlar;kilo
+Nomen;das Gramm, (-e);Adlar;gram
+Nomen;der Liter, -;Adlar;litre
+Nomen;der Preis, -e;Adlar;fiyat
+Nomen;der Euro;Adlar;euro, avro
+Nomen;der Cent;Adlar;cent
+Nomen;das Angebot, -e;Adlar;markette/mağazada indirimli ürün
+Verben;backen;Eylemler;fırında pişirmek
+Verben;braten, brät;Eylemler;kızartmak
+Verben;brauchen;Eylemler;ihtiyacı olmak
+Verben;fragen;Eylemler;sormak
+Verben;mögen, mag;Eylemler;sevmek, hoşlanmak
+Verben;trinken;Eylemler;içmek
+Verben;helfen, hilft;Eylemler;yardım etmek
+Verben;suchen;Eylemler;aramak
+Verben;finden;Eylemler;bulmak
+Verben;kaufen;Eylemler;satın almak
+Verben;verkaufen;Eylemler;satmak
+Verben;kosten;Eylemler;fiyatı … olmak
+Verben;stimmen;Eylemler;doğru olmak
+Verben;Recht haben;Eylemler;haklı olmak
+Verben;aufstehen, steht auf;Eylemler;(ayağa) kalkmak
+Verben;losfahren, fährt los;Eylemler;yola çıkmak
+Verben;wegfahren, fährt weg;Eylemler;gitmek, ayrılmak
+Verben;abholen, holt ab;Eylemler;karşılamak
+Verben;zurückkommen, kommt zurück;Eylemler;geri gelmek
+Verben;einkaufen, kauft ein;Eylemler;satın almak, alışveriş yapmak
+Verben;einpacken, packt ein;Eylemler;sarmak, paketlemek
+Verben;anfangen, fängt an;Eylemler;başlamak
+Verben;aufpassen, passt auf;Eylemler;dikkatli olmak
+Verben;es gibt;Eylemler;var
+Verben;auf haben - zu haben;Eylemler;açık olmak -kapalı olmak
+Adjektive;zufrieden -unzufrieden;Önadlar;hoşnut -hoşnutsuz
+Adjektive;kaputt;Önadlar;bozuk, kırık
+Adjektive;leer;Önadlar;boş
+Adjektive;gesund -ungesund;Önadlar;sağlıklı -sağlıksız
+Adjektive;billig - teuer;Önadlar;ucuz -pahalı
+Adjektive;günstig - nicht günstig;Önadlar;hesaplı -ucuz değil
+Adjektive;frisch;Önadlar;taze
+Adverbien;rechts - links;Belirteçler;sağ -sol
+Adverbien;oben -unten;Belirteçler;yukarıda -aşağıda
+Adverbien;vorn - hinten;Belirteçler;önde -arkada
+Fragewörter;Wie oft?;Soru Sözcükleri;Ne sıklıkta?
+Fragewörter;Wie lange?;Soru Sözcükleri;Ne kadar zaman?/Ne zamandan beri?
+Wendungen;So ein Mist!;Deyişler;Lanet olsun! Hay aksi!
+Wendungen;Entschuldigung, ich habe ein Problem!;Deyişler;Özür dilerim, bir problemim var.
+Wendungen;Warten Sie einen Moment!;Deyişler;Lütfen bekleyiniz!
+Wendungen;Was wünschen Sie?;Deyişler;Ne arzu ediyorsunuz/etmiştiniz?
+Wendungen;Vielen Dank!;Deyişler;Teşekkür ederim.
+Wendungen;Ist alles in Ordnung?;Deyişler;Her şey yolunda mı?
+Wendungen;Danke, das war’s.;Deyişler;Teşekkürler, bu kadar.
+Wendungen;Ich bin kurz weg.;Deyişler;Az sonra geleceğim.
+Wendungen;Wie alt sind Sie?;Deyişler;Kaç yaşındasınız?
+Kleine Wörter;aber;Kısa Sözcükler;ama
+Kleine Wörter;gern;Kısa Sözcükler;seve seve, memnuniyetle
+Kleine Wörter;jetzt;Kısa Sözcükler;şimdi
+Kleine Wörter;nur;Kısa Sözcükler;yalnız
+Kleine Wörter;zweimal;Kısa Sözcükler;iki kez
+Kleine Wörter;für;Kısa Sözcükler;için
+Nomen;das Haar, -e;Adlar;saç
+Nomen;das Auge, -n;Adlar;göz
+Nomen;die Größe, -n;Adlar;boy, beden, büyüklük
+Nomen;die Kleidung (nur Sg.);Adlar;giyim, kıyafet
+Nomen;die Brille, -n;Adlar;gözlük
+Nomen;die Farbe, -n;Adlar;renk
+Nomen;die Haarfarbe;Adlar;saç rengi
+Nomen;das Au-pair, -s;Adlar;çocuk bakıcısı, au-pair
+Nomen;der Junge, -n;Adlar;erkek çocuk
+Nomen;das Mädchen, -;Adlar;kız çocuk
+Nomen;der Fragebogen,–¨;Adlar;anket
+Nomen;das Alter (nur Sg.);Adlar;yaş
+Nomen;das Geschlecht, -er;Adlar;cinsiyet
+Nomen;der Familienstand (nur Sg.);Adlar;medeni hâli
+Nomen;der Führerschein, -e;Adlar;ehliyet, sürücü belgesi
+Nomen;der Mensch, -en;Adlar;insan
+Nomen;das Tier, -e;Adlar;hayvan
+Nomen;das Hobby, -s;Adlar;hobi
+Nomen;die Hausarbeit, -en;Adlar;ev işi
+Nomen;die Hausaufgabe, -n;Adlar;ev ödevi
+Nomen;der Kontakt, -e;Adlar;kontak, temas
+Nomen;das Team, -s;Adlar;ekip, takım
+Nomen;das Werkzeug, -e;Adlar;âlet, araç
+Nomen;der Computer, -;Adlar;bilgisayar
+Nomen;die Landkarte, -n;Adlar;harita
+Nomen;die Zeichnung, -en;Adlar;çizgi, resim
+Nomen;der Text, -e;Adlar;metin
+Nomen;die Volkshochschule, -n (die VHS);Adlar;Halk Eğitim Merkezi
+Nomen;der Kurs, -e;Adlar;kurs
+Nomen;das Sekretariat, -e;Adlar;sekreterlik
+Nomen;die Toilette, -n;Adlar;tuvalet
+Nomen;der Raum,–¨ e;Adlar;oda
+Nomen;das Gebäude, -;Adlar;bina
+Nomen;der Bahnhof,–¨ e;Adlar;istasyon
+Nomen;der Flughafen,–¨;Adlar;hava limanı
+Nomen;die Polizei (nur Sg.);Adlar;polis
+Nomen;die Bücherei, -en;Adlar;kütüphane
+Nomen;die Kirche, -n;Adlar;kilise
+Nomen;der Kindergarten,–¨;Adlar;anaokulu
+Nomen;das Schwimmbad,–¨ er;Adlar;yüzme havuzu
+Nomen;die Post (nur Sg.);Adlar;postane
+Nomen;der Brief, -e;Adlar;mektup
+Nomen;der Park, -s;Adlar;park
+Nomen;der Berg, -e;Adlar;dağ
+Nomen;die Brücke, -n;Adlar;köprü
+Nomen;die Ampel, -n;Adlar;trafik ışığı
+Nomen;die Kreuzung, -en;Adlar;kavşak
+Nomen;die Ecke, -n;Adlar;köşe
+Nomen;das Zentrum, Zentren;Adlar;merkez
+Nomen;die Station, -en;Adlar;istasyon, durak
+Nomen;die Endstation, -en;Adlar;son durak
+Nomen;der Bus, -se;Adlar;otobüs
+Nomen;die Straßenbahn, -en;Adlar;tramvay
+Nomen;die U-Bahn, -en;Adlar;metro
+Nomen;die S-Bahn, -en;Adlar;metro/banliyö treni
+Nomen;das Taxi, -s;Adlar;taksi
+Nomen;das Fahrrad,–¨ er;Adlar;bisiklet
+Nomen;das Motorrad,–¨ er;Adlar;motosiklet
+Nomen;der Zug,–¨ e;Adlar;tren
+Nomen;das Flugzeug, -e;Adlar;uçak
+Nomen;das Schiff, -e;Adlar;gemi
+Verben;fahren, fährt;Eylemler;(bir araçla) gitmek, (araç) kullanmak
+Verben;Auto fahren;Eylemler;araba kullanmak
+Verben;gehen;Eylemler;gitmek
+Verben;zu Fuß gehen;Eylemler;yürüyerek gitmek
+Verben;aussehen, sieht aus;Eylemler;… gibi görünmek
+Verben;tragen, trägt;Eylemler;taşımak
+Verben;rauchen;Eylemler;sigara içmek
+Verben;können, kann;Eylemler;-bilmek, beceriye sahip olmak
+Verben;aufräumen, räumt auf;Eylemler;(…-i) toplamak/düzenlemek
+Verben;lieben;Eylemler;sevmek
+Verben;zeichnen;Eylemler;resim yapmak
+Verben;nähen;Eylemler;(dikiş) dikmek
+Verben;stehen;Eylemler;ayakta durmak
+Verben;reparieren;Eylemler;tamir etmek
+Verben;rechnen;Eylemler;hesap yapmak
+Verben;organisieren;Eylemler;organize etmek
+Verben;kennen lernen, lernt kennen;Eylemler;biriyle tanışmak
+Verben;wiederholen;Eylemler;tekrar etmek
+Verben;nehmen, nimmt;Eylemler;almak
+Verben;einsteigen, steigt ein;Eylemler;binmek
+Verben;aussteigen, steigt aus;Eylemler;inmek
+Verben;umsteigen, steigt um;Eylemler;aktarma yapmak
+Verben;abfahren, fährt ab;Eylemler;hareket etmek, kalkmak (tren, otobüs vb.)
+Verben;ankommen, kommt an;Eylemler;gelmek, varmak
+Verben;abbiegen, biegt ab;Eylemler;dönmek, sapmak
+Adjektive;sportlich -unsportlich;Önadlar;sportif -spor yapmayan
+Adjektive;elegant;Önadlar;zarif
+Adjektive;jung -alt;Önadlar;genç -yaşlı
+Adjektive;groß - klein;Önadlar;büyük -küçük
+Adjektive;lang - kurz;Önadlar;uzun -kısa
+Adjektive;blond;Önadlar;sarı saçlı, sarışın
+Adjektive;weiß;Önadlar;beyaz
+Adjektive;schwarz;Önadlar;siyah
+Adjektive;grau;Önadlar;gri
+Adjektive;braun;Önadlar;kahverengi
+Adjektive;rot;Önadlar;kırmızı
+Adjektive;gelb;Önadlar;sarı
+Adjektive;blau;Önadlar;mavi
+Adjektive;grün;Önadlar;yeşil
+Adjektive;modern -unmodern;Önadlar;modern -demode
+Adjektive;schön;Önadlar;güzel
+Adjektive;männlich - weiblich;Önadlar;eril, erkek -dişi, kadın
+Adjektive;ledig;Önadlar;bekâr
+Adjektive;wichtig -unwichtig;Önadlar;önemli -önemsiz
+Adjektive;selbstständig;Önadlar;bağımsız
+Adjektive;nervös;Önadlar;sinirli
+Adjektive;weit - nah;Önadlar;uzak -yakın
+Fragewörter;Wohin?;Soru Sözcükleri;Nereye?
+Wendungen;Hilfe!;Deyişler;İmdat!
+Wendungen;Ja, genau!;Deyişler;Tamamen öyle! Aynen öyle!
+Wendungen;Ja, natürlich!;Deyişler;Evet, tabii/elbette!
+Wendungen;Ich finde, …;Deyişler;… buluyorum.
+Wendungen;Ich denke, …;Deyişler;… düşünüyorum.
+Wendungen;Tut mir leid.;Deyişler;Özür dilerim, üzgünüm.
+Wendungen;zu spät kommen;Deyişler;geç kalmak
+Wendungen;Ist hier noch frei?;Deyişler;… müsait mi? … boş mu?
+Wendungen;Wie komme ich zum …?;Deyişler;…-e/-a nasıl gidebilirim?
+Wendungen;Wie komme ich nach Hause?;Deyişler;Eve nasıl gidebilirim?
+Kleine Wörter;sofort;Kısa Sözcükler;hemen
+Kleine Wörter;egal;Kısa Sözcükler;fark etmez
+Kleine Wörter;ein bisschen;Kısa Sözcükler;biraz
+Kleine Wörter;man;Kısa Sözcükler;"…-ler/-lır (örn.: man sagt=derler; man schreibt=yazılır)"
+Kleine Wörter;geradeaus;Kısa Sözcükler;dümdüz
+Kleine Wörter;nach links;Kısa Sözcükler;sola
+Kleine Wörter;nach rechts;Kısa Sözcükler;sağa
+Kleine Wörter;weiter;Kısa Sözcükler;daha, ileri
+Kleine Wörter;erst …, dann …;Kısa Sözcükler;il önce …, sonra …
+Kleine Wörter;leider;Kısa Sözcükler;maalesef
+Präpositionen;in;İlgeçler;-de, içinde
+Präpositionen;an;İlgeçler;-de, -da, yanında, bitişiğinde
+Präpositionen;auf;İlgeçler;üstünde
+Präpositionen;vom/von der;İlgeçler;-den, -dan
+Präpositionen;zum /zur;İlgeçler;(bir yöne doğru) -e, -a
+Präpositionen;bis zum/zur;İlgeçler;…-e kadar
+Präpositionen;um (Ort);İlgeçler;(mekan bağlamında) etrafında, etrafına
+Wichtige Arbeitsanweisungen;Hören Sie (den Dialog).;Önemli Çalışma Yönergeleri;Diyaloğu dinleyin.
+Wichtige Arbeitsanweisungen;Hören Sie noch einmal.;Önemli Çalışma Yönergeleri;Tekrar dinleyin.
+Wichtige Arbeitsanweisungen;Sprechen Sie nach.;Önemli Çalışma Yönergeleri;Duyduğunuzu tekrarlayın.
+Wichtige Arbeitsanweisungen;Lesen Sie (den Text).;Önemli Çalışma Yönergeleri;(Metni) okuyun.
+Wichtige Arbeitsanweisungen;Lesen Sie laut.;Önemli Çalışma Yönergeleri;Yüksek sesle okuyun.
+Wichtige Arbeitsanweisungen;"Schreiben Sie eine SMS / eine E-Mail /
+einen Steckbrief / …";Önemli Çalışma Yönergeleri;SMS (kısa mesaj) / e-posta / kısa öz geçmiş … yazın.
+Wichtige Arbeitsanweisungen;Sehen Sie das Bild an.;Önemli Çalışma Yönergeleri;Resme bakın.
+Wichtige Arbeitsanweisungen;Gestalten Sie das leere Feld.;Önemli Çalışma Yönergeleri;Boş alanda uygulayın.
+Wichtige Arbeitsanweisungen;Welche Wörter kennen Sie?;Önemli Çalışma Yönergeleri;Hangi sözcükleri biliyorsunuz?
+Wichtige Arbeitsanweisungen;Was passt?;Önemli Çalışma Yönergeleri;Hangisi uygundur?
+Wichtige Arbeitsanweisungen;Was ist richtig?;Önemli Çalışma Yönergeleri;Hangisi doğrudur?
+Wichtige Arbeitsanweisungen;Sind Ihre Vermutungen richtig?;Önemli Çalışma Yönergeleri;Tahminleriniz doğru mu?
+Wichtige Arbeitsanweisungen;Kreuzen Sie an.;Önemli Çalışma Yönergeleri;Çarpı koyun.
+Wichtige Arbeitsanweisungen;Verbinden Sie.;Önemli Çalışma Yönergeleri;Eşleştirin.
+Wichtige Arbeitsanweisungen;Markieren Sie.;Önemli Çalışma Yönergeleri;İşaretleyin.
+Wichtige Arbeitsanweisungen;Sortieren Sie.;Önemli Çalışma Yönergeleri;Sıralayın / sınıflandırın.
+Wichtige Arbeitsanweisungen;Ordnen Sie (den Dialog).;Önemli Çalışma Yönergeleri;Diyaloğu sıralayın.
+Wichtige Arbeitsanweisungen;Ordnen Sie (die Bilder) zu.;Önemli Çalışma Yönergeleri;Resimleri sıralayın / eşleştirin.
+Wichtige Arbeitsanweisungen;Ergänzen Sie.;Önemli Çalışma Yönergeleri;Tamamlayın.
+Wichtige Arbeitsanweisungen;Fragen Sie.;Önemli Çalışma Yönergeleri;Soru tümcesi oluşturun.
+Wichtige Arbeitsanweisungen;Antworten Sie.;Önemli Çalışma Yönergeleri;Yanıtlayın.
+Wichtige Arbeitsanweisungen;Beantworten Sie die Frage.;Önemli Çalışma Yönergeleri;Soruyu yanıtlayın.
+Wichtige Arbeitsanweisungen;Formulieren Sie Fragen.;Önemli Çalışma Yönergeleri;Soru tümceleri oluşturun.
+Wichtige Arbeitsanweisungen;Spekulieren Sie.;Önemli Çalışma Yönergeleri;Tahmin yürütün.
+Wichtige Arbeitsanweisungen;Vergleichen Sie (mit der Lösung / mit Ihren Ideen).;Önemli Çalışma Yönergeleri;(Kendi düşüncelerinizle / yanıt anahtarı ile) karşılaştırın.
+Wichtige Arbeitsanweisungen;Üben Sie das Gespräch.;Önemli Çalışma Yönergeleri;Diyaloğu çalışın.
+Wichtige Arbeitsanweisungen;Variieren Sie.;Önemli Çalışma Yönergeleri;Çeşitleme yapın.
+Wichtige Arbeitsanweisungen;Wählen Sie.;Önemli Çalışma Yönergeleri;Seçin.
+Wichtige Arbeitsanweisungen;Notieren Sie.;Önemli Çalışma Yönergeleri;Not edin.
+Wichtige Arbeitsanweisungen;Sammeln Sie.;Önemli Çalışma Yönergeleri;Toplayın.
+Wichtige Arbeitsanweisungen;Recherchieren Sie (im Internet).;Önemli Çalışma Yönergeleri;(İnternette) araştırın.
+Wichtige Arbeitsanweisungen;Machen Sie eine Liste / eine Collage / ein Plakat / …;Önemli Çalışma Yönergeleri;Bir liste / kolaj / afiş … yapın.
+Wichtige Arbeitsanweisungen;Raten Sie.;Önemli Çalışma Yönergeleri;Tahmin edin.
+Wichtige Arbeitsanweisungen;Benutzen Sie ein Wörterbuch.;Önemli Çalışma Yönergeleri;Sözlük kullanın.
+Wichtige Arbeitsanweisungen;Achten Sie auf die Schlüsselwörter.;Önemli Çalışma Yönergeleri;Anahtar sözcüklere dikkat edin.
+Wichtige Arbeitsanweisungen;Nehmen Sie sich auf.;Önemli Çalışma Yönergeleri;Kendi sesinizi kaydedin.
+Wichtige Grammatikbegriffe;der Buchstabe, -n;Önemli Dilbilgisi Terinmleri;harf
+Wichtige Grammatikbegriffe;der Laut, -e;Önemli Dilbilgisi Terinmleri;ses
+Wichtige Grammatikbegriffe;der Vokal, -e;Önemli Dilbilgisi Terinmleri;ünlü, sesli, vokal
+Wichtige Grammatikbegriffe;der Konsonant, -en;Önemli Dilbilgisi Terinmleri;ümsüz, sessiz, konsonant
+Wichtige Grammatikbegriffe;das Wort,–¨ er;Önemli Dilbilgisi Terinmleri;sözcük, kelime
+Wichtige Grammatikbegriffe;der Satz,–¨ e;Önemli Dilbilgisi Terinmleri;tümce, cümle
+Wichtige Grammatikbegriffe;die Wortart, -en;Önemli Dilbilgisi Terinmleri;sözcük/kelime türü
+Wichtige Grammatikbegriffe;der Artikel, -;Önemli Dilbilgisi Terinmleri;tanımlık
+Wichtige Grammatikbegriffe;der bestimmte Artikel;Önemli Dilbilgisi Terinmleri;belirli tanımlık
+Wichtige Grammatikbegriffe;der unbestimmte Artikel;Önemli Dilbilgisi Terinmleri;belirsiz tanımlık
+Wichtige Grammatikbegriffe;der Negativartikel;Önemli Dilbilgisi Terinmleri;olumsuz tanımlık
+Wichtige Grammatikbegriffe;der Possessivartikel;Önemli Dilbilgisi Terinmleri;iyelik adılı/zamiri
+Wichtige Grammatikbegriffe;das Nomen, -;Önemli Dilbilgisi Terinmleri;isim, ad
+Wichtige Grammatikbegriffe;das Verb, -en;Önemli Dilbilgisi Terinmleri;eylem, fiil
+Wichtige Grammatikbegriffe;das Modalverb, -en;Önemli Dilbilgisi Terinmleri;kiplik eylemi, tarz fiili
+Wichtige Grammatikbegriffe;das Adjektiv, -e;Önemli Dilbilgisi Terinmleri;önad, sıfat
+Wichtige Grammatikbegriffe;das Pronomen, -;Önemli Dilbilgisi Terinmleri;adıl, zamir
+Wichtige Grammatikbegriffe;das Personalpronomen, -;Önemli Dilbilgisi Terinmleri;kişi adılı/zamiri
+Wichtige Grammatikbegriffe;das Adverb, -ien;Önemli Dilbilgisi Terinmleri;zarf, belirteç
+Wichtige Grammatikbegriffe;die Präposition, -en;Önemli Dilbilgisi Terinmleri;ilgeç, edat
+Wichtige Grammatikbegriffe;das Fragewort,–¨ er;Önemli Dilbilgisi Terinmleri;soru sözcüğü
+Wichtige Grammatikbegriffe;die Funktion, -en;Önemli Dilbilgisi Terinmleri;fonksiyon, işlev
+Wichtige Grammatikbegriffe;das Subjekt, -e;Önemli Dilbilgisi Terinmleri;özne
+Wichtige Grammatikbegriffe;die Ergänzung, -en;Önemli Dilbilgisi Terinmleri;tümleç, tamlama
+Wichtige Grammatikbegriffe;die Nominativ-Ergänzung;Önemli Dilbilgisi Terinmleri;nominatif/yalin hal tümleçi
+Wichtige Grammatikbegriffe;die Akkusativ-Ergänzung;Önemli Dilbilgisi Terinmleri;belirtme durumundaki/-i halindaki nesne
+Wichtige Grammatikbegriffe;die Temporalangabe, -n;Önemli Dilbilgisi Terinmleri;zaman belirten sözcük
+Wichtige Grammatikbegriffe;die Lokalangabe, -n;Önemli Dilbilgisi Terinmleri;yer belirten sözcük
+Wichtige Grammatikbegriffe;der Aussagesatz,–¨ e;Önemli Dilbilgisi Terinmleri;bildirme/ifade tümcesi
+Wichtige Grammatikbegriffe;die W-Frage, -n;Önemli Dilbilgisi Terinmleri;"Almancada wer, wie, was … gibi soru sözcüğü ile
+başlayan soru (Türkçedeki 5N1K soruları)"
+Wichtige Grammatikbegriffe;die Ja-/Nein-Frage, -n;Önemli Dilbilgisi Terinmleri;evet ya da hayır yanıtlanan soru
+Wichtige Grammatikbegriffe;der Imperativ, -e;Önemli Dilbilgisi Terinmleri;emir kipi
+Wichtige Grammatikbegriffe;die Negation, -en;Önemli Dilbilgisi Terinmleri;olumsuzluk/olumsuzlama
+Das Verb;der Infinitiv, -e;Eylem, Fiil;eylemlik, mastar hali
+Das Verb;die Konjugation, -en;Eylem, Fiil;eylem/fiil çekimi
+Das Verb;regelmäßig;Eylem, Fiil;düzenli
+Das Verb;unregelmäßig;Eylem, Fiil;düzensiz
+Das Verb;trennbar;Eylem, Fiil;ayrılabilir, bölünebilir
+Das Verb;der Verbstamm,–¨ e;Eylem, Fiil;eylem/fiil kökü
+Das Verb;die Endung, -en;Eylem, Fiil;son ek/takı
+Das Verb;das Präsens;Eylem, Fiil;"Almancada şimdiki ve geniş zaman (gelecek zaman için
+de kullanılır)"
+Das Nomen;maskulin;Ad, İsim;eril, erkek
+Das Nomen;neutral;Ad, İsim;nötr
+Das Nomen;feminin;Ad, İsim;dişi, kadın
+Das Nomen;der Singular;Ad, İsim;tekil
+Das Nomen;der Plural;Ad, İsim;çoğul
+Das Nomen;der Nominativ;Ad, İsim;yalin hal, nominatif
+Das Nomen;der Akkusativ;Ad, İsim;belirtme durumu, -i hali

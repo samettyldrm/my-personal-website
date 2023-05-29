@@ -1,9 +1,12 @@
-console.log("gdfgjdfg");
-
 // CSV dosyasının adı ve yolu
 var csvFilePath = "./data.csv";
 
-// CSV dosyasını okumak için XMLHttpRequest kullanma
+var min = 1; // Minimum değer
+var max = 638; // Maksimum değer
+var randomInt = Math.floor(Math.random() * (max - min + 1)) + min;
+
+function listen() {
+  // CSV dosyasını okumak için XMLHttpRequest kullanma
 var xhr = new XMLHttpRequest();
 xhr.open("GET", csvFilePath, true);
 xhr.onreadystatechange = function () {
@@ -11,9 +14,6 @@ xhr.onreadystatechange = function () {
     var csvData = xhr.responseText;
 
     // CSV dosyasından satırları ayırma ve diziye aktarma
-    var min = 1; // Minimum değer
-    var max = 638; // Maksimum değer
-    var randomInt = Math.floor(Math.random() * (max - min + 1)) + min;
 
     var lines = csvData.split("\n");
     turDe = lines[randomInt].split(";")[0];
@@ -49,26 +49,29 @@ xhr.onreadystatechange = function () {
     // Örnek metni okut
     okuMetni(kelimeDe);
 
-        // Almanca metni okutmak için konuşma fonksiyonu
-        function okuMetniTr(metin) {
-          const konusma = new SpeechSynthesisUtterance();
-          konusma.lang = "tr-TR"; // Almanca dil kodu
-          konusma.text = metin;
-    
-          // Konuşma seslendiricisi seçimi (opsiyonel)
-          const seslendirici = window.speechSynthesis
-            .getVoices()
-            .find((voice) => voice.lang === "de-DE");
-          if (seslendirici) {
-            konusma.voice = seslendirici;
-          }
-    
-          // Konuşmayı başlat
-          speechSynthesis.speak(konusma);
-        }
-    
-        // Örnek metni okut
-        okuMetniTr(kelimeTr);
+    // Almanca metni okutmak için konuşma fonksiyonu
+    function okuMetniTr(metin) {
+      const konusmaTr = new SpeechSynthesisUtterance();
+      konusmaTr.lang = "tr-TR"; // Almanca dil kodu
+      konusmaTr.text = metin;
+
+      // Konuşma seslendiricisi seçimi (opsiyonel)
+      const seslendirici = window.speechSynthesis
+        .getVoices()
+        .find((voice) => voice.lang === "tr-TR");
+      if (seslendirici) {
+        konusmaTr.voice = seslendirici;
+      }
+
+      // Konuşmayı başlat
+      speechSynthesis.speak(konusmaTr);
+    }
+
+    // Örnek metni okut
+    okuMetniTr(kelimeTr);
   }
 };
 xhr.send();
+}
+
+listen();
