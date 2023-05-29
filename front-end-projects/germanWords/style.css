@@ -46,3 +46,11 @@ body{
 .fa-thumbtack{
     transform: rotate(-45deg);
 }
+
+
+@media (max-width:784px) {
+    #kelimeTr,
+    #kelimeDe{
+        font-size: 100%;
+    }
+}
