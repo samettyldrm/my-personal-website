@@ -11,7 +11,7 @@ function closeInfo() {
 var csvFilePath = "./data.csv";
 
 var min = 1; // Minimum değer
-var max = 638; // Maksimum değer
+var max = 639; // Maksimum değer
 var randomInt = Math.floor(Math.random() * (max - min + 1)) + min;
 
 function listen() {
