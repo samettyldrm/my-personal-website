@@ -1,3 +1,12 @@
+function showInfo() {
+  document.querySelector("#info").style.right = "1rem"
+}
+
+function closeInfo() {
+  document.querySelector("#info").style.right = "-100rem"
+}
+
+
 // CSV dosyasının adı ve yolu
 var csvFilePath = "./data.csv";
 
