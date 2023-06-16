@@ -46,7 +46,6 @@ xhr.onreadystatechange = function () {
       const konusma = new SpeechSynthesisUtterance();
       konusma.lang = "de-DE"; // Almanca dil kodu
       konusma.text = metin;
-      konusma.rate = 0.25
 
       // Konuşma seslendiricisi seçimi (opsiyonel)
       const seslendirici = window.speechSynthesis
