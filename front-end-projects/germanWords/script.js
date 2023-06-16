@@ -20,11 +20,24 @@ xhr.onreadystatechange = function () {
     kelimeDe = lines[randomInt].split(";")[1];
     turTr = lines[randomInt].split(";")[2];
     kelimeTr = lines[randomInt].split(";")[3];
+    
+
 
     document.querySelector("#turDe").innerHTML = turDe;
     document.querySelector("#kelimeDe").innerHTML = kelimeDe;
     document.querySelector("#turTr").innerHTML = "( " + turTr + " )";
-    document.querySelector("#kelimeTr").innerHTML = kelimeTr;
+    document.querySelector("#kelimeTr").innerHTML = "Anlamını görmek için mouse ile üzerine gel."
+
+    
+    document.querySelector("#kelimeTr").addEventListener("mouseover", function() {
+      document.querySelector("#kelimeTr").innerHTML=kelimeTr
+      okuMetniTr(kelimeTr);
+    })
+
+    document.querySelector("#kelimeTr").addEventListener("mouseout", function() {
+      document.querySelector("#kelimeTr").innerHTML = "Anlamını görmek için mouse ile üzerine gel."
+    })
+  
 
     console.log(turDe, kelimeDe, turTr, kelimeTr);
 
@@ -33,6 +46,7 @@ xhr.onreadystatechange = function () {
       const konusma = new SpeechSynthesisUtterance();
       konusma.lang = "de-DE"; // Almanca dil kodu
       konusma.text = metin;
+      konusma.rate = 0.25
 
       // Konuşma seslendiricisi seçimi (opsiyonel)
       const seslendirici = window.speechSynthesis
@@ -68,7 +82,7 @@ xhr.onreadystatechange = function () {
     }
 
     // Örnek metni okut
-    okuMetniTr(kelimeTr);
+    
   }
 };
 xhr.send();
