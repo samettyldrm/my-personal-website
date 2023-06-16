@@ -40,6 +40,7 @@ xhr.onreadystatechange = function () {
     
     document.querySelector("#kelimeTr").addEventListener("mouseover", function() {
       document.querySelector("#kelimeTr").innerHTML=kelimeTr
+      // document.querySelector("#kelimeTr").style.fontSize= "100%";
       okuMetniTr(kelimeTr);
     })
 

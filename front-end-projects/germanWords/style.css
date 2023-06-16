@@ -152,4 +152,14 @@ body{
     #not{
         font-size: 50%;
     }
+
+    #kelimeTr{
+        font-size: 75%;
+    }
+
+    #info{
+        width: 80%;
+    }
+
+
 }
