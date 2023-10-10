@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-body{
-    background-color: #374259;
+html{
+    background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+
+
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
+
+
 
 #germanWords{
     /* width: 100%; */
@@ -47,13 +57,23 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     background-color: rgb(255, 251, 251);
-    color: #374259;
+    color: #6696ef;
     padding: 1rem;
     margin: 1rem;
     cursor: pointer;
     border-radius: 2rem;
 
     /* color: #FFB84C; */
+}
+
+#wortkarte{
+    position: fixed;
+    color: rgb(255, 255, 255);
+    font-family: 'Boogaloo', cursive;
+    left: 3%;
+    top: 5%;
+    font-size: 1.3rem;
+
 }
 
 
@@ -70,15 +90,16 @@ body{
 
 #niveau{
     color: #FFF;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Boogaloo', cursive;
     position: fixed;
     left: 5%;
     bottom: 5%;
+    font-size: 1.2rem;
 
 }
 
 #not{
-    color: rgba(255, 255, 255, 0.323);
+    color: rgba(255, 255, 255, 0.712);
     position: fixed;
     bottom: 5%;
     left: 50%;
@@ -100,11 +121,19 @@ body{
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     cursor: pointer;
+    margin: 0.5rem;
 }
 
 .btn:hover{
     color: white;
-    background-color: rgb(219, 27, 27);
+    /* background-color: rgb(27, 123, 219); */
+    background-color: #FF9A8B;
+background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+
+
+
+
+    
 
 }
 
@@ -145,7 +174,6 @@ body{
     bottom: 1rem;
     color: white;
     cursor: pointer;
-    /* z-index: 100; */
 }
 
 
