@@ -68,6 +68,15 @@ body{
     
 }
 
+#niveau{
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    left: 5%;
+    bottom: 5%;
+
+}
+
 #not{
     color: rgba(255, 255, 255, 0.323);
     position: fixed;

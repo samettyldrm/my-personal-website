@@ -11,7 +11,7 @@ function closeInfo() {
 var csvFilePath = "./data.csv";
 
 var min = 1; // Minimum değer
-var max = 639; // Maksimum değer
+var max = 3273; // Maksimum değer
 var randomInt = Math.floor(Math.random() * (max - min + 1)) + min;
 
 function listen() {
@@ -29,6 +29,7 @@ xhr.onreadystatechange = function () {
     kelimeDe = lines[randomInt].split(";")[1];
     turTr = lines[randomInt].split(";")[2];
     kelimeTr = lines[randomInt].split(";")[3];
+    niveau = lines[randomInt].split(";")[4];
     
 
 
@@ -36,6 +37,7 @@ xhr.onreadystatechange = function () {
     document.querySelector("#kelimeDe").innerHTML = kelimeDe;
     document.querySelector("#turTr").innerHTML = "( " + turTr + " )";
     document.querySelector("#kelimeTr").innerHTML = "Anlamını görmek için mouse ile üzerine gel."
+    document.querySelector("#niveau").innerHTML = niveau
 
     
     document.querySelector("#kelimeTr").addEventListener("mouseover", function() {
