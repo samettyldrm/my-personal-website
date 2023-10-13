@@ -2,7 +2,7 @@
 
 html{
     background-color: #8BC6EC;
-background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+background-image: linear-gradient(90deg, #8BC6EC 0%, #393fa6 100%);
 
 
 
@@ -127,8 +127,8 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 .btn:hover{
     color: white;
     /* background-color: rgb(27, 123, 219); */
-    background-color: #FF9A8B;
-background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    background-color: #393939;
+background-image: linear-gradient(90deg, #a0bcfc 0%, #1454d3 55%, #075095 100%);
 
 
 
