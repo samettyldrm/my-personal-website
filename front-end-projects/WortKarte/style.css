@@ -27,8 +27,29 @@ background-image: linear-gradient(90deg, #8BC6EC 0%, #393fa6 100%);
     font-family: 'Luckiest Guy', cursive;
 }
 
-#kelimeDe{
+#germanWords #mitWord {
+    display: flex;
+    /* flex-direction:row; */
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    gap: 1rem;
+    /* flex-wrap: wrap; */
+
+}
+
+#germanWords i{
+    color: rgb(238, 238, 238);
+}
+
+#germanWords i:hover{
+    color: white;
+    /* font-size: large; */
+    cursor: pointer;
+
+}
+
+#kelimeDe{
     font-size: 4rem;
 }
 
