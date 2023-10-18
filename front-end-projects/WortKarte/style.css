@@ -39,14 +39,12 @@ background-image: linear-gradient(90deg, #8BC6EC 0%, #393fa6 100%);
 }
 
 #germanWords i{
-    color: rgb(238, 238, 238);
+    opacity: 0.8;
 }
 
 #germanWords i:hover{
-    color: white;
-    /* font-size: large; */
+    opacity: 1;
     cursor: pointer;
-
 }
 
 #kelimeDe{

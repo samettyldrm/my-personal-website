@@ -70,16 +70,19 @@ function update() {
           // Konuşma seslendiricisi seçimi (opsiyonel)
           const seslendirici = window.speechSynthesis
             .getVoices()
-            .find((voice) => voice.lang === "de-DE");
+            .find((voice) => voice.lang === "de-DE" );
           if (seslendirici) {
             konusma.voice = seslendirici;
           }
 
+
           // Konuşmayı başlat
           speechSynthesis.speak(konusma);
+          
         }
 
         document.querySelector("#dinle").onclick = function () {
+  
           okuMetni(kelimeDe);
         };
 
