@@ -84,7 +84,7 @@ html {
 #tur {
   position: fixed;
   color: white;
-  font-family: "Boogaloo", cursive;
+  font-family: "Poppins", sans-serif;
   right: 5%;
   top: 5%;
 }
@@ -187,6 +187,7 @@ html {
   #kelimeTr,
   #kelimeDe {
     font-size: 150%;
+    /* cursor: ; */
   }
 
   #not {
