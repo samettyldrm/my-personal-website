@@ -113,8 +113,8 @@ function update() {
             
             kelimeTrDiv.style.color = "#fc5a5a"
             kelimeTrDiv.addEventListener("mouseover", function() {
-              document.querySelector("#kelimeTr").innerHTML=kelimeTr
-              kelimeTrDiv.addEventListener("mouseout", function() {
+              kelimeTrDiv.innerHTML=kelimeTr
+            kelimeTrDiv.addEventListener("mouseout", function() {
                 kelimeTrDiv.innerHTML = "Anlamını görmek için mouse ile üzerine gel."
               
               })
@@ -132,6 +132,17 @@ function update() {
             document.querySelector("#wortkarte").innerHTML = '<i class="fa-solid fa-diamond"></i> Wortkarte'
             document.querySelector("#kelimeTr").innerHTML = kelimeTr
             console.log(htmlElement)
+
+            kelimeTrDiv.addEventListener("mouseover", function() {
+              document.querySelector("#kelimeTr").innerHTML=kelimeTr
+            kelimeTrDiv.addEventListener("mouseout", function() {
+                kelimeTrDiv.innerHTML = kelimeTr
+              
+              })
+            
+              
+            })
+            
           }
         }
 
