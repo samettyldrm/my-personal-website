@@ -1,230 +1,201 @@
-@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&display=swap");
 
-html{
-    background-color: #8BC6EC;
-background-image: linear-gradient(90deg, #8BC6EC 0%, #393fa6 100%);
-
-
-
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-
-#germanWords{
-    /* width: 100%; */
-    color: white;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Luckiest Guy', cursive;
+#germanWords {
+  /* width: 100%; */
+  color: white;
+  /* color: #393939; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Luckiest Guy", cursive;
 }
 
 #germanWords #mitWord {
-    display: flex;
-    /* flex-direction:row; */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-    /* flex-wrap: wrap; */
-
+  display: flex;
+  /* flex-direction:row; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  /* flex-wrap: wrap; */
 }
 
-#germanWords i{
-    opacity: 0.8;
+#germanWords i {
+  opacity: 0.8;
 }
 
-#germanWords i:hover{
-    opacity: 1;
-    cursor: pointer;
+#germanWords i:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
-#kelimeDe{
-    font-size: 4rem;
+#kelimeDe {
+  font-size: 4rem;
 }
 
-#germanWords span{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+#germanWords span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
-.fa-circle-play{
-    /* position: absolute;
+.fa-circle-play {
+  /* position: absolute;
     right: -15%;
     top: -15%; */
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.fa-circle-play:hover{
-    color: #FFB84C;
+.fa-circle-play:hover {
+  color: #ffb84c;
 }
 
+#kelimeTr {
+  text-align: center;
+  width: 50vw;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  background-color: rgb(255, 251, 251);
+  color: #6696ef;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 2rem;
 
-
-#kelimeTr{
-    text-align: center;
-    width: 50vw;
-    font-size: 2rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
-    background-color: rgb(255, 251, 251);
-    color: #6696ef;
-    padding: 1rem;
-    margin: 1rem;
-    cursor: pointer;
-    border-radius: 2rem;
-
-    /* color: #FFB84C; */
+  /* color: #FFB84C; */
 }
 
-#wortkarte{
-    position: fixed;
-    color: rgb(255, 255, 255);
-    font-family: 'Boogaloo', cursive;
-    left: 3%;
-    top: 5%;
-    font-size: 1.3rem;
-
+#wortkarte {
+  position: fixed;
+  color: white;
+  font-family: "Boogaloo", cursive;
+  left: 3%;
+  top: 5%;
+  font-size: 1.3rem;
 }
 
-
-
-#tur{
-    position: fixed;
-    color: white;
-    font-family: 'Boogaloo', cursive;
-    right: 5%;
-    top: 5%;
-    
-    
+#tur {
+  position: fixed;
+  color: white;
+  font-family: "Boogaloo", cursive;
+  right: 5%;
+  top: 5%;
 }
 
-#niveau{
-    color: #FFF;
-    font-family: 'Boogaloo', cursive;
-    position: fixed;
-    left: 5%;
-    bottom: 5%;
-    font-size: 1.2rem;
-
+#niveau {
+  color: #fff;
+  font-family: "Boogaloo", cursive;
+  position: fixed;
+  left: 5%;
+  bottom: 5%;
+  font-size: 1.2rem;
 }
 
-#not{
-    color: rgba(255, 255, 255, 0.712);
-    position: fixed;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Quicksand', sans-serif;
-    font-weight: lighter;
-    font-size: small;
+#not {
+  color: rgba(255, 255, 255, 0.712);
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Quicksand", sans-serif;
+  font-weight: lighter;
+  font-size: small;
 }
 
-#not div{
-    align-items: center;
-    text-align: center;
+#not div {
+  align-items: center;
+  text-align: center;
 }
 
-.btn{
-    padding: 0.3rem 1rem;
-    font-size:medium;
-    border-radius: 1rem;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 0.5rem;
+.btn {
+  padding: 0.3rem 1rem;
+  font-size: medium;
+  border-radius: 1rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0.5rem;
 }
 
-.btn:hover{
-    color: white;
-    /* background-color: rgb(27, 123, 219); */
-    background-color: #393939;
-background-image: linear-gradient(90deg, #a0bcfc 0%, #1454d3 55%, #075095 100%);
-
-
-
-
-    
-
+.btn:hover {
+  color: white;
+  /* background-color: rgb(27, 123, 219); */
+  background-color: #393939;
+  background-image: linear-gradient(
+    90deg,
+    #a0bcfc 0%,
+    #1454d3 55%,
+    #075095 100%
+  );
 }
 
-
-
-.fa-thumbtack{
-    transform: rotate(-45deg);
+.fa-thumbtack {
+  transform: rotate(-45deg);
 }
 
 #info {
-    
-    background-color: rgb(54, 54, 54);
-    color: rgb(235, 235, 235);
-    width: 25%;
-    padding: 1rem;
-    border-radius: 1rem;
-    position: fixed;
-    bottom: 1rem;
-    right: -100rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    font-size: 0.7rem;
+  background-color: rgb(54, 54, 54);
+  color: rgb(235, 235, 235);
+  width: 25%;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: fixed;
+  bottom: 1rem;
+  right: -100rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 0.7rem;
 }
 
-#info .fa-circle-xmark{
-    cursor: pointer;
-    font-size: 1.2rem;
-    position: absolute;
-    right: 0rem;
-    bottom: 0rem;
-    
+#info .fa-circle-xmark {
+  cursor: pointer;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
 }
 
-#info-icon{
-    font-size: 1.2rem;
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-    color: white;
-    cursor: pointer;
+#info-icon {
+  font-size: 1.2rem;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  color: white;
+  cursor: pointer;
 }
 
 #info a {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
 }
 
 #info a:hover {
-    color: #c5d6ff 
+  color: #c5d6ff;
 }
 
+@media (max-width: 784px) {
+  #kelimeTr,
+  #kelimeDe {
+    font-size: 150%;
+  }
 
+  #not {
+    font-size: 50%;
+  }
 
+  #kelimeTr {
+    font-size: 75%;
+  }
 
-@media (max-width:784px) {
-    #kelimeTr,
-    #kelimeDe{
-        font-size: 150%;
-    }
-
-    #not{
-        font-size: 50%;
-    }
-
-    #kelimeTr{
-        font-size: 75%;
-    }
-
-    #info{
-        width: 80%;
-    }
-
-
+  #info {
+    width: 80%;
+  }
 }

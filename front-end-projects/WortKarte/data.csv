@@ -288,7 +288,7 @@ Kleine Wörter;schon;Kısa Sözcükler;çoktan, bile;A1.1
 Kleine Wörter;heute;Kısa Sözcükler;bugün;A1.1
 Kleine Wörter;morgen;Kısa Sözcükler;yarın;A1.1
 Kleine Wörter;endlich;Kısa Sözcükler;en sonunda, nihayet;A1.1
-Präpositionen;um (Zeit);İlgeçler;-de;A1.1
+Präpositionen;um (Zeit);İlgeçler;#AD?;A1.1
 Präpositionen;gegen (Zeit);İlgeçler;… doğru;A1.1
 Präpositionen;von;İlgeçler;-den, -dan;A1.1
 Nomen;die Ware, -n;Adlar;mal, ürün;A1.1
@@ -728,7 +728,7 @@ Adjektive;kalt⭤    warm;Önadlar;soğuk⭤    sıcak;A1.2
 Adjektive;hell⭤    dunkel;Önadlar;aydınlık⭤    karanlık;A1.2
 Adjektive;praktisch⭤    unpraktisch;Önadlar;pratik⭤    kullanışsız;A1.2
 Adjektive;schmutzig⭤    sauber;Önadlar;kirli⭤    temiz;A1.2
-Präpositionen;von … nach …;İlgeçler;-den … -e;A1.2
+Präpositionen;von … nach …;İlgeçler;#AD?;A1.2
 Präpositionen;mit⭤    ohne;İlgeçler;ile⭤    -siz;A1.2
 Wendungen;in der Nähe;Deyişler;yakında;A1.2
 Wendungen;Verflixt!;Deyişler;Lanet olsun!;A1.2
@@ -1354,7 +1354,7 @@ Kleine Wörter;echt;Kısa Sözcükler;gerçekten;A2.1
 Kleine Wörter;miteinander;Kısa Sözcükler;beraber;A2.1
 Kleine Wörter;überall;Kısa Sözcükler;her yerde;A2.1
 Kleine Wörter;etwa;Kısa Sözcükler;aşağı yukarı;A2.1
-Präpositionen;aus;İlgeçler;-den;A2.1
+Präpositionen;aus;İlgeçler;#AD?;A2.1
 Präpositionen;hinter;İlgeçler;arkasında;A2.1
 Präpositionen;vor (Ort);İlgeçler;önünde;A2.1
 Präpositionen;über (Ort);İlgeçler;üstünde;A2.1
@@ -2392,7 +2392,7 @@ Verben;feststellen;Eylemler;saptamak, tespit etmek;B1.1
 Verben;wecken;Eylemler;uyandırmak;B1.1
 Verben;angeben, hat angegeben;Eylemler;vermek, bildirmek;B1.1
 Verben;"dazwischenkommen,
-ist dazwischengekommen";Eylemler;araya girmek;B1.1
+ist dazwischengekommen";Eylemler;araya girmek;
 Verben;benachrichtigen;Eylemler;haber vermek;B1.1
 Verben;überreden;Eylemler;ikna etmek;B1.1
 Verben;einwilligen;Eylemler;razı olmak;B1.1
@@ -3160,7 +3160,7 @@ Verben;prägen;Eylemler;damgasını vurmak;B1.2
 Verben;anerkennen, hat anerkannt;Eylemler;kabul etmek, ikrar etmek;B1.2
 Verben;schätzen;Eylemler;değer biçmek, takdir etmek;B1.2
 Verben;verstecken;Eylemler;saklamak;B1.2
-Verben;klagen über + A;Eylemler;-den yakınmak;B1.2
+Verben;klagen über + A;Eylemler;#AD?;B1.2
 Verben;einparken;Eylemler;park etmek;B1.2
 Verben;angeln;Eylemler;balığa çıkmak;B1.2
 Verben;bellen;Eylemler;havlamak, ürümek;B1.2
