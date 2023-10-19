@@ -181,6 +181,8 @@ html {
   color: #c5d6ff;
 }
 
+/* Responsive */
+
 @media (max-width: 784px) {
   #kelimeTr,
   #kelimeDe {
@@ -197,5 +199,10 @@ html {
 
   #info {
     width: 80%;
+  }
+  
+  .btn {
+    color:#075095;
+    font-size: 100%;
   }
 }
